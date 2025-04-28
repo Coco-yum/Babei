@@ -11,6 +11,9 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         h1 {
             color: #2c3e50;
@@ -19,44 +22,60 @@
         .module-selector {
             margin-bottom: 20px;
             text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .card {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            padding: 20px;
+            padding: 30px;
             margin-bottom: 20px;
+            flex-grow: 1;
         }
         .chinese {
-            font-size: 24px;
+            font-size: 32px;
             font-weight: bold;
             color: #2c3e50;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
+            text-align: center;
         }
         .answer {
-            display: none;
-            font-size: 20px;
+            min-height: 60px;
+            font-size: 28px;
             color: #27ae60;
-            margin-bottom: 15px;
-            padding: 10px;
+            margin: 25px 0;
+            padding: 15px;
             background-color: #e8f5e9;
             border-radius: 5px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .buttons {
             display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .action-buttons {
+            display: flex;
             justify-content: space-between;
+            margin-top: 20px;
         }
         button {
-            padding: 10px 15px;
+            padding: 12px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
             transition: background-color 0.3s;
         }
         .show-answer {
             background-color: #3498db;
             color: white;
+            width: 100%;
         }
         .show-answer:hover {
             background-color: #2980b9;
@@ -64,6 +83,7 @@
         .remembered {
             background-color: #2ecc71;
             color: white;
+            flex: 1;
         }
         .remembered:hover {
             background-color: #27ae60;
@@ -71,6 +91,7 @@
         .not-remembered {
             background-color: #e74c3c;
             color: white;
+            flex: 1;
         }
         .not-remembered:hover {
             background-color: #c0392b;
@@ -96,9 +117,88 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 14px;
         }
         .module-btn.active {
             background-color: #2c3e50;
+        }
+        .reset-btn {
+            background-color: #95a5a6;
+            color: white;
+            margin-top: 10px;
+        }
+        .reset-btn:hover {
+            background-color: #7f8c8d;
+        }
+        .finish-btn {
+            background-color: #9b59b6;
+            color: white;
+            margin-top: 10px;
+        }
+        .finish-btn:hover {
+            background-color: #8e44ad;
+        }
+        .not-remembered-list {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fdedec;
+            border-radius: 5px;
+            display: none;
+        }
+        .not-remembered-list h3 {
+            color: #c0392b;
+            margin-top: 0;
+        }
+        .not-remembered-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .not-remembered-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid #f5b7b1;
+        }
+        .email-form {
+            display: none;
+            margin-top: 20px;
+        }
+        .word-type-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .word-type-btn {
+            padding: 8px 15px;
+            margin: 0 5px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .word-type-btn.active {
+            background-color: #2c3e50;
+        }
+        .footer-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .email-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .email-form-group {
+            margin-bottom: 15px;
+        }
+        .email-form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -106,20 +206,68 @@
     <h1>G2B单词复习打卡</h1>
     
     <div class="module-selector">
-        <button class="module-btn active" data-module="m1">M1 单词</button>
-        <button class="module-btn" data-module="m2u1">M2U1 单词</button>
-        <button class="module-btn" data-module="m2">M2 单词</button>
+        <button class="module-btn active" data-module="m1u1">M1U1</button>
+        <button class="module-btn" data-module="m1u2">M1U2</button>
+        <button class="module-btn" data-module="m1u3">M1U3</button>
+        <button class="module-btn" data-module="m2u1">M2U1</button>
+        <button class="module-btn" data-module="m2u2">M2U2</button>
+        <button class="module-btn" data-module="m2u3">M2U3</button>
+        <button class="module-btn" data-module="m3u1">M3U1</button>
+        <button class="module-btn" data-module="m3u2">M3U2</button>
+        <button class="module-btn" data-module="m3u3">M3U3</button>
+        <button class="module-btn" data-module="m4u1">M4U1</button>
+        <button class="module-btn" data-module="m4u2">M4U2</button>
+        <button class="module-btn" data-module="m4u3">M4U3</button>
     </div>
     
-    <div id="m1-words" class="word-container">
-        <div class="progress">进度: <span id="m1-progress">0</span>/<span id="m1-total">0</span> (<span id="m1-completed">0</span> 已记住)</div>
-        <div id="m1-card" class="card">
-            <div class="chinese" id="m1-chinese"></div>
-            <div class="answer" id="m1-answer"></div>
+    <div class="word-type-tabs">
+        <button class="word-type-btn active" data-type="words">单词</button>
+        <button class="word-type-btn" data-type="phrases">词组</button>
+        <button class="word-type-btn" data-type="sentences">句子</button>
+    </div>
+    
+    <!-- Word Containers for each module -->
+    <div id="m1u1-words" class="word-container">
+        <div class="progress">进度: <span id="m1u1-progress">0</span>/<span id="m1u1-total">0</span> (<span id="m1u1-completed">0</span> 已记住)</div>
+        <div id="m1u1-card" class="card">
+            <div class="chinese" id="m1u1-chinese"></div>
+            <div class="answer" id="m1u1-answer"></div>
             <div class="buttons">
-                <button class="show-answer" id="m1-show-answer">显示答案</button>
-                <button class="remembered" id="m1-remembered">记住</button>
-                <button class="not-remembered" id="m1-not-remembered">未记住</button>
+                <button class="show-answer" id="m1u1-show-answer">显示答案</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m1u1-remembered">已记住</button>
+                    <button class="not-remembered" id="m1u1-not-remembered">未记住</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="m1u2-words" class="word-container hidden">
+        <div class="progress">进度: <span id="m1u2-progress">0</span>/<span id="m1u2-total">0</span> (<span id="m1u2-completed">0</span> 已记住)</div>
+        <div id="m1u2-card" class="card">
+            <div class="chinese" id="m1u2-chinese"></div>
+            <div class="answer" id="m1u2-answer"></div>
+            <div class="buttons">
+                <button class="show-answer" id="m1u2-show-answer">显示答案</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m1u2-remembered">已记住</button>
+                    <button class="not-remembered" id="m1u2-not-remembered">未记住</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="m1u3-words" class="word-container hidden">
+        <div class="progress">进度: <span id="m1u3-progress">0</span>/<span id="m1u3-total">0</span> (<span id="m1u3-completed">0</span> 已记住)</div>
+        <div id="m1u3-card" class="card">
+            <div class="chinese" id="m1u3-chinese"></div>
+            <div class="answer" id="m1u3-answer"></div>
+            <div class="buttons">
+                <button class="show-answer" id="m1u3-show-answer">显示答案</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m1u3-remembered">已记住</button>
+                    <button class="not-remembered" id="m1u3-not-remembered">未记住</button>
+                </div>
             </div>
         </div>
     </div>
@@ -131,365 +279,293 @@
             <div class="answer" id="m2u1-answer"></div>
             <div class="buttons">
                 <button class="show-answer" id="m2u1-show-answer">显示答案</button>
-                <button class="remembered" id="m2u1-remembered">记住</button>
-                <button class="not-remembered" id="m2u1-not-remembered">未记住</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m2u1-remembered">已记住</button>
+                    <button class="not-remembered" id="m2u1-not-remembered">未记住</button>
+                </div>
             </div>
         </div>
     </div>
     
-    <div id="m2-words" class="word-container hidden">
-        <div class="progress">进度: <span id="m2-progress">0</span>/<span id="m2-total">0</span> (<span id="m2-completed">0</span> 已记住)</div>
-        <div id="m2-card" class="card">
-            <div class="chinese" id="m2-chinese"></div>
-            <div class="answer" id="m2-answer"></div>
+    <div id="m2u2-words" class="word-container hidden">
+        <div class="progress">进度: <span id="m2u2-progress">0</span>/<span id="m2u2-total">0</span> (<span id="m2u2-completed">0</span> 已记住)</div>
+        <div id="m2u2-card" class="card">
+            <div class="chinese" id="m2u2-chinese"></div>
+            <div class="answer" id="m2u2-answer"></div>
             <div class="buttons">
-                <button class="show-answer" id="m2-show-answer">显示答案</button>
-                <button class="remembered" id="m2-remembered">记住</button>
-                <button class="not-remembered" id="m2-not-remembered">未记住</button>
+                <button class="show-answer" id="m2u2-show-answer">显示答案</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m2u2-remembered">已记住</button>
+                    <button class="not-remembered" id="m2u2-not-remembered">未记住</button>
+                </div>
             </div>
         </div>
     </div>
+    
+    <div id="m2u3-words" class="word-container hidden">
+        <div class="progress">进度: <span id="m2u3-progress">0</span>/<span id="m2u3-total">0</span> (<span id="m2u3-completed">0</span> 已记住)</div>
+        <div id="m2u3-card" class="card">
+            <div class="chinese" id="m2u3-chinese"></div>
+            <div class="answer" id="m2u3-answer"></div>
+            <div class="buttons">
+                <button class="show-answer" id="m2u3-show-answer">显示答案</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m2u3-remembered">已记住</button>
+                    <button class="not-remembered" id="m2u3-not-remembered">未记住</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="m3u1-words" class="word-container hidden">
+        <div class="progress">进度: <span id="m3u1-progress">0</span>/<span id="m3u1-total">0</span> (<span id="m3u1-completed">0</span> 已记住)</div>
+        <div id="m3u1-card" class="card">
+            <div class="chinese" id="m3u1-chinese"></div>
+            <div class="answer" id="m3u1-answer"></div>
+            <div class="buttons">
+                <button class="show-answer" id="m3u1-show-answer">显示答案</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m3u1-remembered">已记住</button>
+                    <button class="not-remembered" id="m3u1-not-remembered">未记住</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="m3u2-words" class="word-container hidden">
+        <div class="progress">进度: <span id="m3u2-progress">0</span>/<span id="m3u2-total">0</span> (<span id="m3u2-completed">0</span> 已记住)</div>
+        <div id="m3u2-card" class="card">
+            <div class="chinese" id="m3u2-chinese"></div>
+            <div class="answer" id="m3u2-answer"></div>
+            <div class="buttons">
+                <button class="show-answer" id="m3u2-show-answer">显示答案</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m3u2-remembered">已记住</button>
+                    <button class="not-remembered" id="m3u2-not-remembered">未记住</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="m3u3-words" class="word-container hidden">
+        <div class="progress">进度: <span id="m3u3-progress">0</span>/<span id="m3u3-total">0</span> (<span id="m3u3-completed">0</span> 已记住)</div>
+        <div id="m3u3-card" class="card">
+            <div class="chinese" id="m3u3-chinese"></div>
+            <div class="answer" id="m3u3-answer"></div>
+            <div class="buttons">
+                <button class="show-answer" id="m3u3-show-answer">显示答案</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m3u3-remembered">已记住</button>
+                    <button class="not-remembered" id="m3u3-not-remembered">未记住</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="m4u1-words" class="word-container hidden">
+        <div class="progress">进度: <span id="m4u1-progress">0</span>/<span id="m4u1-total">0</span> (<span id="m4u1-completed">0</span> 已记住)</div>
+        <div id="m4u1-card" class="card">
+            <div class="chinese" id="m4u1-chinese"></div>
+            <div class="answer" id="m4u1-answer"></div>
+            <div class="buttons">
+                <button class="show-answer" id="m4u1-show-answer">显示答案</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m4u1-remembered">已记住</button>
+                    <button class="not-remembered" id="m4u1-not-remembered">未记住</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="m4u2-words" class="word-container hidden">
+        <div class="progress">进度: <span id="m4u2-progress">0</span>/<span id="m4u2-total">0</span> (<span id="m4u2-completed">0</span> 已记住)</div>
+        <div id="m4u2-card" class="card">
+            <div class="chinese" id="m4u2-chinese"></div>
+            <div class="answer" id="m4u2-answer"></div>
+            <div class="buttons">
+                <button class="show-answer" id="m4u2-show-answer">显示答案</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m4u2-remembered">已记住</button>
+                    <button class="not-remembered" id="m4u2-not-remembered">未记住</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="m4u3-words" class="word-container hidden">
+        <div class="progress">进度: <span id="m4u3-progress">0</span>/<span id="m4u3-total">0</span> (<span id="m4u3-completed">0</span> 已记住)</div>
+        <div id="m4u3-card" class="card">
+            <div class="chinese" id="m4u3-chinese"></div>
+            <div class="answer" id="m4u3-answer"></div>
+            <div class="buttons">
+                <button class="show-answer" id="m4u3-show-answer">显示答案</button>
+                <div class="action-buttons">
+                    <button class="remembered" id="m4u3-remembered">已记住</button>
+                    <button class="not-remembered" id="m4u3-not-remembered">未记住</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="not-remembered-list" class="not-remembered-list">
+        <h3>未记住的单词清单</h3>
+        <ul id="not-remembered-words"></ul>
+    </div>
+
+    <form class="email-form" id="email-form">
+        <div class="email-form-group">
+            <label for="user-email">请输入您的邮箱地址：</label>
+            <input type="email" id="user-email" class="email-input" required placeholder="example@163.com">
+        </div>
+        <input type="hidden" name="_subject" value="未记住的单词清单">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="未记住的单词" id="email-words">
+        <button type="submit" class="finish-btn">发送到邮箱</button>
+    </form>
+
+    <div class="footer-buttons">
+        <button class="reset-btn" id="reset-all">重置所有进度</button>
+        <button class="finish-btn" id="finish-session">结束本次打卡</button>
+    </div>
 
     <script>
-        // 单词数据
-        const wordData = {
-            m1: [
-                {chinese: "听（动作）", english: "listen"},
-                {chinese: "听见", english: "hear"},
-                {chinese: "看见", english: "see"},
-                {chinese: "看（动作）", english: "look"},
-                {chinese: "火车", english: "train"},
-                {chinese: "公交车", english: "bus"},
-                {chinese: "公交车（复数）", english: "buses"},
-                {chinese: "汽车", english: "car"},
-                {chinese: "小货车", english: "van"},
-                {chinese: "自行车", english: "bicycle"},
-                {chinese: "自行车", english: "bike"},
-                {chinese: "船", english: "ship"},
-                {chinese: "绵羊（单数）", english: "sheep"},
-                {chinese: "绵羊（复数）", english: "sheep"},
-                {chinese: "在......旁边", english: "beside"},
-                {chinese: "睡觉", english: "sleep"},
-                {chinese: "公交站", english: "bus stop"},
-                {chinese: "车站", english: "station"},
-                {chinese: "道路", english: "road"},
-                {chinese: "声音", english: "sound"},
-                {chinese: "嘀声", english: "beep"},
-                {chinese: "呼啸声（火车）", english: "choo"},
-                {chinese: "嘀嘟声", english: "boop"},
-                {chinese: "等待", english: "wait"},
-                {chinese: "蝴蝶", english: "butterfly"},
-                {chinese: "昆虫", english: "insect"},
-                {chinese: "狮子", english: "lion"},
-                {chinese: "老鼠", english: "mouse"},
-                {chinese: "橙子", english: "orange"},
-                {chinese: "猪", english: "pig"},
-                {chinese: "兔子", english: "rabbit"},
-                {chinese: "雨伞", english: "umbrella"},
-                {chinese: "箱子", english: "box"},
-                {chinese: "黄色", english: "yellow"},
-                {chinese: "斑马", english: "zebra"},
-                {chinese: "狗", english: "dog"},
-                {chinese: "猫", english: "cat"},
-                {chinese: "大象", english: "elephant"},
-                {chinese: "颜色", english: "colour"},
-                {chinese: "白色", english: "white"},
-                {chinese: "黑色", english: "black"},
-                {chinese: "粉色", english: "pink"},
-                {chinese: "紫色", english: "purple"},
-                {chinese: "苹果", english: "apple"},
-                {chinese: "包", english: "bag"},
-                {chinese: "风筝", english: "kite"},
-                {chinese: "草", english: "grass"},
-                {chinese: "黑色", english: "black"},
-                {chinese: "白色", english: "white"},
-                {chinese: "粉色", english: "pink"},
-                {chinese: "紫色", english: "purple"},
-                {chinese: "橙色", english: "orange"},
-                {chinese: "蓝色", english: "blue"},
-                {chinese: "棕色", english: "brown"},
-                {chinese: "黄色", english: "yellow"},
-                {chinese: "红色", english: "red"},
-                {chinese: "绿色", english: "green"},
-                {chinese: "公园", english: "park"},
-                {chinese: "他", english: "he"},
-                {chinese: "她", english: "she"},
-                {chinese: "它", english: "it"},
-                {chinese: "他们/她们/它们", english: "they"},
-                {chinese: "瓢虫", english: "ladybird"},
-                {chinese: "鸟", english: "bird"},
-                {chinese: "蝴蝶", english: "butterfly"},
-                {chinese: "蝴蝶（复数）", english: "butterflies"},
-                {chinese: "看见", english: "see"},
-                {chinese: "听见", english: "hear"},
-                {chinese: "美丽的", english: "beautiful"},
-                {chinese: "鸟", english: "bird"},
-                {chinese: "彩虹", english: "rainbow"},
-                {chinese: "蝴蝶", english: "butterfly"},
-                {chinese: "蝴蝶（复数）", english: "butterflies"},
-                {chinese: "紫色", english: "purple"},
-                {chinese: "在外面", english: "outside"},
-                {chinese: "窗户", english: "window"},
-                {chinese: "两个", english: "two"},
-                {chinese: "棕色", english: "brown"},
-                {chinese: "触摸", english: "touch"},
-                {chinese: "感觉", english: "feel"},
-                {chinese: "观看", english: "watch"},
-                {chinese: "手表（复数）", english: "watches"},
-                {chinese: "包", english: "bag"},
-                {chinese: "铅笔盒", english: "pencil case"},
-                {chinese: "软的", english: "soft"},
-                {chinese: "硬的", english: "hard"},
-                {chinese: "粗糙的", english: "rough"},
-                {chinese: "光滑的", english: "smooth"},
-                {chinese: "热的", english: "hot"},
-                {chinese: "冷的", english: "cold"},
-                {chinese: "看见", english: "see"},
-                {chinese: "听见", english: "hear"},
-                {chinese: "品尝", english: "taste"},
-                {chinese: "舌头", english: "tongue"},
-                {chinese: "闻", english: "smell"},
-                {chinese: "猜测", english: "guess"},
-                {chinese: "打开", english: "open"},
-                {chinese: "关闭", english: "close"},
-                {chinese: "梨", english: "pear"},
-                {chinese: "橙子", english: "orange"},
-                {chinese: "桃子", english: "peach"},
-                {chinese: "桃子（复数）", english: "peaches"},
-                {chinese: "洋娃娃", english: "doll"},
-                {chinese: "菠萝", english: "pineapple"},
-                {chinese: "手表", english: "watch"},
-                {chinese: "手表（复数）", english: "watches"},
-                {chinese: "触摸", english: "touch"},
-                {chinese: "感觉", english: "feel"},
-                {chinese: "猜测", english: "guess"},
-                {chinese: "打开", english: "open"},
-                {chinese: "软的", english: "soft"},
-                {chinese: "光滑的", english: "smooth"},
-                {chinese: "粗糙的", english: "rough"},
-                {chinese: "硬的", english: "hard"},
-                {chinese: "声音", english: "sound"},
-                {chinese: "听见", english: "hear"},
-                {chinese: "听", english: "listen"},
-                {chinese: "火车", english: "train"},
-                {chinese: "呼啸声（火车）", english: "choo"},
-                {chinese: "公交车", english: "bus"},
-                {chinese: "嘀嘟声", english: "boop"},
-                {chinese: "汽车", english: "car"},
-                {chinese: "小货车", english: "van"},
-                {chinese: "嘀声", english: "beep"},
-                {chinese: "自行车", english: "bicycle"},
-                {chinese: "船", english: "ship"},
-                {chinese: "狗", english: "dog"},
-                {chinese: "猫", english: "cat"},
-                {chinese: "老虎", english: "tiger"},
-                {chinese: "在......旁边", english: "beside"},
-                {chinese: "窗户", english: "window"},
-                {chinese: "公交站", english: "bus stop"},
-                {chinese: "车站", english: "station"},
-                {chinese: "道路", english: "road"}
-            ],
-            m2u1: [
-                {chinese: "喜欢", english: "like"},
-                {chinese: "跑", english: "run"},
-                {chinese: "跑（现在分词）", english: "running"},
-                {chinese: "滑冰", english: "skate"},
-                {chinese: "滑冰（现在分词）", english: "skating"},
-                {chinese: "骑", english: "ride"},
-                {chinese: "骑（现在分词）", english: "riding"},
-                {chinese: "自行车", english: "bicycle"},
-                {chinese: "自行车", english: "bike"},
-                {chinese: "单脚跳", english: "hop"},
-                {chinese: "单脚跳（现在分词）", english: "hopping"},
-                {chinese: "跳绳", english: "skip"},
-                {chinese: "跳绳（现在分词）", english: "skipping"},
-                {chinese: "唱歌", english: "sing"},
-                {chinese: "唱歌（现在分词）", english: "singing"},
-                {chinese: "跳舞", english: "dance"},
-                {chinese: "跳舞（现在分词）", english: "dancing"},
-                {chinese: "写", english: "write"},
-                {chinese: "写（现在分词）", english: "writing"},
-                {chinese: "青蛙", english: "frog"},
-                {chinese: "跑", english: "run"},
-                {chinese: "跑（现在分词）", english: "running"},
-                {chinese: "滑冰", english: "skate"},
-                {chinese: "滑冰（现在分词）", english: "skating"},
-                {chinese: "跳", english: "jump"},
-                {chinese: "跳（现在分词）", english: "jumping"},
-                {chinese: "写", english: "write"},
-                {chinese: "写（现在分词）", english: "writing"},
-                {chinese: "游泳", english: "swim"},
-                {chinese: "游泳（现在分词）", english: "swimming"},
-                {chinese: "单脚跳", english: "hop"},
-                {chinese: "单脚跳（现在分词）", english: "hopping"},
-                {chinese: "骑", english: "ride"},
-                {chinese: "骑（现在分词）", english: "riding"},
-                {chinese: "画", english: "draw"},
-                {chinese: "画（现在分词）", english: "drawing"},
-                {chinese: "唱歌", english: "sing"},
-                {chinese: "唱歌（现在分词）", english: "singing"},
-                {chinese: "读", english: "read"},
-                {chinese: "读（现在分词）", english: "reading"},
-                {chinese: "跳舞", english: "dance"},
-                {chinese: "跳舞（现在分词）", english: "dancing"},
-                {chinese: "飞", english: "fly"},
-                {chinese: "飞（现在分词）", english: "flying"},
-                {chinese: "玩", english: "play"},
-                {chinese: "玩（现在分词）", english: "playing"},
-                {chinese: "跳", english: "jump"},
-                {chinese: "跳（现在分词）", english: "jumping"}
-            ],
-            m2: [
-                {chinese: "跑", english: "run"},
-                {chinese: "滑冰", english: "skate"},
-                {chinese: "骑", english: "ride"},
-                {chinese: "单脚跳", english: "hop"},
-                {chinese: "跳绳", english: "skip"},
-                {chinese: "唱歌", english: "sing"},
-                {chinese: "跳舞", english: "dance"},
-                {chinese: "写", english: "write"},
-                {chinese: "跳", english: "jump"},
-                {chinese: "画", english: "draw"},
-                {chinese: "读", english: "read"},
-                {chinese: "飞", english: "fly"},
-                {chinese: "玩", english: "play"},
-                {chinese: "跑（现在分词）", english: "running"},
-                {chinese: "滑冰（现在分词）", english: "skating"},
-                {chinese: "骑（现在分词）", english: "riding"},
-                {chinese: "单脚跳（现在分词）", english: "hopping"},
-                {chinese: "跳绳（现在分词）", english: "skipping"},
-                {chinese: "唱歌（现在分词）", english: "singing"},
-                {chinese: "跳舞（现在分词）", english: "dancing"},
-                {chinese: "写（现在分词）", english: "writing"},
-                {chinese: "跳（现在分词）", english: "jumping"},
-                {chinese: "画（现在分词）", english: "drawing"},
-                {chinese: "读（现在分词）", english: "reading"},
-                {chinese: "飞（现在分词）", english: "flying"},
-                {chinese: "玩（现在分词）", english: "playing"},
-                {chinese: "食物", english: "food"},
-                {chinese: "汉堡", english: "hamburger"},
-                {chinese: "披萨", english: "pizza"},
-                {chinese: "沙拉", english: "salad"},
-                {chinese: "鱼", english: "fish"},
-                {chinese: "鸡肉", english: "chicken"},
-                {chinese: "胡萝卜", english: "carrot"},
-                {chinese: "香蕉", english: "banana"},
-                {chinese: "苹果", english: "apple"},
-                {chinese: "梨", english: "pear"},
-                {chinese: "桃子", english: "peach"},
-                {chinese: "橙子", english: "orange"},
-                {chinese: "米饭", english: "rice"},
-                {chinese: "汤", english: "soup"},
-                {chinese: "面条", english: "noodles"},
-                {chinese: "鸡蛋", english: "egg"},
-                {chinese: "果冻", english: "jelly"},
-                {chinese: "冰淇淋", english: "ice cream"},
-                {chinese: "糖果", english: "sweet"},
-                {chinese: "饼干", english: "biscuit"},
-                {chinese: "可乐", english: "cola"},
-                {chinese: "果汁", english: "juice"},
-                {chinese: "牛奶", english: "milk"},
-                {chinese: "水", english: "water"},
-                {chinese: "馅饼", english: "pie"},
-                {chinese: "蛋糕", english: "cake"},
-                {chinese: "长颈鹿", english: "giraffe"},
-                {chinese: "蛇", english: "snake"},
-                {chinese: "大象", english: "elephant"},
-                {chinese: "斑马", english: "zebra"},
-                {chinese: "小鸡", english: "chick"},
-                {chinese: "鸭子", english: "duck"},
-                {chinese: "牛", english: "cow"},
-                {chinese: "猪", english: "pig"},
-                {chinese: "青蛙", english: "frog"},
-                {chinese: "兔子", english: "rabbit"},
-                {chinese: "蜜蜂", english: "bee"},
-                {chinese: "蝴蝶", english: "butterfly"},
-                {chinese: "瓢虫", english: "ladybird"},
-                {chinese: "昆虫", english: "insect"},
-                {chinese: "鸟", english: "bird"},
-                {chinese: "绵羊", english: "sheep"},
-                {chinese: "母鸡", english: "hen"},
-                {chinese: "熊", english: "bear"},
-                {chinese: "老虎", english: "tiger"},
-                {chinese: "猴子", english: "monkey"},
-                {chinese: "熊猫", english: "panda"},
-                {chinese: "狗", english: "dog"},
-                {chinese: "猫", english: "cat"},
-                {chinese: "狼", english: "wolf"},
-                {chinese: "狐狸", english: "fox"},
-                {chinese: "河马", english: "hippo"},
-                {chinese: "自行车", english: "bicycle"},
-                {chinese: "自行车", english: "bike"},
-                {chinese: "最喜欢的", english: "favourite"},
-                {chinese: "美味的", english: "yummy"}
-            ]
+        // 单词数据 - 示例结构
+     let wordData = {}; // 全局变量，将在 fetch 后填充
+
+async function initializeApp() {
+    try {
+        const response = await fetch('word-data.json');
+        if (!response.ok) throw new Error('Network response was not ok');
+        wordData = await response.json();
+        
+        initializeModules();
+        initializeEventListeners();
+        
+        Object.keys(modules).forEach(module => {
+            ['words', 'phrases', 'sentences'].forEach(type => {
+                if (wordData[module]?.[type]) {
+                    initModule(module, type);
+                }
+            });
+        });
+        
+        switchModule('m1u1');
+        switchType('words');
+    } catch (error) {
+        console.error('加载单词数据失败:', error);
+        alert('加载单词数据失败，请检查网络连接或数据文件是否存在。');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', initializeApp);
         };
+
+        let currentModule = 'm1u1';
+        let currentType = 'words';
+        let notRememberedWords = [];
+
+        // 从LocalStorage加载模块数据
+        function loadModuleData(module, type) {
+            const savedData = localStorage.getItem(`wordReview_${module}_${type}`);
+            if (savedData) {
+                return JSON.parse(savedData);
+            }
+            return null;
+        }
+
+        // 保存模块数据到LocalStorage
+        function saveModuleData(module, type, data) {
+            localStorage.setItem(`wordReview_${module}_${type}`, JSON.stringify(data));
+        }
+
+        // 重置模块数据
+        function resetModuleData(module, type) {
+            localStorage.removeItem(`wordReview_${module}_${type}`);
+            initModule(module, type, true);
+        }
 
         // 初始化模块
-        let currentModule = 'm1';
-        const modules = {
-            m1: {
-                words: [...wordData.m1],
-                remembered: [],
-                currentIndex: 0,
-                element: document.getElementById('m1-words'),
-                chinese: document.getElementById('m1-chinese'),
-                answer: document.getElementById('m1-answer'),
-                showAnswerBtn: document.getElementById('m1-show-answer'),
-                rememberedBtn: document.getElementById('m1-remembered'),
-                notRememberedBtn: document.getElementById('m1-not-remembered'),
-                progress: document.getElementById('m1-progress'),
-                total: document.getElementById('m1-total'),
-                completed: document.getElementById('m1-completed')
-            },
-            m2u1: {
-                words: [...wordData.m2u1],
-                remembered: [],
-                currentIndex: 0,
-                element: document.getElementById('m2u1-words'),
-                chinese: document.getElementById('m2u1-chinese'),
-                answer: document.getElementById('m2u1-answer'),
-                showAnswerBtn: document.getElementById('m2u1-show-answer'),
-                rememberedBtn: document.getElementById('m2u1-remembered'),
-                notRememberedBtn: document.getElementById('m2u1-not-remembered'),
-                progress: document.getElementById('m2u1-progress'),
-                total: document.getElementById('m2u1-total'),
-                completed: document.getElementById('m2u1-completed')
-            },
-            m2: {
-                words: [...wordData.m2],
-                remembered: [],
-                currentIndex: 0,
-                element: document.getElementById('m2-words'),
-                chinese: document.getElementById('m2-chinese'),
-                answer: document.getElementById('m2-answer'),
-                showAnswerBtn: document.getElementById('m2-show-answer'),
-                rememberedBtn: document.getElementById('m2-remembered'),
-                notRememberedBtn: document.getElementById('m2-not-remembered'),
-                progress: document.getElementById('m2-progress'),
-                total: document.getElementById('m2-total'),
-                completed: document.getElementById('m2-completed')
+        function initModule(module, type, forceReset = false) {
+            let savedData = null;
+            
+            if (!forceReset) {
+                savedData = loadModuleData(module, type);
             }
-        };
+            
+            const m = modules[module][type];
+            const data = wordData[module]?.[type] || [];
+            
+            if (savedData) {
+                // 使用保存的数据初始化
+                m.words = savedData.words;
+                m.remembered = savedData.remembered;
+                m.currentIndex = savedData.currentIndex;
+            } else {
+                // 使用原始数据初始化
+                m.words = [...data];
+                m.remembered = [];
+                m.currentIndex = 0;
+            }
+            
+            updateModuleUI(module, type);
+        }
 
-        // 初始化模块数据
-        function initModule(module) {
-            const m = modules[module];
-            m.total.textContent = m.words.length;
+        // 更新模块UI
+        function updateModuleUI(module, type) {
+            const m = modules[module][type];
+            const data = wordData[module]?.[type] || [];
+            
+            m.total.textContent = data.length; // 总是显示原始总数
             m.completed.textContent = m.remembered.length;
             m.progress.textContent = m.currentIndex + 1;
             
             if (m.currentIndex < m.words.length) {
                 m.chinese.textContent = m.words[m.currentIndex].chinese;
                 m.answer.textContent = m.words[m.currentIndex].english;
+                m.answer.style.display = "none";
+                m.showAnswerBtn.style.display = "block";
+                m.rememberedBtn.style.display = "block";
+                m.notRememberedBtn.style.display = "block";
             } else {
-                m.chinese.textContent = "已完成所有单词复习！";
+                m.chinese.textContent = "已完成所有内容复习！";
                 m.answer.style.display = "none";
                 m.showAnswerBtn.style.display = "none";
                 m.rememberedBtn.style.display = "none";
                 m.notRememberedBtn.style.display = "none";
             }
         }
+
+        // 初始化模块对象
+        const modules = {};
+        
+        // 初始化所有模块和类型
+        function initializeModules() {
+            const moduleIds = ['m1u1', 'm1u2', 'm1u3', 'm2u1', 'm2u2', 'm2u3', 'm3u1', 'm3u2', 'm3u3', 'm4u1', 'm4u2', 'm4u3'];
+            const types = ['words', 'phrases', 'sentences'];
+            
+            moduleIds.forEach(module => {
+                modules[module] = {};
+                
+                types.forEach(type => {
+                    modules[module][type] = {
+                        words: [],
+                        remembered: [],
+                        currentIndex: 0,
+                        element: document.getElementById(`${module}-words`),
+                        chinese: document.getElementById(`${module}-chinese`),
+                        answer: document.getElementById(`${module}-answer`),
+                        showAnswerBtn: document.getElementById(`${module}-show-answer`),
+                        rememberedBtn: document.getElementById(`${module}-remembered`),
+                        notRememberedBtn: document.getElementById(`${module}-not-remembered`),
+                        progress: document.getElementById(`${module}-progress`),
+                        total: document.getElementById(`${module}-total`),
+                        completed: document.getElementById(`${module}-completed`)
+                    };
+                });
+            });
+        }
+        
+        initializeModules();
 
         // 切换模块
         function switchModule(module) {
@@ -501,34 +577,52 @@
                 btn.classList.remove('active');
             });
             
-            modules[module].element.classList.remove('hidden');
+            modules[module][currentType].element.classList.remove('hidden');
             document.querySelector(`.module-btn[data-module="${module}"]`).classList.add('active');
-            initModule(module);
+            initModule(module, currentType);
+        }
+
+        // 切换内容类型
+        function switchType(type) {
+            currentType = type;
+            document.querySelectorAll('.word-type-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`.word-type-btn[data-type="${type}"]`).classList.add('active');
+            initModule(currentModule, currentType);
         }
 
         // 显示答案
-        function showAnswer(module) {
-            const m = modules[module];
+        function showAnswer(module, type) {
+            const m = modules[module][type];
             m.answer.style.display = "block";
-            m.showAnswerBtn.style.display = "none";
         }
 
         // 标记为记住
-        function markAsRemembered(module) {
-            const m = modules[module];
+        function markAsRemembered(module, type) {
+            const m = modules[module][type];
             if (m.currentIndex < m.words.length) {
+                // 显示答案
+                m.answer.style.display = "block";
+                
                 m.remembered.push(m.words[m.currentIndex]);
                 m.currentIndex++;
                 m.completed.textContent = m.remembered.length;
+                
+                // 保存进度
+                saveModuleData(module, type, {
+                    words: m.words,
+                    remembered: m.remembered,
+                    currentIndex: m.currentIndex
+                });
                 
                 if (m.currentIndex < m.words.length) {
                     m.chinese.textContent = m.words[m.currentIndex].chinese;
                     m.answer.textContent = m.words[m.currentIndex].english;
                     m.answer.style.display = "none";
-                    m.showAnswerBtn.style.display = "block";
                     m.progress.textContent = m.currentIndex + 1;
                 } else {
-                    m.chinese.textContent = "已完成所有单词复习！";
+                    m.chinese.textContent = "已完成所有内容复习！";
                     m.answer.style.display = "none";
                     m.showAnswerBtn.style.display = "none";
                     m.rememberedBtn.style.display = "none";
@@ -538,43 +632,204 @@
         }
 
         // 标记为未记住
-        function markAsNotRemembered(module) {
-            const m = modules[module];
+        function markAsNotRemembered(module, type) {
+            const m = modules[module][type];
             if (m.currentIndex < m.words.length) {
+                // 显示答案
+                m.answer.style.display = "block";
+                
                 // 将未记住的单词移到数组末尾，稍后再次复习
                 const notRememberedWord = m.words[m.currentIndex];
                 m.words.splice(m.currentIndex, 1);
                 m.words.push(notRememberedWord);
                 
+                // 添加到未记住单词列表
+                notRememberedWords.push({
+                    module: module,
+                    type: type,
+                    word: notRememberedWord
+                });
+                
+                // 保存进度
+                saveModuleData(module, type, {
+                    words: m.words,
+                    remembered: m.remembered,
+                    currentIndex: m.currentIndex
+                });
+                
                 m.chinese.textContent = m.words[m.currentIndex].chinese;
                 m.answer.textContent = m.words[m.currentIndex].english;
                 m.answer.style.display = "none";
-                m.showAnswerBtn.style.display = "block";
                 m.progress.textContent = m.currentIndex + 1;
             }
         }
 
+        // 重置所有进度
+        function resetAllProgress() {
+            if (confirm("确定要重置所有复习进度吗？这将清除所有已记住的内容记录。")) {
+                Object.keys(modules).forEach(module => {
+                    ['words', 'phrases', 'sentences'].forEach(type => {
+                        if (modules[module][type]) {
+                            resetModuleData(module, type);
+                        }
+                    });
+                });
+                notRememberedWords = [];
+                initModule(currentModule, currentType); // 刷新当前模块显示
+            }
+        }
+
+        // 结束本次打卡
+        function finishSession() {
+            const listElement = document.getElementById('not-remembered-words');
+            listElement.innerHTML = '';
+            
+            if (notRememberedWords.length === 0) {
+                listElement.innerHTML = '<li>本次打卡没有未记住的内容！</li>';
+            } else {
+                // 按模块和类型分组
+                const groupedWords = {};
+                notRememberedWords.forEach(item => {
+                    if (!groupedWords[item.module]) {
+                        groupedWords[item.module] = {};
+                    }
+                    if (!groupedWords[item.module][item.type]) {
+                        groupedWords[item.module][item.type] = [];
+                    }
+                    groupedWords[item.module][item.type].push(item.word);
+                });
+                
+                // 添加到列表
+                Object.keys(groupedWords).forEach(module => {
+                    const moduleTitle = document.createElement('li');
+                    moduleTitle.innerHTML = `<strong>${module.toUpperCase()}</strong>`;
+                    listElement.appendChild(moduleTitle);
+                    
+                    Object.keys(groupedWords[module]).forEach(type => {
+                        const typeTitle = document.createElement('li');
+                        typeTitle.innerHTML = `<em>${getTypeName(type)}</em>`;
+                        listElement.appendChild(typeTitle);
+                        
+                        groupedWords[module][type].forEach(word => {
+                            const wordItem = document.createElement('li');
+                            wordItem.textContent = `${word.chinese} - ${word.english}`;
+                            listElement.appendChild(wordItem);
+                        });
+                    });
+                });
+                
+                // 准备邮件内容
+                let emailContent = '';
+                Object.keys(groupedWords).forEach(module => {
+                    emailContent += `${module.toUpperCase()}:\n`;
+                    Object.keys(groupedWords[module]).forEach(type => {
+                        emailContent += `  ${getTypeName(type)}:\n`;
+                        groupedWords[module][type].forEach(word => {
+                            emailContent += `    - ${word.chinese} - ${word.english}\n`;
+                        });
+                    });
+                    emailContent += '\n';
+                });
+                document.getElementById('email-words').value = emailContent;
+            }
+            
+            document.getElementById('not-remembered-list').style.display = 'block';
+            document.getElementById('email-form').style.display = 'block';
+        }
+
+        // 获取类型名称
+        function getTypeName(type) {
+            return {
+                'words': '单词',
+                'phrases': '词组',
+                'sentences': '句子'
+            }[type];
+        }
+
+        // 修改邮件表单提交处理
+        document.getElementById('email-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const userEmail = document.getElementById('user-email').value;
+            if (!userEmail || !userEmail.includes('@')) {
+                alert('请输入有效的邮箱地址！');
+                return;
+            }
+            
+            const formData = new FormData(this);
+            const wordsData = document.getElementById('email-words').value;
+            
+            // 使用FormSubmit.co发送邮件
+            fetch('https://formsubmit.co/ajax/' + encodeURIComponent(userEmail), {
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    _subject: '未记住的单词清单',
+                    _template: 'table',
+                    '未记住的单词': wordsData
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success === "true") {
+                    alert('邮件发送成功！');
+                    this.reset();
+                    document.getElementById('not-remembered-list').style.display = 'none';
+                    this.style.display = 'none';
+                } else {
+                    alert('邮件发送失败，请稍后再试。');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('邮件发送失败，请检查网络连接。');
+            });
+        });
         // 事件监听
         document.querySelectorAll('.module-btn').forEach(btn => {
+            if (btn.id !== 'reset-all' && btn.id !== 'finish-session') {
+                btn.addEventListener('click', () => {
+                    switchModule(btn.dataset.module);
+                });
+            }
+        });
+
+        document.querySelectorAll('.word-type-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                switchModule(btn.dataset.module);
+                switchType(btn.dataset.type);
             });
         });
 
-        document.getElementById('m1-show-answer').addEventListener('click', () => showAnswer('m1'));
-        document.getElementById('m1-remembered').addEventListener('click', () => markAsRemembered('m1'));
-        document.getElementById('m1-not-remembered').addEventListener('click', () => markAsNotRemembered('m1'));
+        document.getElementById('reset-all').addEventListener('click', resetAllProgress);
+        document.getElementById('finish-session').addEventListener('click', finishSession);
 
-        document.getElementById('m2u1-show-answer').addEventListener('click', () => showAnswer('m2u1'));
-        document.getElementById('m2u1-remembered').addEventListener('click', () => markAsRemembered('m2u1'));
-        document.getElementById('m2u1-not-remembered').addEventListener('click', () => markAsNotRemembered('m2u1'));
+        // 初始化事件监听器
+        function initializeEventListeners() {
+            const moduleIds = ['m1u1', 'm1u2', 'm1u3', 'm2u1', 'm2u2', 'm2u3', 'm3u1', 'm3u2', 'm3u3', 'm4u1', 'm4u2', 'm4u3'];
+                    
+            moduleIds.forEach(module => {
+                document.getElementById(`${module}-show-answer`).addEventListener('click', () => showAnswer(module, currentType));
+                document.getElementById(`${module}-remembered`).addEventListener('click', () => markAsRemembered(module, currentType));
+                document.getElementById(`${module}-not-remembered`).addEventListener('click', () => markAsNotRemembered(module, currentType));
 
-        document.getElementById('m2-show-answer').addEventListener('click', () => showAnswer('m2'));
-        document.getElementById('m2-remembered').addEventListener('click', () => markAsRemembered('m2'));
-        document.getElementById('m2-not-remembered').addEventListener('click', () => markAsNotRemembered('m2'));
+            });
+        }
+
+        initializeEventListeners();
 
         // 初始化
-        switchModule('m1');
+        Object.keys(modules).forEach(module => {
+            ['words', 'phrases', 'sentences'].forEach(type => {
+                if (wordData[module]?.[type]) {
+                    initModule(module, type);
+                }
+            });
+        });
+        switchModule('m1u1');
+        switchType('words');
     </script>
 </body>
 </html>
