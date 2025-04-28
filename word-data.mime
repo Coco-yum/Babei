@@ -1,6 +1,6 @@
  {
-            “m1u1“: {
-                “words“: [
+            m1u1: {
+                words: [
                     { "chinese": "听（动作）", "english": "listen" },
                     { "chinese": "听见", "english": "hear" },
                     { "chinese": "看见", "english": "see" },
@@ -26,15 +26,15 @@
                     { "chinese": "嘀嘟声", "english": "boop" },
                     { "chinese": "等待", "english": "wait" }
                 ],
-                “phrases“: [
+                phrases: [
                     {chinese: "听音乐", english: "listen to music"}
                 ],
-                “sentences“: [
+                sentences: [
                     {chinese: "我喜欢听音乐。", english: "I like listening to music."}
                 ]
             },
-            “m1u2“: {
-                “words“: [
+            m1u2 : {
+                words: [
                     { "chinese": "蝴蝶", "english": "butterfly" },
                     { "chinese": "昆虫", "english": "insect" },
                     { "chinese": "狮子", "english": "lion" },
@@ -73,15 +73,15 @@
                     { "chinese": "蝴蝶（复数）", "english": "butterflies" },
                     { "chinese": "美丽的", "english": "beautiful" }
                 ],
-                “phrases“: [
+                phrases: [
                     {chinese: "看见苹果", english: "see an apple"}
                 ],
-                “sentences“: [
+                sentences: [
                     {chinese: "我能看见一个苹果。", english: "I can see an apple."}
                 ]
             },
-            “m1u3“: {
-                “words“: [
+            m1u3 : {
+                words: [
                     { "chinese": "彩虹", "english": "rainbow" },
                     { "chinese": "在外面", "english": "outside" },
                     { "chinese": "窗户", "english": "window" },
@@ -112,15 +112,15 @@
                     { "chinese": "手表", "english": "watch" },
                     { "chinese": "老虎", "english": "tiger" }
                 ],
-                “phrases“: [
+                phrases: [
                     {chinese: "白色的道路", english: "white road"}
                 ],
-                “sentences“: [
+                sentences: [
                     {chinese: "这条道路是白色的。", english: "This road is white."}
                 ]
             },
-            “m2u1“: {
-                “words“: [
+            m2u1: {
+                words: [
                     { "chinese": "喜欢", "english": "like" },
                     { "chinese": "跑", "english": "run" },
                     { "chinese": "跑（现在分词）", "english": "running" },
@@ -154,15 +154,15 @@
                     { "chinese": "玩", "english": "play" },
                     { "chinese": "玩（现在分词）", "english": "playing" }
                 ],
-                “phrases“: [
+                phrases: [
                     {chinese: "喜欢飞", english: "like to fly"}
                 ],
-                “sentences“: [
+                sentences: [
                     {chinese: "小鸟喜欢飞。", english: "Birds like to fly."}
                 ]
             },
-            “m2u2“: {
-                “words“: [
+            m2u2 : {
+                words: [
                     { "chinese": "食物", "english": "food" },
                     { "chinese": "汉堡", "english": "hamburger" },
                     { "chinese": "披萨", "english": "pizza" },
@@ -220,27 +220,27 @@
                     { "chinese": "最喜欢的", "english": "favourite" },
                     { "chinese": "美味的", "english": "yummy" }
                 ], 
-                “phrases“: [
+                phrases: [
                     {chinese: "示例词组1", english: "example phrase 1"}
                 ],
-                “sentences“: [
+                sentences: [
                     {chinese: "示例句子1", english: "example sentence 1"}
                 ]
             },
-            “m2u3“: {
-                “words“: [
+            m2u3 : {
+                words: [
                     {chinese: "示例单词1", english: "example word 1"},
                     {chinese: "示例单词2", english: "example word 2"}
                 ],
-                “phrases“: [
+                phrases: [
                     {chinese: "示例词组1", english: "example phrase 1"}
                 ],
-                “sentences“: [
+                sentences: [
                     {chinese: "示例句子1", english: "example sentence 1"}
                 ]
             },
-            “m3u1“: {
-                “words“: [
+            m3u1: {
+                words: [
                     {chinese: "季节", english: "season"},
                     {chinese: "春天", english: "spring"},
                     {chinese: "夏天", english: "summer"},
@@ -263,8 +263,8 @@
                     {chinese: "雪人（单数）", english: "snowman"},
                     {chinese: "雪人（复数）", english: "snowmen"}
                 ], 
-                “phrases“: [], 
-                “sentences“: [
+                phrases: [], 
+                sentences: [
                     {chinese: "在春天，我喜欢在公园里骑自行车。", english: "In spring, I like riding my bicycle in the park."},
                     {chinese: "在夏天，我喜欢在水里游泳。", english: "In summer, I like swimming in the water."},
                     {chinese: "在秋天，我喜欢在公园里放风筝。", english: "In autumn, I like flying a kite in the park."},
@@ -280,63 +280,63 @@
                     {chinese: "我最喜欢的季节是秋天。", english: "My favourite season is autumn."}
                 ]
             },
-            “m3u2“: {
-                “words“: [
+            m3u2 : {
+                words: [
                     {chinese: "示例单词1", english: "example word 1"},
                     {chinese: "示例单词2", english: "example word 2"}
                 ],
-                “phrases“: [
+                phrases: [
                     {chinese: "示例词组1", english: "example phrase 1"}
                 ],
-                “sentences“: [
+                sentences: [
                     {chinese: "示例句子1", english: "example sentence 1"}
                 ]
             },
-            “m3u3“: {
-                “words“: [
+            m3u3: {
+                words: [
                     {chinese: "示例单词1", english: "example word 1"},
                     {chinese: "示例单词2", english: "example word 2"}
                 ],
-                “phrases“: [
+                phrases: [
                     {chinese: "示例词组1", english: "example phrase 1"}
                 ],
-                “sentences“: [
+                sentences: [
                     {chinese: "示例句子1", english: "example sentence 1"}
                 ]
             },
-            “m4u1“: {
-                “words“: [
+            m4u1: {
+                words: [
                     {chinese: "示例单词1", english: "example word 1"},
                     {chinese: "示例单词2", english: "example word 2"}
                 ],
-                “phrases“: [
+                phrases: [
                     {chinese: "示例词组1", english: "example phrase 1"}
                 ],
-                “sentences“: [
+                sentences: [
                     {chinese: "示例句子1", english: "example sentence 1"}
                 ]
             },
-            “m4u2“: {
-                “words“: [
+            m4u2: {
+                words: [
                     {chinese: "示例单词1", english: "example word 1"},
                     {chinese: "示例单词2", english: "example word 2"}
                 ],
-                “phrases“: [
+                phrases: [
                     {chinese: "示例词组1", english: "example phrase 1"}
                 ],
-                “sentences“: [
+                sentences: [
                     {chinese: "示例句子1", english: "example sentence 1"}
                 ]
             },
-            “m4u3“: {
-                “words“: [
+            m4u3: {
+                words: [
                     {chinese: "示例单词1", english: "example word 1"},
                     {chinese: "示例单词2", english: "example word 2"}
                 ],
-                “phrases“: [
+                phrases: [
                     {chinese: "示例词组1", english: "example phrase 1"}
                 ],
-                “sentences“: [
+                sentences: [
                     {chinese: "示例句子1", english: "example sentence 1"}
                 ]
             }
