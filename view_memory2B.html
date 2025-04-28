@@ -439,7 +439,7 @@
         // 初始化应用
         async function initializeApp() {
             try {
-                const response = await fetch('word-data.json');
+                const response = await fetch('word-data.mime');
                 if (!response.ok) throw new Error('Network response was not ok');
                 wordData = await response.json();
                 
