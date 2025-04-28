@@ -428,37 +428,37 @@
         <button class="finish-btn" id="finish-session">结束本次打卡</button>
     </div>
 
-    <script>
+    <javascript>
         // 单词数据 - 示例结构
      let wordData = {}; // 全局变量，将在 fetch 后填充
 
-async function initializeApp() {
-    try {
-        const response = await fetch('word-data.json');
-        if (!response.ok) throw new Error('Network response was not ok');
-        wordData = await response.json();
-        
-        initializeModules();
-        initializeEventListeners();
-        
-        Object.keys(modules).forEach(module => {
-            ['words', 'phrases', 'sentences'].forEach(type => {
-                if (wordData[module]?.[type]) {
-                    initModule(module, type);
+            async function initializeApp() {
+                try {
+                    const response = await fetch('word-data.json');
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    wordData = await response.json();
+                    
+                    initializeModules();
+                    initializeEventListeners();
+                    
+                    Object.keys(modules).forEach(module => {
+                        ['words', 'phrases', 'sentences'].forEach(type => {
+                            if (wordData[module]?.[type]) {
+                                initModule(module, type);
+                            }
+                        });
+                    });
+                    
+                    switchModule('m1u1');
+                    switchType('words');
+                } catch (error) {
+                    console.error('加载单词数据失败:', error);
+                    alert('加载单词数据失败，请检查网络连接或数据文件是否存在。');
                 }
-            });
-        });
-        
-        switchModule('m1u1');
-        switchType('words');
-    } catch (error) {
-        console.error('加载单词数据失败:', error);
-        alert('加载单词数据失败，请检查网络连接或数据文件是否存在。');
-    }
-}
+            }
+            
+            document.addEventListener('DOMContentLoaded', initializeApp);
 
-document.addEventListener('DOMContentLoaded', initializeApp);
-        };
 
         let currentModule = 'm1u1';
         let currentType = 'words';
