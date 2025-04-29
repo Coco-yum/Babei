@@ -1,5 +1,5 @@
 {
-	"2Am1": {
+	"2am1": {
 		"words": [{
 				"chinese": "你好",
 				"english": "hello"
@@ -316,7 +316,7 @@
 			}
 		]
 	},
-	"2Am2": {
+	"2am2": {
 		"words": [{
 				"chinese": "跑步",
 				"english": "run"
@@ -705,7 +705,7 @@
 			}
 		]
 	},
-	"2Am3": {
+	"2am3": {
 		"words": [{
 				"chinese": "滑滑梯",
 				"english": "slide"
@@ -1098,7 +1098,7 @@
 			}
 		]
 	},
-	"2Am4": {
+	"2am4": {
 		"words": [{
 				"chinese": "天空",
 				"english": "sky"
