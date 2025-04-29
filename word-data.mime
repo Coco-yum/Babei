@@ -22,41 +22,6 @@
                 sentences: [
                     {chinese: "示例句子1", english: "example sentence 1"}
                 ]
-            },
-            m4u1: {
-                words: [
-                    {chinese: "示例单词1", english: "example word 1"},
-                    {chinese: "示例单词2", english: "example word 2"}
-                ],
-                phrases: [
-                    {chinese: "示例词组1", english: "example phrase 1"}
-                ],
-                sentences: [
-                    {chinese: "示例句子1", english: "example sentence 1"}
-                ]
-            },
-            m4u2: {
-                words: [
-                    {chinese: "示例单词1", english: "example word 1"},
-                    {chinese: "示例单词2", english: "example word 2"}
-                ],
-                phrases: [
-                    {chinese: "示例词组1", english: "example phrase 1"}
-                ],
-                sentences: [
-                    {chinese: "示例句子1", english: "example sentence 1"}
-                ]
-            },
-            m4u3: {
-                words: [
-                    {chinese: "示例单词1", english: "example word 1"},
-                    {chinese: "示例单词2", english: "example word 2"}
-                ],
-                phrases: [
-                    {chinese: "示例词组1", english: "example phrase 1"}
-                ],
-                sentences: [
-                    {chinese: "示例句子1", english: "example sentence 1"}
-                ]
             }
+
 }
