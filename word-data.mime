@@ -269,5 +269,7 @@
             {"chinese": "在夏天，我喜欢在水里游泳。", "english": "In summer, I like swimming in the water."},
             {"chinese": "在秋天，我喜欢在公园里放风筝。", "english": "In autumn, I like flying a kite in the park."},
             {"chinese": "在冬天，我喜欢滑冰和堆雪人。", "english": "In winter, I like skating on the ice and making snowmen."},
-            {"chinese": "你喜欢夏天么？不，我不喜欢。", "english": "Do you like summer? No, I don't."},
-            {"chinese": "你喜欢冬天么？是的，我喜欢。", "english": "Do you like winter? Yes, I do
+            {"chinese": "你喜欢夏天么？不，我不喜欢。", "english": "Do you like summer? No, I don't."}
+        ]
+    }
+}
