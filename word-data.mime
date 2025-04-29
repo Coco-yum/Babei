@@ -1,731 +1,2463 @@
 {
-    "2Am1": {
-        "words": [
-            {"chinese": "你好", "english": "hello"},
-            {"chinese": "早上", "english": "morning"},
-            {"chinese": "下午", "english": "afternoon"},
-            {"chinese": "傍晚", "english": "evening"},
-            {"chinese": "夜晚", "english": "night"},
-            {"chinese": "好的（身体、天气）", "english": "fine"},
-            {"chinese": "太太、夫人", "english": "Mrs"},
-            {"chinese": "山姆（小狗名）", "english": "Sam"},
-            {"chinese": "妈妈（口语称呼）", "english": "Mum"},
-            {"chinese": "艾迪（男名）", "english": "Eddie"},
-            {"chinese": "爱丽丝（女名）", "english": "Alice"},
-            {"chinese": "今天", "english": "today"},
-            {"chinese": "天", "english": "day"},
-            {"chinese": "好的", "english": "well"},
-            {"chinese": "苹果", "english": "apple"},
-            {"chinese": "包", "english": "bag"},
-            {"chinese": "男孩", "english": "boy"},
-            {"chinese": "女孩", "english": "girl"},
-            {"chinese": "大的", "english": "big"},
-            {"chinese": "小的", "english": "small"},
-            {"chinese": "高的", "english": "tall"},
-            {"chinese": "矮的、短的", "english": "short"},
-            {"chinese": "胖的", "english": "fat"},
-            {"chinese": "瘦的", "english": "thin"},
-            {"chinese": "我（第一人称）", "english": "I"},
-            {"chinese": "是", "english": "am"},
-            {"chinese": "你、你们", "english": "you"},
-            {"chinese": "是", "english": "are"},
-            {"chinese": "谁", "english": "who"},
-            {"chinese": "丹尼（男孩名）", "english": "Danny"},
-            {"chinese": "玛丽（女孩名）", "english": "Mary"},
-            {"chinese": "凯蒂（女孩名）", "english": "Kitty"},
-            {"chinese": "小姐", "english": "Miss"},
-            {"chinese": "猫", "english": "cat"},
-            {"chinese": "狗", "english": "dog"},
-            {"chinese": "一", "english": "one"},
-            {"chinese": "二", "english": "two"},
-            {"chinese": "三", "english": "three"},
-            {"chinese": "四", "english": "four"},
-            {"chinese": "五", "english": "five"},
-            {"chinese": "六", "english": "six"},
-            {"chinese": "七", "english": "seven"},
-            {"chinese": "八", "english": "eight"},
-            {"chinese": "九", "english": "nine"},
-            {"chinese": "十", "english": "ten"},
-            {"chinese": "同班同学", "english": "classmate"},
-            {"chinese": "新的、新来的", "english": "new"},
-            {"chinese": "旧的", "english": "old"},
-            {"chinese": "年轻的", "english": "young"},
-            {"chinese": "膝盖", "english": "knee"},
-            {"chinese": "树枝", "english": "stick"},
-            {"chinese": "蛇", "english": "snake"},
-            {"chinese": "你的（所有格）", "english": "your"},
-            {"chinese": "对不起", "english": "sorry"},
-            {"chinese": "彼德（男名）", "english": "Peter"},
-            {"chinese": "汤姆（男名）", "english": "Tom"},
-            {"chinese": "大象", "english": "elephant"}
-        ],
-        "phrases": [
-            {"chinese": "一头大象", "english": "an elephant"},
-            {"chinese": "五头大象", "english": "five elephants"},
-            {"chinese": "碰下你的膝盖", "english": "touch your knees"},
-            {"chinese": "捡树枝", "english": "pick up sticks"},
-            {"chinese": "画一条蛇", "english": "draw a snake"},
-            {"chinese": "再做一次", "english": "do it again"},
-            {"chinese": "一位新同学", "english": "a new classmate"}
-        ],
-        "sentences": [
-            {"chinese": "我是am，你是are，is用于他、她、它。", "english": "I am, you are, is for he, she, it."},
-            {"chinese": "多少个碗？有四个碗。", "english": "How many bowls? --There are four bowls."},
-            {"chinese": "多少个勺子？有一个。", "english": "How many spoons? --There is one."},
-            {"chinese": "在厨房里有一只猫。", "english": "There is a cat in the kitchen."},
-            {"chinese": "在桌上有两只碗。", "english": "There are two bowls on the table."},
-            {"chinese": "在房间里有一张桌子和一把椅子。", "english": "There is a table and a chair in the room."},
-            {"chinese": "碗在地上。", "english": "The bowls are on the floor."},
-            {"chinese": "温迪用手关上了窗。", "english": "Wendy closes the window with her hand."},
-            {"chinese": "不要摘花。对不起。", "english": "Don't pick the flowers. --I'm sorry."},
-            {"chinese": "不要爬树，丹尼。对不起。", "english": "Don't climb the tree, Danny. --I'm sorry."},
-            {"chinese": "我喜欢这个公园。它又大又美丽。", "english": "I like this park. It's big and nice."},
-            {"chinese": "看看这朵花。它真漂亮。", "english": "Look at this flower. It's beautiful."},
-            {"chinese": "这是什么？它是个蜜蜂。", "english": "What's this? --It's a bee."},
-            {"chinese": "一只斑马在一个黄色的盒子里。", "english": "A zebra is in a yellow box."}
-        ]
-    },
-    "2Am2": {
-        "words": [
-            {"chinese": "跑步", "english": "run"},
-            {"chinese": "写字", "english": "write"},
-            {"chinese": "游泳", "english": "swim"},
-            {"chinese": "飞", "english": "fly"},
-            {"chinese": "唱", "english": "sing"},
-            {"chinese": "画", "english": "draw"},
-            {"chinese": "读", "english": "read"},
-            {"chinese": "跳舞", "english": "dance"},
-            {"chinese": "跳绳", "english": "skip"},
-            {"chinese": "骑（车）", "english": "ride"},
-            {"chinese": "会", "english": "can"},
-            {"chinese": "不会", "english": "can't"},
-            {"chinese": "超级女孩（名字）", "english": "Supergirl"},
-            {"chinese": "但是（转折）", "english": "but"},
-            {"chinese": "她（第三人称单数）", "english": "she"},
-            {"chinese": "他（第三人称单数）", "english": "he"},
-            {"chinese": "它（第三人称单数）", "english": "it"},
-            {"chinese": "什么", "english": "what"},
-            {"chinese": "女孩", "english": "girl"},
-            {"chinese": "手", "english": "hand"},
-            {"chinese": "大门", "english": "gate"},
-            {"chinese": "有（第三人称单数）", "english": "has"},
-            {"chinese": "盘子", "english": "plate"},
-            {"chinese": "她的（所有格）", "english": "her"},
-            {"chinese": "家庭", "english": "family"},
-            {"chinese": "年轻的", "english": "young"},
-            {"chinese": "年老的", "english": "old"},
-            {"chinese": "兄弟", "english": "brother"},
-            {"chinese": "姐妹", "english": "sister"},
-            {"chinese": "妈妈", "english": "mother"},
-            {"chinese": "爸爸", "english": "father"},
-            {"chinese": "妈妈（爱称）", "english": "mummy"},
-            {"chinese": "爸爸（爱称）", "english": "daddy"},
-            {"chinese": "(外)祖父", "english": "grandfather"},
-            {"chinese": "(外)祖母", "english": "grandmother"},
-            {"chinese": "是（第三人称单数）", "english": "is"},
-            {"chinese": "不是", "english": "isn't"},
-            {"chinese": "朋友", "english": "friend"},
-            {"chinese": "同班同学", "english": "classmate"},
-            {"chinese": "萨莉（女孩名）", "english": "Sally"},
-            {"chinese": "吉姆（男孩名）", "english": "Jim"},
-            {"chinese": "哈利（男孩名）", "english": "Harry"},
-            {"chinese": "我的", "english": "my"},
-            {"chinese": "你的", "english": "your"},
-            {"chinese": "这个", "english": "this"},
-            {"chinese": "那个", "english": "that"},
-            {"chinese": "昆虫", "english": "insect"},
-            {"chinese": "广口瓶", "english": "jar"},
-            {"chinese": "头发", "english": "hair"},
-            {"chinese": "头", "english": "head"},
-            {"chinese": "脸", "english": "face"},
-            {"chinese": "眼睛", "english": "eye"},
-            {"chinese": "耳朵", "english": "ear"},
-            {"chinese": "鼻子", "english": "nose"},
-            {"chinese": "嘴巴", "english": "mouth"},
-            {"chinese": "手", "english": "hand"},
-            {"chinese": "圆的", "english": "round"},
-            {"chinese": "大的", "english": "big"},
-            {"chinese": "小的", "english": "small"},
-            {"chinese": "长的", "english": "long"},
-            {"chinese": "短的、矮的", "english": "short"},
-            {"chinese": "高的", "english": "tall"},
-            {"chinese": "巨人（名字）", "english": "Giant"},
-            {"chinese": "巨人", "english": "giant"},
-            {"chinese": "我是", "english": "I'm"},
-            {"chinese": "你是", "english": "You're"},
-            {"chinese": "我（主格）", "english": "I"},
-            {"chinese": "我（宾格）", "english": "me"},
-            {"chinese": "我的（所有格）", "english": "my"},
-            {"chinese": "你、你们", "english": "you"},
-            {"chinese": "你的、你们的", "english": "your"},
-            {"chinese": "风筝", "english": "kite"},
-            {"chinese": "狮子", "english": "lion"},
-            {"chinese": "喜欢", "english": "like"}
-        ],
-        "phrases": [
-            {"chinese": "又高又大的", "english": "big and tall"},
-            {"chinese": "苗条漂亮的", "english": "thin and nice"},
-            {"chinese": "小巧可爱的", "english": "sweet and small"},
-            {"chinese": "和蔼可亲的", "english": "kind and dear"},
-            {"chinese": "一只昆虫", "english": "an insect"},
-            {"chinese": "跳绳", "english": "skip rope"},
-            {"chinese": "放风筝", "english": "fly a kite"},
-            {"chinese": "踢足球", "english": "play football"},
-            {"chinese": "骑自行车", "english": "ride a bicycle"},
-            {"chinese": "一只眼睛", "english": "an eye"},
-            {"chinese": "一只耳朵", "english": "an ear"},
-            {"chinese": "一张开心的脸", "english": "a happy face"},
-            {"chinese": "一张开心的脸", "english": "a funny face"},
-            {"chinese": "一张可爱的脸", "english": "a cute face"},
-            {"chinese": "一只大狮子", "english": "a big lion"},
-            {"chinese": "一个小风筝", "english": "a small kite"}
-        ],
-        "sentences": [
-            {"chinese": "我是巨人。你是超级女孩。", "english": "I'm Giant. You're Supergirl."},
-            {"chinese": "我是瘦的。你是胖的。", "english": "I'm thin. You're fat."},
-            {"chinese": "我的头发是短的。你的头发是长的。", "english": "My hair is short. Your hair is long."},
-            {"chinese": "我的鼻子是大的。你的鼻子是小的。", "english": "My nose is big. Your nose is small."},
-            {"chinese": "我的眼睛是大的。你的耳朵是小的。", "english": "My eyes are big. Your ears are small."},
-            {"chinese": "你的鼻子不是很大。", "english": "Your nose is not very big."}
-        ]
-    },
-    "2Am3": {
-        "words": [
-            {"chinese": "滑滑梯", "english": "slide"},
-            {"chinese": "秋千", "english": "swing"},
-            {"chinese": "跷跷板", "english": "seesaw"},
-            {"chinese": "什么", "english": "what"},
-            {"chinese": "颜色", "english": "colour"},
-            {"chinese": "红色", "english": "red"},
-            {"chinese": "黄色", "english": "yellow"},
-            {"chinese": "蓝色", "english": "blue"},
-            {"chinese": "绿色", "english": "green"},
-            {"chinese": "橙色（桔子）", "english": "orange"},
-            {"chinese": "棕色", "english": "brown"},
-            {"chinese": "白色", "english": "white"},
-            {"chinese": "黑色", "english": "black"},
-            {"chinese": "看见", "english": "see"},
-            {"chinese": "向上", "english": "up"},
-            {"chinese": "向下", "english": "down"},
-            {"chinese": "他/她/它们", "english": "they"},
-            {"chinese": "老鼠", "english": "mouse"},
-            {"chinese": "网", "english": "net"},
-            {"chinese": "男人", "english": "man"},
-            {"chinese": "书包", "english": "bag"},
-            {"chinese": "盒子", "english": "box"},
-            {"chinese": "盒子（复数）", "english": "boxes"},
-            {"chinese": "书本", "english": "book"},
-            {"chinese": "课桌", "english": "desk"},
-            {"chinese": "椅子", "english": "chair"},
-            {"chinese": "铅笔盒", "english": "pencil case"},
-            {"chinese": "房间", "english": "room"},
-            {"chinese": "放", "english": "put"},
-            {"chinese": "在...里面", "english": "in"},
-            {"chinese": "在...上面", "english": "on"},
-            {"chinese": "在...下面", "english": "under"},
-            {"chinese": "请", "english": "please"},
-            {"chinese": "爱", "english": "love"},
-            {"chinese": "使用", "english": "use"},
-            {"chinese": "保持", "english": "keep"},
-            {"chinese": "干净的", "english": "clean"},
-            {"chinese": "桔子（橙色）", "english": "orange"},
-            {"chinese": "一只桔子", "english": "an orange"},
-            {"chinese": "猪", "english": "pig"},
-            {"chinese": "宝拉（女孩名）", "english": "Paula"},
-            {"chinese": "腿", "english": "leg"},
-            {"chinese": "来", "english": "come"},
-            {"chinese": "吃", "english": "eat"},
-            {"chinese": "厨房", "english": "kitchen"},
-            {"chinese": "碗", "english": "bowl"},
-            {"chinese": "盘子", "english": "plate"},
-            {"chinese": "勺子", "english": "spoon"},
-            {"chinese": "叉子", "english": "fork"},
-            {"chinese": "筷子（复数）", "english": "chopsticks"},
-            {"chinese": "烧菜、烹饪", "english": "cook"},
-            {"chinese": "晚饭", "english": "dinner"},
-            {"chinese": "给", "english": "give"},
-            {"chinese": "准备好的", "english": "ready"},
-            {"chinese": "金吉（名字）", "english": "Ginger"},
-            {"chinese": "淘气的", "english": "naughty"},
-            {"chinese": "桌子、餐桌", "english": "table"},
-            {"chinese": "（双脚）跳", "english": "jump"},
-            {"chinese": "跳绳", "english": "skip"},
-            {"chinese": "地板", "english": "floor"},
-            {"chinese": "在......上面", "english": "on"},
-            {"chinese": "在......下面", "english": "under"},
-            {"chinese": "在......里面", "english": "in"},
-            {"chinese": "女王", "english": "queen"},
-            {"chinese": "兔子", "english": "rabbit"},
-            {"chinese": "坐", "english": "sit"},
-            {"chinese": "面条", "english": "noodles"},
-            {"chinese": "汤", "english": "soup"},
-            {"chinese": "鸡、鸡肉", "english": "chicken"},
-            {"chinese": "鱼、鱼肉", "english": "fish"}
-        ],
-        "phrases": [
-            {"chinese": "在儿童乐园", "english": "In the children's garden"},
-            {"chinese": "一只昆虫", "english": "an insect"},
-            {"chinese": "跳绳", "english": "skip rope"},
-            {"chinese": "放风筝", "english": "fly a kite"},
-            {"chinese": "踢足球", "english": "play football"},
-            {"chinese": "骑自行车", "english": "ride a bicycle"},
-            {"chinese": "一只眼睛", "english": "an eye"},
-            {"chinese": "一只耳朵", "english": "an ear"},
-            {"chinese": "一张开心的脸", "english": "a happy face"},
-            {"chinese": "一张开心的脸", "english": "a funny face"},
-            {"chinese": "一张可爱的脸", "english": "a cute face"},
-            {"chinese": "一只大狮子", "english": "a big lion"},
-            {"chinese": "一个小风筝", "english": "a small kite"}
-        ],
-        "sentences": [
-            {"chinese": "你能看到什么？我能看到一个跷跷板。", "english": "What can you see? --I can see a seesaw."},
-            {"chinese": "它是什么颜色？它是黄色的。", "english": "What colour is it? --It's yellow."},
-            {"chinese": "你们（你）喜欢玩。他们喜欢玩。", "english": "You like to play. They like to play."},
-            {"chinese": "那人有一张网。老鼠在网里。", "english": "The man has a net. The mouse is in the net."},
-            {"chinese": "请把盒子放在椅子上面。", "english": "Put the box on the chair, please."},
-            {"chinese": "请把铅笔放在书包里面。", "english": "Put the pencils in the bag, please."},
-            {"chinese": "把球放在课桌下面。好的。", "english": "Put the ball under the desk. All right."},
-            {"chinese": "看看你的房间。我很抱歉。", "english": "Look at your room. I'm sorry."},
-            {"chinese": "我每天用这个盒子。我每天使它保持干净。", "english": "I use the box every day! I keep it clean every day!"},
-            {"chinese": "要勺子吗？不用，谢谢。", "english": "--A spoon? --No, thanks."},
-            {"chinese": "筷子要吗？是的，请给我。", "english": "--Chopsticks? --Yes, please."},
-            {"chinese": "请给我一个盘子。给你。", "english": "Give me a plate, please. --Here you are."},
-            {"chinese": "晚饭准备好了。我来了。", "english": "Dinner is ready! --I'm coming."},
-            {"chinese": "这是我家的厨房。", "english": "This is my kitchen."}
-        ]
-    },
-    "2Am4": {
-        "words": [
-            {"chinese": "天空", "english": "sky"},
-            {"chinese": "太阳", "english": "sun"},
-            {"chinese": "月亮", "english": "moon"},
-            {"chinese": "星星", "english": "star"},
-            {"chinese": "明亮的", "english": "bright"},
-            {"chinese": "闪烁", "english": "twinkle"},
-            {"chinese": "小的", "english": "little"},
-            {"chinese": "高的", "english": "high"},
-            {"chinese": "钻石", "english": "diamond"},
-            {"chinese": "汤（不可数）", "english": "soup"},
-            {"chinese": "桌子", "english": "table"},
-            {"chinese": "汤姆（男名）", "english": "Tom"},
-            {"chinese": "光滑的", "english": "smooth"},
-            {"chinese": "柔软的", "english": "soft"},
-            {"chinese": "森林", "english": "forest"},
-            {"chinese": "狐狸", "english": "fox"},
-            {"chinese": "狐狸（复数）", "english": "foxes"},
-            {"chinese": "河马", "english": "hippo"},
-            {"chinese": "肉（不可数）", "english": "meat"},
-            {"chinese": "草（不可数）", "english": "grass"},
-            {"chinese": "野生的", "english": "wild"},
-            {"chinese": "动物", "english": "animal"},
-            {"chinese": "猴子", "english": "monkey"},
-            {"chinese": "兔子", "english": "rabbit"},
-            {"chinese": "好看的", "english": "nice"},
-            {"chinese": "单脚跳", "english": "hop"},
-            {"chinese": "可爱的", "english": "cute"},
-            {"chinese": "顽皮的", "english": "naughty"},
-            {"chinese": "棕色", "english": "brown"},
-            {"chinese": "白色", "english": "white"},
-            {"chinese": "荡秋千", "english": "swing"},
-            {"chinese": "雨伞", "english": "umbrella"},
-            {"chinese": "面包车", "english": "van"},
-            {"chinese": "窗户", "english": "window"},
-            {"chinese": "温迪（女名）", "english": "Wendy"},
-            {"chinese": "黑色", "english": "black"},
-            {"chinese": "雨点", "english": "raindrop"},
-            {"chinese": "关", "english": "close"},
-            {"chinese": "街道", "english": "street"},
-            {"chinese": "花朵", "english": "flower"},
-            {"chinese": "树", "english": "tree"},
-            {"chinese": "不要", "english": "don’t"},
-            {"chinese": "采摘", "english": "pick"},
-            {"chinese": "对不起", "english": "sorry"},
-            {"chinese": "爬", "english": "climb"},
-            {"chinese": "画画", "english": "draw"},
-            {"chinese": "涂色", "english": "colour"},
-            {"chinese": "颜色", "english": "cut"},
-            {"chinese": "公园", "english": "park"},
-            {"chinese": "漂亮的", "english": "beautiful"},
-            {"chinese": "帮忙", "english": "help"},
-            {"chinese": "哭", "english": "cry"},
-            {"chinese": "盒子", "english": "box"},
-            {"chinese": "黄色", "english": "yellow"},
-            {"chinese": "斑马", "english": "zebra"},
-            {"chinese": "动物园", "english": "zoo"}
-        ],
-        "phrases": [
-            {"chinese": "在天空中", "english": "in the sky"},
-            {"chinese": "光滑又柔软的", "english": "smooth and soft"},
-            {"chinese": "坐在桌子上", "english": "sit on the table"},
-            {"chinese": "一个动物", "english": "an animal"},
-            {"chinese": "一把伞", "english": "an umbrella"},
-            {"chinese": "关窗", "english": "close the window"},
-            {"chinese": "河马的嘴巴", "english": "the hippo’s mouth"},
-            {"chinese": "在街上", "english": "in the street"},
-            {"chinese": "采花", "english": "pick the flowers"},
-            {"chinese": "爬树", "english": "climb the tree"},
-            {"chinese": "在公园里", "english": "in the park"}
-        ],
-        "sentences": [
-            {"chinese": "看看天空。", "english": "Look at the sky."},
-            {"chinese": "看着我。", "english": "Look at me."},
-            {"chinese": "你能看到什么？我能看见太阳。", "english": "What can you see? --- I can see the sun."},
-            {"chinese": "你能看到星星吗？是的，我能。", "english": "Can you see the stars? --- Yes, I can."},
-            {"chinese": "你能看到月亮吗？不，我不能。", "english": "Can you see the moon? --- No, I can’t."},
-            {"chinese": "月亮是大的吗？是的。它是大的。它是明亮的。", "english": "Is the moon big? ---Yes. It’s big. It’s bright."},
-            {"chinese": "汤姆的兔子光滑又柔软。", "english": "Tom’s rabbit is smooth and soft."},
-            {"chinese": "看这只狮子。它很大。它喜欢吃肉。", "english": "Look at the lion. It’s big. It likes meat."},
-            {"chinese": "看这只河马的嘴巴。这么大。", "english": "Look at the hippo’s mouth. It’s so big."},
-            {"chinese": "温迪在面包车里，手里拿着两把雨伞。", "english": "Wendy is in a van，with two umbrellas in her hands."},
-            {"chinese": "她把它们带给她的朋友们。", "english": "She takes them to her friends."},
-            {"chinese": "雨点落在她的头上。", "english": "Raindrops fall on her head."},
-            {"chinese": "温迪用手关上了窗。", "english": "Wendy closes the window with her hand."},
-            {"chinese": "不要摘花。对不起。", "english": "Don’t pick the flowers. ---I’m sorry."},
-            {"chinese": "不要爬树，丹尼。对不起。", "english": "Don’t climb the tree, Danny. ---I’m sorry."},
-            {"chinese": "我喜欢这个公园。", "english": "I like this park."}
-        ]
-    },
-    "m1u1": {
-        "words": [
-            { "chinese": "听（动作）", "english": "listen" },
-            { "chinese": "听见", "english": "hear" },
-            { "chinese": "看见", "english": "see" },
-            { "chinese": "看（动作）", "english": "look" },
-            { "chinese": "火车", "english": "train" },
-            { "chinese": "公交车", "english": "bus" },
-            { "chinese": "公交车（复数）", "english": "buses" },
-            { "chinese": "汽车", "english": "car" },
-            { "chinese": "小货车", "english": "van" },
-            { "chinese": "自行车", "english": "bicycle" },
-            { "chinese": "自行车", "english": "bike" },
-            { "chinese": "船", "english": "ship" },
-            { "chinese": "绵羊（单数）", "english": "sheep" },
-            { "chinese": "绵羊（复数）", "english": "sheep" },
-            { "chinese": "在......旁边", "english": "beside" },
-            { "chinese": "睡觉", "english": "sleep" },
-            { "chinese": "公交站", "english": "bus stop" },
-            { "chinese": "车站", "english": "station" },
-            { "chinese": "道路", "english": "road" },
-            { "chinese": "声音", "english": "sound" },
-            { "chinese": "嘀声", "english": "beep" },
-            { "chinese": "呼啸声（火车）", "english": "choo" },
-            { "chinese": "嘀嘟声", "english": "boop" },
-            { "chinese": "等待", "english": "wait" }
-        ],
-        "phrases": [
-            {"chinese": "听音乐", "english": "listen to music"}
-        ],
-        "sentences": [
-            {"chinese": "我喜欢听音乐。", "english": "I like listening to music."}
-        ]
-    },
-    "m1u2": {
-        "words": [
-            { "chinese": "蝴蝶", "english": "butterfly" },
-            { "chinese": "昆虫", "english": "insect" },
-            { "chinese": "狮子", "english": "lion" },
-            { "chinese": "老鼠", "english": "mouse" },
-            { "chinese": "橙子", "english": "orange" },
-            { "chinese": "猪", "english": "pig" },
-            { "chinese": "兔子", "english": "rabbit" },
-            { "chinese": "雨伞", "english": "umbrella" },
-            { "chinese": "箱子", "english": "box" },
-            { "chinese": "黄色", "english": "yellow" },
-            { "chinese": "斑马", "english": "zebra" },
-            { "chinese": "狗", "english": "dog" },
-            { "chinese": "猫", "english": "cat" },
-            { "chinese": "大象", "english": "elephant" },
-            { "chinese": "颜色", "english": "colour" },
-            { "chinese": "白色", "english": "white" },
-            { "chinese": "黑色", "english": "black" },
-            { "chinese": "粉色", "english": "pink" },
-            { "chinese": "紫色", "english": "purple" },
-            { "chinese": "苹果", "english": "apple" },
-            { "chinese": "包", "english": "bag" },
-            { "chinese": "风筝", "english": "kite" },
-            { "chinese": "草", "english": "grass" },
-            { "chinese": "橙色", "english": "orange" },
-            { "chinese": "蓝色", "english": "blue" },
-            { "chinese": "棕色", "english": "brown" },
-            { "chinese": "红色", "english": "red" },
-            { "chinese": "绿色", "english": "green" },
-            { "chinese": "公园", "english": "park" },
-            { "chinese": "他", "english": "he" },
-            { "chinese": "她", "english": "she" },
-            { "chinese": "它", "english": "it" },
-            { "chinese": "他们/她们/它们", "english": "they" },
-            { "chinese": "瓢虫", "english": "ladybird" },
-            { "chinese": "鸟", "english": "bird" },
-            { "chinese": "蝴蝶（复数）", "english": "butterflies" },
-            { "chinese": "美丽的", "english": "beautiful" }
-        ],
-        "phrases": [
-            {"chinese": "看见苹果", "english": "see an apple"}
-        ],
-        "sentences": [
-            {"chinese": "我能看见一个苹果。", "english": "I can see an apple."}
-        ]
-    },
-    "m1u3": {
-        "words": [
-            { "chinese": "彩虹", "english": "rainbow" },
-            { "chinese": "在外面", "english": "outside" },
-            { "chinese": "窗户", "english": "window" },
-            { "chinese": "两个", "english": "two" },
-            { "chinese": "棕色", "english": "brown" },
-            { "chinese": "触摸", "english": "touch" },
-            { "chinese": "感觉", "english": "feel" },
-            { "chinese": "观看", "english": "watch" },
-            { "chinese": "手表（复数）", "english": "watches" },
-            { "chinese": "铅笔盒", "english": "pencil case" },
-            { "chinese": "软的", "english": "soft" },
-            { "chinese": "硬的", "english": "hard" },
-            { "chinese": "粗糙的", "english": "rough" },
-            { "chinese": "光滑的", "english": "smooth" },
-            { "chinese": "热的", "english": "hot" },
-            { "chinese": "冷的", "english": "cold" },
-            { "chinese": "品尝", "english": "taste" },
-            { "chinese": "舌头", "english": "tongue" },
-            { "chinese": "闻", "english": "smell" },
-            { "chinese": "猜测", "english": "guess" },
-            { "chinese": "打开", "english": "open" },
-            { "chinese": "关闭", "english": "close" },
-            { "chinese": "梨", "english": "pear" },
-            { "chinese": "桃子", "english": "peach" },
-            { "chinese": "桃子（复数）", "english": "peaches" },
-            { "chinese": "洋娃娃", "english": "doll" },
-            { "chinese": "菠萝", "english": "pineapple" },
-            { "chinese": "手表", "english": "watch" },
-            { "chinese": "老虎", "english": "tiger" }
-        ],
-        "phrases": [
-            {"chinese": "白色的道路", "english": "white road"}
-        ],
-        "sentences": [
-            {"chinese": "这条道路是白色的。", "english": "This road is white."}
-        ]
-    },
-    "m2u1": {
-        "words": [
-            { "chinese": "喜欢", "english": "like" },
-            { "chinese": "跑", "english": "run" },
-            { "chinese": "跑（现在分词）", "english": "running" },
-            { "chinese": "滑冰", "english": "skate" },
-            { "chinese": "滑冰（现在分词）", "english": "skating" },
-            { "chinese": "骑", "english": "ride" },
-            { "chinese": "骑（现在分词）", "english": "riding" },
-            { "chinese": "自行车", "english": "bicycle" },
-            { "chinese": "自行车", "english": "bike" },
-            { "chinese": "单脚跳", "english": "hop" },
-            { "chinese": "单脚跳（现在分词）", "english": "hopping" },
-            { "chinese": "跳绳", "english": "skip" },
-            { "chinese": "跳绳（现在分词）", "english": "skipping" },
-            { "chinese": "唱歌", "english": "sing" },
-            { "chinese": "唱歌（现在分词）", "english": "singing" },
-            { "chinese": "跳舞", "english": "dance" },
-            { "chinese": "跳舞（现在分词）", "english": "dancing" },
-            { "chinese": "写", "english": "write" },
-            { "chinese": "写（现在分词）", "english": "writing" },
-            { "chinese": "青蛙", "english": "frog" },
-            { "chinese": "跳", "english": "jump" },
-            { "chinese": "跳（现在分词）", "english": "jumping" },
-            { "chinese": "游泳", "english": "swim" },
-            { "chinese": "游泳（现在分词）", "english": "swimming" },
-            { "chinese": "画", "english": "draw" },
-            { "chinese": "画（现在分词）", "english": "drawing" },
-            { "chinese": "读", "english": "read" },
-            { "chinese": "读（现在分词）", "english": "reading" },
-            { "chinese": "飞", "english": "fly" },
-            { "chinese": "飞（现在分词）", "english": "flying" },
-            { "chinese": "玩", "english": "play" },
-            { "chinese": "玩（现在分词）", "english": "playing" }
-        ],
-        "phrases": [
-            {"chinese": "喜欢飞", "english": "like to fly"}
-        ],
-        "sentences": [
-            {"chinese": "小鸟喜欢飞。", "english": "Birds like to fly."}
-        ]
-    },
-    "m2u2": {
-        "words": [
-            { "chinese": "食物", "english": "food" },
-            { "chinese": "汉堡", "english": "hamburger" },
-            { "chinese": "披萨", "english": "pizza" },
-            { "chinese": "沙拉", "english": "salad" },
-            { "chinese": "鱼", "english": "fish" },
-            { "chinese": "鸡肉", "english": "chicken" },
-            { "chinese": "胡萝卜", "english": "carrot" },
-            { "chinese": "香蕉", "english": "banana" },
-            { "chinese": "苹果", "english": "apple" },
-            { "chinese": "梨", "english": "pear" },
-            { "chinese": "桃子", "english": "peach" },
-            { "chinese": "橙子", "english": "orange" },
-            { "chinese": "米饭", "english": "rice" },
-            { "chinese": "汤", "english": "soup" },
-            { "chinese": "面条", "english": "noodles" },
-            { "chinese": "鸡蛋", "english": "egg" },
-            { "chinese": "果冻", "english": "jelly" },
-            { "chinese": "冰淇淋", "english": "ice cream" },
-            { "chinese": "糖果", "english": "sweet" },
-            { "chinese": "饼干", "english": "biscuit" },
-            { "chinese": "可乐", "english": "cola" },
-            { "chinese": "果汁", "english": "juice" },
-            { "chinese": "牛奶", "english": "milk" },
-            { "chinese": "水", "english": "water" },
-            { "chinese": "馅饼", "english": "pie" },
-            { "chinese": "蛋糕", "english": "cake" },
-            { "chinese": "长颈鹿", "english": "giraffe" },
-            { "chinese": "蛇", "english": "snake" },
-            { "chinese": "大象", "english": "elephant" },
-            { "chinese": "斑马", "english": "zebra" },
-            { "chinese": "小鸡", "english": "chick" },
-            { "chinese": "鸭子", "english": "duck" },
-            { "chinese": "牛", "english": "cow" },
-            { "chinese": "猪", "english": "pig" },
-            { "chinese": "青蛙", "english": "frog" },
-            { "chinese": "兔子", "english": "rabbit" },
-            { "chinese": "蜜蜂", "english": "bee" },
-            { "chinese": "蝴蝶", "english": "butterfly" },
-            { "chinese": "瓢虫", "english": "ladybird" },
-            { "chinese": "昆虫", "english": "insect" },
-            { "chinese": "鸟", "english": "bird" },
-            { "chinese": "绵羊", "english": "sheep" },
-            { "chinese": "母鸡", "english": "hen" },
-            { "chinese": "熊", "english": "bear" },
-            { "chinese": "老虎", "english": "tiger" },
-            { "chinese": "猴子", "english": "monkey" },
-            { "chinese": "熊猫", "english": "panda" },
-            { "chinese": "狗", "english": "dog" },
-            { "chinese": "猫", "english": "cat" },
-            { "chinese": "狼", "english": "wolf" },
-            { "chinese": "狐狸", "english": "fox" },
-            { "chinese": "河马", "english": "hippo" },
-            { "chinese": "自行车", "english": "bicycle" },
-            { "chinese": "自行车", "english": "bike" },
-            { "chinese": "最喜欢的", "english": "favourite" },
-            { "chinese": "美味的", "english": "yummy" }
-        ],
-        "phrases": [
-            {"chinese": "示例词组1", "english": "example phrase 1"}
-        ],
-        "sentences": [
-            {"chinese": "示例句子1", "english": "example sentence 1"}
-        ]
-    },
-    "m2u3": {
-        "words": [
-            {"chinese": "示例单词1", "english": "example word 1"},
-            {"chinese": "示例单词2", "english": "example word 2"}
-        ],
-        "phrases": [
-            {"chinese": "示例词组1", "english": "example phrase 1"}
-        ],
-        "sentences": [
-            {"chinese": "示例句子1", "english": "example sentence 1"}
-        ]
-    },
-    "m3u1": {
-        "words": [
-            {"chinese": "季节", "english": "season"},
-            {"chinese": "春天", "english": "spring"},
-            {"chinese": "夏天", "english": "summer"},
-            {"chinese": "秋天", "english": "autumn"},
-            {"chinese": "冬天", "english": "winter"},
-            {"chinese": "天气", "english": "weather"},
-            {"chinese": "晴朗的", "english": "sunny"},
-            {"chinese": "太阳", "english": "sun"},
-            {"chinese": "多云的", "english": "cloudy"},
-            {"chinese": "云", "english": "cloud"},
-            {"chinese": "有雨的", "english": "rainy"},
-            {"chinese": "雨", "english": "rain"},
-            {"chinese": "有风的", "english": "windy"},
-            {"chinese": "风", "english": "wind"},
-            {"chinese": "温暖的", "english": "warm"},
-            {"chinese": "炎热的", "english": "hot"},
-            {"chinese": "凉爽的", "english": "cool"},
-            {"chinese": "寒冷的", "english": "cold"},
-            {"chinese": "在外面", "english": "outside"},
-            {"chinese": "雪人（单数）", "english": "snowman"},
-            {"chinese": "雪人（复数）", "english": "snowmen"}
-        ],
-        "phrases": [
-            {"chinese": "示例词组1", "english": "example phrase 1"}
-        ],
-        "sentences": [
-            {"chinese": "在春天，我喜欢在公园里骑自行车。", "english": "In spring, I like riding my bicycle in the park."},
-            {"chinese": "在夏天，我喜欢在水里游泳。", "english": "In summer, I like swimming in the water."},
-            {"chinese": "在秋天，我喜欢在公园里放风筝。", "english": "In autumn, I like flying a kite in the park."},
-            {"chinese": "在冬天，我喜欢滑冰和堆雪人。", "english": "In winter, I like skating on the ice and making snowmen."},
-            {"chinese": "你喜欢夏天么？不，我不喜欢。", "english": "Do you like summer? No, I don't."},
-            {"chinese": "你喜欢冬天么？是的，我喜欢。", "english": "Do you like winter? Yes, I do."},
-            {"chinese": "春天舒服又温暖。", "english": "Spring is nice and warm."},
-            {"chinese": "夏天晴朗又炎热。", "english": "Summer is sunny and hot."},
-            {"chinese": "秋天多风又凉爽。", "english": "Autumn is windy and cool."},
-            {"chinese": "冬天多云又寒冷。", "english": "Winter is cloudy and cold."},
-            {"chinese": "你喜欢什么季节？我喜欢秋天。", "english": "What season do you like? I like autumn."},
-            {"chinese": "天气怎么样？", "english": "How is the weather?"},
-            {"chinese": "我最喜欢的季节是秋天。", "english": "My favourite season is autumn."}
-        ]
-    },
-    "m3u2": {
-        "words": [
-            {"chinese": "示例单词1", "english": "example word 1"},
-            {"chinese": "示例单词2", "english": "example word 2"}
-        ],
-        "phrases": [
-            {"chinese": "示例词组1", "english": "example phrase 1"}
-        ],
-        "sentences": [
-            {"chinese": "示例句子1", "english": "example sentence 1"}
-        ]
-    },
-    "m3u3": {
-        "words": [
-            {"chinese": "示例单词1", "english": "example word 1"},
-            {"chinese": "示例单词2", "english": "example word 2"}
-        ],
-        "phrases": [
-            {"chinese": "示例词组1", "english": "example phrase 1"}
-        ],
-        "sentences": [
-            {"chinese": "示例句子1", "english": "example sentence 1"}
-        ]
-    },
-    "m4u1": {
-        "words": [
-            {"chinese": "示例单词1", "english": "example word 1"},
-            {"chinese": "示例单词2", "english": "example word 2"}
-        ],
-        "phrases": [
-            {"chinese": "示例词组1", "english": "example phrase 1"}
-        ],
-        "sentences": [
-            {"chinese": "示例句子1", "english": "example sentence 1"}
-        ]
-    },
-    "m4u2": {
-        "words": [
-            {"chinese": "示例单词1", "english": "example word 1"},
-            {"chinese": "示例单词2", "english": "example word 2"}
-        ],
-        "phrases": [
-            {"chinese": "示例词组1", "english": "example phrase 1"}
-        ],
-        "sentences": [
-            {"chinese": "示例句子1", "english": "example sentence 1"}
-        ]
-    },
-    "m4u3": {
-        "words": [
-            {"chinese": "示例单词1", "english": "example word 1"},
-            {"chinese": "示例单词2", "english": "example word 2"}
-        ],
-        "phrases": [
-            {"chinese": "示例词组1", "english": "example phrase 1"}
-        ],
-        "sentences": [
-            {"chinese": "示例句子1", "english": "example sentence 1"}
-        ]
-    }
+	"2Am1": {
+		"words": [{
+				"chinese": "你好",
+				"english": "hello"
+			},
+			{
+				"chinese": "早上",
+				"english": "morning"
+			},
+			{
+				"chinese": "下午",
+				"english": "afternoon"
+			},
+			{
+				"chinese": "傍晚",
+				"english": "evening"
+			},
+			{
+				"chinese": "夜晚",
+				"english": "night"
+			},
+			{
+				"chinese": "好的（身体、天气）",
+				"english": "fine"
+			},
+			{
+				"chinese": "太太、夫人",
+				"english": "Mrs"
+			},
+			{
+				"chinese": "山姆（小狗名）",
+				"english": "Sam"
+			},
+			{
+				"chinese": "妈妈（口语称呼）",
+				"english": "Mum"
+			},
+			{
+				"chinese": "艾迪（男名）",
+				"english": "Eddie"
+			},
+			{
+				"chinese": "爱丽丝（女名）",
+				"english": "Alice"
+			},
+			{
+				"chinese": "今天",
+				"english": "today"
+			},
+			{
+				"chinese": "天",
+				"english": "day"
+			},
+			{
+				"chinese": "好的",
+				"english": "well"
+			},
+			{
+				"chinese": "苹果",
+				"english": "apple"
+			},
+			{
+				"chinese": "包",
+				"english": "bag"
+			},
+			{
+				"chinese": "男孩",
+				"english": "boy"
+			},
+			{
+				"chinese": "女孩",
+				"english": "girl"
+			},
+			{
+				"chinese": "大的",
+				"english": "big"
+			},
+			{
+				"chinese": "小的",
+				"english": "small"
+			},
+			{
+				"chinese": "高的",
+				"english": "tall"
+			},
+			{
+				"chinese": "矮的、短的",
+				"english": "short"
+			},
+			{
+				"chinese": "胖的",
+				"english": "fat"
+			},
+			{
+				"chinese": "瘦的",
+				"english": "thin"
+			},
+			{
+				"chinese": "我（第一人称）",
+				"english": "I"
+			},
+			{
+				"chinese": "是",
+				"english": "am"
+			},
+			{
+				"chinese": "你、你们",
+				"english": "you"
+			},
+			{
+				"chinese": "是",
+				"english": "are"
+			},
+			{
+				"chinese": "谁",
+				"english": "who"
+			},
+			{
+				"chinese": "丹尼（男孩名）",
+				"english": "Danny"
+			},
+			{
+				"chinese": "玛丽（女孩名）",
+				"english": "Mary"
+			},
+			{
+				"chinese": "凯蒂（女孩名）",
+				"english": "Kitty"
+			},
+			{
+				"chinese": "小姐",
+				"english": "Miss"
+			},
+			{
+				"chinese": "猫",
+				"english": "cat"
+			},
+			{
+				"chinese": "狗",
+				"english": "dog"
+			},
+			{
+				"chinese": "一",
+				"english": "one"
+			},
+			{
+				"chinese": "二",
+				"english": "two"
+			},
+			{
+				"chinese": "三",
+				"english": "three"
+			},
+			{
+				"chinese": "四",
+				"english": "four"
+			},
+			{
+				"chinese": "五",
+				"english": "five"
+			},
+			{
+				"chinese": "六",
+				"english": "six"
+			},
+			{
+				"chinese": "七",
+				"english": "seven"
+			},
+			{
+				"chinese": "八",
+				"english": "eight"
+			},
+			{
+				"chinese": "九",
+				"english": "nine"
+			},
+			{
+				"chinese": "十",
+				"english": "ten"
+			},
+			{
+				"chinese": "同班同学",
+				"english": "classmate"
+			},
+			{
+				"chinese": "新的、新来的",
+				"english": "new"
+			},
+			{
+				"chinese": "旧的",
+				"english": "old"
+			},
+			{
+				"chinese": "年轻的",
+				"english": "young"
+			},
+			{
+				"chinese": "膝盖",
+				"english": "knee"
+			},
+			{
+				"chinese": "树枝",
+				"english": "stick"
+			},
+			{
+				"chinese": "蛇",
+				"english": "snake"
+			},
+			{
+				"chinese": "你的（所有格）",
+				"english": "your"
+			},
+			{
+				"chinese": "对不起",
+				"english": "sorry"
+			},
+			{
+				"chinese": "彼德（男名）",
+				"english": "Peter"
+			},
+			{
+				"chinese": "汤姆（男名）",
+				"english": "Tom"
+			},
+			{
+				"chinese": "大象",
+				"english": "elephant"
+			}
+		],
+		"phrases": [{
+				"chinese": "一头大象",
+				"english": "an elephant"
+			},
+			{
+				"chinese": "五头大象",
+				"english": "five elephants"
+			},
+			{
+				"chinese": "碰下你的膝盖",
+				"english": "touch your knees"
+			},
+			{
+				"chinese": "捡树枝",
+				"english": "pick up sticks"
+			},
+			{
+				"chinese": "画一条蛇",
+				"english": "draw a snake"
+			},
+			{
+				"chinese": "再做一次",
+				"english": "do it again"
+			},
+			{
+				"chinese": "一位新同学",
+				"english": "a new classmate"
+			}
+		],
+		"sentences": [{
+				"chinese": "我是am，你是are，is用于他、她、它。",
+				"english": "I am, you are, is for he, she, it."
+			},
+			{
+				"chinese": "多少个碗？有四个碗。",
+				"english": "How many bowls? --There are four bowls."
+			},
+			{
+				"chinese": "多少个勺子？有一个。",
+				"english": "How many spoons? --There is one."
+			},
+			{
+				"chinese": "在厨房里有一只猫。",
+				"english": "There is a cat in the kitchen."
+			},
+			{
+				"chinese": "在桌上有两只碗。",
+				"english": "There are two bowls on the table."
+			},
+			{
+				"chinese": "在房间里有一张桌子和一把椅子。",
+				"english": "There is a table and a chair in the room."
+			},
+			{
+				"chinese": "碗在地上。",
+				"english": "The bowls are on the floor."
+			},
+			{
+				"chinese": "温迪用手关上了窗。",
+				"english": "Wendy closes the window with her hand."
+			},
+			{
+				"chinese": "不要摘花。对不起。",
+				"english": "Don't pick the flowers. --I'm sorry."
+			},
+			{
+				"chinese": "不要爬树，丹尼。对不起。",
+				"english": "Don't climb the tree, Danny. --I'm sorry."
+			},
+			{
+				"chinese": "我喜欢这个公园。它又大又美丽。",
+				"english": "I like this park. It's big and nice."
+			},
+			{
+				"chinese": "看看这朵花。它真漂亮。",
+				"english": "Look at this flower. It's beautiful."
+			},
+			{
+				"chinese": "这是什么？它是个蜜蜂。",
+				"english": "What's this? --It's a bee."
+			},
+			{
+				"chinese": "一只斑马在一个黄色的盒子里。",
+				"english": "A zebra is in a yellow box."
+			}
+		]
+	},
+	"2Am2": {
+		"words": [{
+				"chinese": "跑步",
+				"english": "run"
+			},
+			{
+				"chinese": "写字",
+				"english": "write"
+			},
+			{
+				"chinese": "游泳",
+				"english": "swim"
+			},
+			{
+				"chinese": "飞",
+				"english": "fly"
+			},
+			{
+				"chinese": "唱",
+				"english": "sing"
+			},
+			{
+				"chinese": "画",
+				"english": "draw"
+			},
+			{
+				"chinese": "读",
+				"english": "read"
+			},
+			{
+				"chinese": "跳舞",
+				"english": "dance"
+			},
+			{
+				"chinese": "跳绳",
+				"english": "skip"
+			},
+			{
+				"chinese": "骑（车）",
+				"english": "ride"
+			},
+			{
+				"chinese": "会",
+				"english": "can"
+			},
+			{
+				"chinese": "不会",
+				"english": "can't"
+			},
+			{
+				"chinese": "超级女孩（名字）",
+				"english": "Supergirl"
+			},
+			{
+				"chinese": "但是（转折）",
+				"english": "but"
+			},
+			{
+				"chinese": "她（第三人称单数）",
+				"english": "she"
+			},
+			{
+				"chinese": "他（第三人称单数）",
+				"english": "he"
+			},
+			{
+				"chinese": "它（第三人称单数）",
+				"english": "it"
+			},
+			{
+				"chinese": "什么",
+				"english": "what"
+			},
+			{
+				"chinese": "女孩",
+				"english": "girl"
+			},
+			{
+				"chinese": "手",
+				"english": "hand"
+			},
+			{
+				"chinese": "大门",
+				"english": "gate"
+			},
+			{
+				"chinese": "有（第三人称单数）",
+				"english": "has"
+			},
+			{
+				"chinese": "盘子",
+				"english": "plate"
+			},
+			{
+				"chinese": "她的（所有格）",
+				"english": "her"
+			},
+			{
+				"chinese": "家庭",
+				"english": "family"
+			},
+			{
+				"chinese": "年轻的",
+				"english": "young"
+			},
+			{
+				"chinese": "年老的",
+				"english": "old"
+			},
+			{
+				"chinese": "兄弟",
+				"english": "brother"
+			},
+			{
+				"chinese": "姐妹",
+				"english": "sister"
+			},
+			{
+				"chinese": "妈妈",
+				"english": "mother"
+			},
+			{
+				"chinese": "爸爸",
+				"english": "father"
+			},
+			{
+				"chinese": "妈妈（爱称）",
+				"english": "mummy"
+			},
+			{
+				"chinese": "爸爸（爱称）",
+				"english": "daddy"
+			},
+			{
+				"chinese": "(外)祖父",
+				"english": "grandfather"
+			},
+			{
+				"chinese": "(外)祖母",
+				"english": "grandmother"
+			},
+			{
+				"chinese": "是（第三人称单数）",
+				"english": "is"
+			},
+			{
+				"chinese": "不是",
+				"english": "isn't"
+			},
+			{
+				"chinese": "朋友",
+				"english": "friend"
+			},
+			{
+				"chinese": "同班同学",
+				"english": "classmate"
+			},
+			{
+				"chinese": "萨莉（女孩名）",
+				"english": "Sally"
+			},
+			{
+				"chinese": "吉姆（男孩名）",
+				"english": "Jim"
+			},
+			{
+				"chinese": "哈利（男孩名）",
+				"english": "Harry"
+			},
+			{
+				"chinese": "我的",
+				"english": "my"
+			},
+			{
+				"chinese": "你的",
+				"english": "your"
+			},
+			{
+				"chinese": "这个",
+				"english": "this"
+			},
+			{
+				"chinese": "那个",
+				"english": "that"
+			},
+			{
+				"chinese": "昆虫",
+				"english": "insect"
+			},
+			{
+				"chinese": "广口瓶",
+				"english": "jar"
+			},
+			{
+				"chinese": "头发",
+				"english": "hair"
+			},
+			{
+				"chinese": "头",
+				"english": "head"
+			},
+			{
+				"chinese": "脸",
+				"english": "face"
+			},
+			{
+				"chinese": "眼睛",
+				"english": "eye"
+			},
+			{
+				"chinese": "耳朵",
+				"english": "ear"
+			},
+			{
+				"chinese": "鼻子",
+				"english": "nose"
+			},
+			{
+				"chinese": "嘴巴",
+				"english": "mouth"
+			},
+			{
+				"chinese": "手",
+				"english": "hand"
+			},
+			{
+				"chinese": "圆的",
+				"english": "round"
+			},
+			{
+				"chinese": "大的",
+				"english": "big"
+			},
+			{
+				"chinese": "小的",
+				"english": "small"
+			},
+			{
+				"chinese": "长的",
+				"english": "long"
+			},
+			{
+				"chinese": "短的、矮的",
+				"english": "short"
+			},
+			{
+				"chinese": "高的",
+				"english": "tall"
+			},
+			{
+				"chinese": "巨人（名字）",
+				"english": "Giant"
+			},
+			{
+				"chinese": "巨人",
+				"english": "giant"
+			},
+			{
+				"chinese": "我是",
+				"english": "I'm"
+			},
+			{
+				"chinese": "你是",
+				"english": "You're"
+			},
+			{
+				"chinese": "我（主格）",
+				"english": "I"
+			},
+			{
+				"chinese": "我（宾格）",
+				"english": "me"
+			},
+			{
+				"chinese": "我的（所有格）",
+				"english": "my"
+			},
+			{
+				"chinese": "你、你们",
+				"english": "you"
+			},
+			{
+				"chinese": "你的、你们的",
+				"english": "your"
+			},
+			{
+				"chinese": "风筝",
+				"english": "kite"
+			},
+			{
+				"chinese": "狮子",
+				"english": "lion"
+			},
+			{
+				"chinese": "喜欢",
+				"english": "like"
+			}
+		],
+		"phrases": [{
+				"chinese": "又高又大的",
+				"english": "big and tall"
+			},
+			{
+				"chinese": "苗条漂亮的",
+				"english": "thin and nice"
+			},
+			{
+				"chinese": "小巧可爱的",
+				"english": "sweet and small"
+			},
+			{
+				"chinese": "和蔼可亲的",
+				"english": "kind and dear"
+			},
+			{
+				"chinese": "一只昆虫",
+				"english": "an insect"
+			},
+			{
+				"chinese": "跳绳",
+				"english": "skip rope"
+			},
+			{
+				"chinese": "放风筝",
+				"english": "fly a kite"
+			},
+			{
+				"chinese": "踢足球",
+				"english": "play football"
+			},
+			{
+				"chinese": "骑自行车",
+				"english": "ride a bicycle"
+			},
+			{
+				"chinese": "一只眼睛",
+				"english": "an eye"
+			},
+			{
+				"chinese": "一只耳朵",
+				"english": "an ear"
+			},
+			{
+				"chinese": "一张开心的脸",
+				"english": "a happy face"
+			},
+			{
+				"chinese": "一张开心的脸",
+				"english": "a funny face"
+			},
+			{
+				"chinese": "一张可爱的脸",
+				"english": "a cute face"
+			},
+			{
+				"chinese": "一只大狮子",
+				"english": "a big lion"
+			},
+			{
+				"chinese": "一个小风筝",
+				"english": "a small kite"
+			}
+		],
+		"sentences": [{
+				"chinese": "我是巨人。你是超级女孩。",
+				"english": "I'm Giant. You're Supergirl."
+			},
+			{
+				"chinese": "我是瘦的。你是胖的。",
+				"english": "I'm thin. You're fat."
+			},
+			{
+				"chinese": "我的头发是短的。你的头发是长的。",
+				"english": "My hair is short. Your hair is long."
+			},
+			{
+				"chinese": "我的鼻子是大的。你的鼻子是小的。",
+				"english": "My nose is big. Your nose is small."
+			},
+			{
+				"chinese": "我的眼睛是大的。你的耳朵是小的。",
+				"english": "My eyes are big. Your ears are small."
+			},
+			{
+				"chinese": "你的鼻子不是很大。",
+				"english": "Your nose is not very big."
+			}
+		]
+	},
+	"2Am3": {
+		"words": [{
+				"chinese": "滑滑梯",
+				"english": "slide"
+			},
+			{
+				"chinese": "秋千",
+				"english": "swing"
+			},
+			{
+				"chinese": "跷跷板",
+				"english": "seesaw"
+			},
+			{
+				"chinese": "什么",
+				"english": "what"
+			},
+			{
+				"chinese": "颜色",
+				"english": "colour"
+			},
+			{
+				"chinese": "红色",
+				"english": "red"
+			},
+			{
+				"chinese": "黄色",
+				"english": "yellow"
+			},
+			{
+				"chinese": "蓝色",
+				"english": "blue"
+			},
+			{
+				"chinese": "绿色",
+				"english": "green"
+			},
+			{
+				"chinese": "橙色（桔子）",
+				"english": "orange"
+			},
+			{
+				"chinese": "棕色",
+				"english": "brown"
+			},
+			{
+				"chinese": "白色",
+				"english": "white"
+			},
+			{
+				"chinese": "黑色",
+				"english": "black"
+			},
+			{
+				"chinese": "看见",
+				"english": "see"
+			},
+			{
+				"chinese": "向上",
+				"english": "up"
+			},
+			{
+				"chinese": "向下",
+				"english": "down"
+			},
+			{
+				"chinese": "他/她/它们",
+				"english": "they"
+			},
+			{
+				"chinese": "老鼠",
+				"english": "mouse"
+			},
+			{
+				"chinese": "网",
+				"english": "net"
+			},
+			{
+				"chinese": "男人",
+				"english": "man"
+			},
+			{
+				"chinese": "书包",
+				"english": "bag"
+			},
+			{
+				"chinese": "盒子",
+				"english": "box"
+			},
+			{
+				"chinese": "盒子（复数）",
+				"english": "boxes"
+			},
+			{
+				"chinese": "书本",
+				"english": "book"
+			},
+			{
+				"chinese": "课桌",
+				"english": "desk"
+			},
+			{
+				"chinese": "椅子",
+				"english": "chair"
+			},
+			{
+				"chinese": "铅笔盒",
+				"english": "pencil case"
+			},
+			{
+				"chinese": "房间",
+				"english": "room"
+			},
+			{
+				"chinese": "放",
+				"english": "put"
+			},
+			{
+				"chinese": "在...里面",
+				"english": "in"
+			},
+			{
+				"chinese": "在...上面",
+				"english": "on"
+			},
+			{
+				"chinese": "在...下面",
+				"english": "under"
+			},
+			{
+				"chinese": "请",
+				"english": "please"
+			},
+			{
+				"chinese": "爱",
+				"english": "love"
+			},
+			{
+				"chinese": "使用",
+				"english": "use"
+			},
+			{
+				"chinese": "保持",
+				"english": "keep"
+			},
+			{
+				"chinese": "干净的",
+				"english": "clean"
+			},
+			{
+				"chinese": "桔子（橙色）",
+				"english": "orange"
+			},
+			{
+				"chinese": "一只桔子",
+				"english": "an orange"
+			},
+			{
+				"chinese": "猪",
+				"english": "pig"
+			},
+			{
+				"chinese": "宝拉（女孩名）",
+				"english": "Paula"
+			},
+			{
+				"chinese": "腿",
+				"english": "leg"
+			},
+			{
+				"chinese": "来",
+				"english": "come"
+			},
+			{
+				"chinese": "吃",
+				"english": "eat"
+			},
+			{
+				"chinese": "厨房",
+				"english": "kitchen"
+			},
+			{
+				"chinese": "碗",
+				"english": "bowl"
+			},
+			{
+				"chinese": "盘子",
+				"english": "plate"
+			},
+			{
+				"chinese": "勺子",
+				"english": "spoon"
+			},
+			{
+				"chinese": "叉子",
+				"english": "fork"
+			},
+			{
+				"chinese": "筷子（复数）",
+				"english": "chopsticks"
+			},
+			{
+				"chinese": "烧菜、烹饪",
+				"english": "cook"
+			},
+			{
+				"chinese": "晚饭",
+				"english": "dinner"
+			},
+			{
+				"chinese": "给",
+				"english": "give"
+			},
+			{
+				"chinese": "准备好的",
+				"english": "ready"
+			},
+			{
+				"chinese": "金吉（名字）",
+				"english": "Ginger"
+			},
+			{
+				"chinese": "淘气的",
+				"english": "naughty"
+			},
+			{
+				"chinese": "桌子、餐桌",
+				"english": "table"
+			},
+			{
+				"chinese": "（双脚）跳",
+				"english": "jump"
+			},
+			{
+				"chinese": "跳绳",
+				"english": "skip"
+			},
+			{
+				"chinese": "地板",
+				"english": "floor"
+			},
+			{
+				"chinese": "在......上面",
+				"english": "on"
+			},
+			{
+				"chinese": "在......下面",
+				"english": "under"
+			},
+			{
+				"chinese": "在......里面",
+				"english": "in"
+			},
+			{
+				"chinese": "女王",
+				"english": "queen"
+			},
+			{
+				"chinese": "兔子",
+				"english": "rabbit"
+			},
+			{
+				"chinese": "坐",
+				"english": "sit"
+			},
+			{
+				"chinese": "面条",
+				"english": "noodles"
+			},
+			{
+				"chinese": "汤",
+				"english": "soup"
+			},
+			{
+				"chinese": "鸡、鸡肉",
+				"english": "chicken"
+			},
+			{
+				"chinese": "鱼、鱼肉",
+				"english": "fish"
+			}
+		],
+		"phrases": [{
+				"chinese": "在儿童乐园",
+				"english": "In the children's garden"
+			},
+			{
+				"chinese": "一只昆虫",
+				"english": "an insect"
+			},
+			{
+				"chinese": "跳绳",
+				"english": "skip rope"
+			},
+			{
+				"chinese": "放风筝",
+				"english": "fly a kite"
+			},
+			{
+				"chinese": "踢足球",
+				"english": "play football"
+			},
+			{
+				"chinese": "骑自行车",
+				"english": "ride a bicycle"
+			},
+			{
+				"chinese": "一只眼睛",
+				"english": "an eye"
+			},
+			{
+				"chinese": "一只耳朵",
+				"english": "an ear"
+			},
+			{
+				"chinese": "一张开心的脸",
+				"english": "a happy face"
+			},
+			{
+				"chinese": "一张开心的脸",
+				"english": "a funny face"
+			},
+			{
+				"chinese": "一张可爱的脸",
+				"english": "a cute face"
+			},
+			{
+				"chinese": "一只大狮子",
+				"english": "a big lion"
+			},
+			{
+				"chinese": "一个小风筝",
+				"english": "a small kite"
+			}
+		],
+		"sentences": [{
+				"chinese": "你能看到什么？我能看到一个跷跷板。",
+				"english": "What can you see? --I can see a seesaw."
+			},
+			{
+				"chinese": "它是什么颜色？它是黄色的。",
+				"english": "What colour is it? --It's yellow."
+			},
+			{
+				"chinese": "你们（你）喜欢玩。他们喜欢玩。",
+				"english": "You like to play. They like to play."
+			},
+			{
+				"chinese": "那人有一张网。老鼠在网里。",
+				"english": "The man has a net. The mouse is in the net."
+			},
+			{
+				"chinese": "请把盒子放在椅子上面。",
+				"english": "Put the box on the chair, please."
+			},
+			{
+				"chinese": "请把铅笔放在书包里面。",
+				"english": "Put the pencils in the bag, please."
+			},
+			{
+				"chinese": "把球放在课桌下面。好的。",
+				"english": "Put the ball under the desk. All right."
+			},
+			{
+				"chinese": "看看你的房间。我很抱歉。",
+				"english": "Look at your room. I'm sorry."
+			},
+			{
+				"chinese": "我每天用这个盒子。我每天使它保持干净。",
+				"english": "I use the box every day! I keep it clean every day!"
+			},
+			{
+				"chinese": "要勺子吗？不用，谢谢。",
+				"english": "--A spoon? --No, thanks."
+			},
+			{
+				"chinese": "筷子要吗？是的，请给我。",
+				"english": "--Chopsticks? --Yes, please."
+			},
+			{
+				"chinese": "请给我一个盘子。给你。",
+				"english": "Give me a plate, please. --Here you are."
+			},
+			{
+				"chinese": "晚饭准备好了。我来了。",
+				"english": "Dinner is ready! --I'm coming."
+			},
+			{
+				"chinese": "这是我家的厨房。",
+				"english": "This is my kitchen."
+			}
+		]
+	},
+	"2Am4": {
+		"words": [{
+				"chinese": "天空",
+				"english": "sky"
+			},
+			{
+				"chinese": "太阳",
+				"english": "sun"
+			},
+			{
+				"chinese": "月亮",
+				"english": "moon"
+			},
+			{
+				"chinese": "星星",
+				"english": "star"
+			},
+			{
+				"chinese": "明亮的",
+				"english": "bright"
+			},
+			{
+				"chinese": "闪烁",
+				"english": "twinkle"
+			},
+			{
+				"chinese": "小的",
+				"english": "little"
+			},
+			{
+				"chinese": "高的",
+				"english": "high"
+			},
+			{
+				"chinese": "钻石",
+				"english": "diamond"
+			},
+			{
+				"chinese": "汤（不可数）",
+				"english": "soup"
+			},
+			{
+				"chinese": "桌子",
+				"english": "table"
+			},
+			{
+				"chinese": "汤姆（男名）",
+				"english": "Tom"
+			},
+			{
+				"chinese": "光滑的",
+				"english": "smooth"
+			},
+			{
+				"chinese": "柔软的",
+				"english": "soft"
+			},
+			{
+				"chinese": "森林",
+				"english": "forest"
+			},
+			{
+				"chinese": "狐狸",
+				"english": "fox"
+			},
+			{
+				"chinese": "狐狸（复数）",
+				"english": "foxes"
+			},
+			{
+				"chinese": "河马",
+				"english": "hippo"
+			},
+			{
+				"chinese": "肉（不可数）",
+				"english": "meat"
+			},
+			{
+				"chinese": "草（不可数）",
+				"english": "grass"
+			},
+			{
+				"chinese": "野生的",
+				"english": "wild"
+			},
+			{
+				"chinese": "动物",
+				"english": "animal"
+			},
+			{
+				"chinese": "猴子",
+				"english": "monkey"
+			},
+			{
+				"chinese": "兔子",
+				"english": "rabbit"
+			},
+			{
+				"chinese": "好看的",
+				"english": "nice"
+			},
+			{
+				"chinese": "单脚跳",
+				"english": "hop"
+			},
+			{
+				"chinese": "可爱的",
+				"english": "cute"
+			},
+			{
+				"chinese": "顽皮的",
+				"english": "naughty"
+			},
+			{
+				"chinese": "棕色",
+				"english": "brown"
+			},
+			{
+				"chinese": "白色",
+				"english": "white"
+			},
+			{
+				"chinese": "荡秋千",
+				"english": "swing"
+			},
+			{
+				"chinese": "雨伞",
+				"english": "umbrella"
+			},
+			{
+				"chinese": "面包车",
+				"english": "van"
+			},
+			{
+				"chinese": "窗户",
+				"english": "window"
+			},
+			{
+				"chinese": "温迪（女名）",
+				"english": "Wendy"
+			},
+			{
+				"chinese": "黑色",
+				"english": "black"
+			},
+			{
+				"chinese": "雨点",
+				"english": "raindrop"
+			},
+			{
+				"chinese": "关",
+				"english": "close"
+			},
+			{
+				"chinese": "街道",
+				"english": "street"
+			},
+			{
+				"chinese": "花朵",
+				"english": "flower"
+			},
+			{
+				"chinese": "树",
+				"english": "tree"
+			},
+			{
+				"chinese": "不要",
+				"english": "don’t"
+			},
+			{
+				"chinese": "采摘",
+				"english": "pick"
+			},
+			{
+				"chinese": "对不起",
+				"english": "sorry"
+			},
+			{
+				"chinese": "爬",
+				"english": "climb"
+			},
+			{
+				"chinese": "画画",
+				"english": "draw"
+			},
+			{
+				"chinese": "涂色",
+				"english": "colour"
+			},
+			{
+				"chinese": "颜色",
+				"english": "cut"
+			},
+			{
+				"chinese": "公园",
+				"english": "park"
+			},
+			{
+				"chinese": "漂亮的",
+				"english": "beautiful"
+			},
+			{
+				"chinese": "帮忙",
+				"english": "help"
+			},
+			{
+				"chinese": "哭",
+				"english": "cry"
+			},
+			{
+				"chinese": "盒子",
+				"english": "box"
+			},
+			{
+				"chinese": "黄色",
+				"english": "yellow"
+			},
+			{
+				"chinese": "斑马",
+				"english": "zebra"
+			},
+			{
+				"chinese": "动物园",
+				"english": "zoo"
+			}
+		],
+		"phrases": [{
+				"chinese": "在天空中",
+				"english": "in the sky"
+			},
+			{
+				"chinese": "光滑又柔软的",
+				"english": "smooth and soft"
+			},
+			{
+				"chinese": "坐在桌子上",
+				"english": "sit on the table"
+			},
+			{
+				"chinese": "一个动物",
+				"english": "an animal"
+			},
+			{
+				"chinese": "一把伞",
+				"english": "an umbrella"
+			},
+			{
+				"chinese": "关窗",
+				"english": "close the window"
+			},
+			{
+				"chinese": "河马的嘴巴",
+				"english": "the hippo’s mouth"
+			},
+			{
+				"chinese": "在街上",
+				"english": "in the street"
+			},
+			{
+				"chinese": "采花",
+				"english": "pick the flowers"
+			},
+			{
+				"chinese": "爬树",
+				"english": "climb the tree"
+			},
+			{
+				"chinese": "在公园里",
+				"english": "in the park"
+			}
+		],
+		"sentences": [{
+				"chinese": "看看天空。",
+				"english": "Look at the sky."
+			},
+			{
+				"chinese": "看着我。",
+				"english": "Look at me."
+			},
+			{
+				"chinese": "你能看到什么？我能看见太阳。",
+				"english": "What can you see? --- I can see the sun."
+			},
+			{
+				"chinese": "你能看到星星吗？是的，我能。",
+				"english": "Can you see the stars? --- Yes, I can."
+			},
+			{
+				"chinese": "你能看到月亮吗？不，我不能。",
+				"english": "Can you see the moon? --- No, I can’t."
+			},
+			{
+				"chinese": "月亮是大的吗？是的。它是大的。它是明亮的。",
+				"english": "Is the moon big? ---Yes. It’s big. It’s bright."
+			},
+			{
+				"chinese": "汤姆的兔子光滑又柔软。",
+				"english": "Tom’s rabbit is smooth and soft."
+			},
+			{
+				"chinese": "看这只狮子。它很大。它喜欢吃肉。",
+				"english": "Look at the lion. It’s big. It likes meat."
+			},
+			{
+				"chinese": "看这只河马的嘴巴。这么大。",
+				"english": "Look at the hippo’s mouth. It’s so big."
+			},
+			{
+				"chinese": "温迪在面包车里，手里拿着两把雨伞。",
+				"english": "Wendy is in a van，with two umbrellas in her hands."
+			},
+			{
+				"chinese": "她把它们带给她的朋友们。",
+				"english": "She takes them to her friends."
+			},
+			{
+				"chinese": "雨点落在她的头上。",
+				"english": "Raindrops fall on her head."
+			},
+			{
+				"chinese": "温迪用手关上了窗。",
+				"english": "Wendy closes the window with her hand."
+			},
+			{
+				"chinese": "不要摘花。对不起。",
+				"english": "Don’t pick the flowers. ---I’m sorry."
+			},
+			{
+				"chinese": "不要爬树，丹尼。对不起。",
+				"english": "Don’t climb the tree, Danny. ---I’m sorry."
+			},
+			{
+				"chinese": "我喜欢这个公园。",
+				"english": "I like this park."
+			}
+		]
+	},
+	"m1u1": {
+		"words": [{
+				"chinese": "听（动作）",
+				"english": "listen"
+			},
+			{
+				"chinese": "听见",
+				"english": "hear"
+			},
+			{
+				"chinese": "看见",
+				"english": "see"
+			},
+			{
+				"chinese": "看（动作）",
+				"english": "look"
+			},
+			{
+				"chinese": "火车",
+				"english": "train"
+			},
+			{
+				"chinese": "公交车",
+				"english": "bus"
+			},
+			{
+				"chinese": "公交车（复数）",
+				"english": "buses"
+			},
+			{
+				"chinese": "汽车",
+				"english": "car"
+			},
+			{
+				"chinese": "小货车",
+				"english": "van"
+			},
+			{
+				"chinese": "自行车",
+				"english": "bicycle"
+			},
+			{
+				"chinese": "自行车",
+				"english": "bike"
+			},
+			{
+				"chinese": "船",
+				"english": "ship"
+			},
+			{
+				"chinese": "绵羊（单数）",
+				"english": "sheep"
+			},
+			{
+				"chinese": "绵羊（复数）",
+				"english": "sheep"
+			},
+			{
+				"chinese": "在......旁边",
+				"english": "beside"
+			},
+			{
+				"chinese": "睡觉",
+				"english": "sleep"
+			},
+			{
+				"chinese": "公交站",
+				"english": "bus stop"
+			},
+			{
+				"chinese": "车站",
+				"english": "station"
+			},
+			{
+				"chinese": "道路",
+				"english": "road"
+			},
+			{
+				"chinese": "声音",
+				"english": "sound"
+			},
+			{
+				"chinese": "嘀声",
+				"english": "beep"
+			},
+			{
+				"chinese": "呼啸声（火车）",
+				"english": "choo"
+			},
+			{
+				"chinese": "嘀嘟声",
+				"english": "boop"
+			},
+			{
+				"chinese": "等待",
+				"english": "wait"
+			}
+		],
+		"phrases": [{
+			"chinese": "听音乐",
+			"english": "listen to music"
+		}],
+		"sentences": [{
+			"chinese": "我喜欢听音乐。",
+			"english": "I like listening to music."
+		}]
+	},
+	"m1u2": {
+		"words": [{
+				"chinese": "蝴蝶",
+				"english": "butterfly"
+			},
+			{
+				"chinese": "昆虫",
+				"english": "insect"
+			},
+			{
+				"chinese": "狮子",
+				"english": "lion"
+			},
+			{
+				"chinese": "老鼠",
+				"english": "mouse"
+			},
+			{
+				"chinese": "橙子",
+				"english": "orange"
+			},
+			{
+				"chinese": "猪",
+				"english": "pig"
+			},
+			{
+				"chinese": "兔子",
+				"english": "rabbit"
+			},
+			{
+				"chinese": "雨伞",
+				"english": "umbrella"
+			},
+			{
+				"chinese": "箱子",
+				"english": "box"
+			},
+			{
+				"chinese": "黄色",
+				"english": "yellow"
+			},
+			{
+				"chinese": "斑马",
+				"english": "zebra"
+			},
+			{
+				"chinese": "狗",
+				"english": "dog"
+			},
+			{
+				"chinese": "猫",
+				"english": "cat"
+			},
+			{
+				"chinese": "大象",
+				"english": "elephant"
+			},
+			{
+				"chinese": "颜色",
+				"english": "colour"
+			},
+			{
+				"chinese": "白色",
+				"english": "white"
+			},
+			{
+				"chinese": "黑色",
+				"english": "black"
+			},
+			{
+				"chinese": "粉色",
+				"english": "pink"
+			},
+			{
+				"chinese": "紫色",
+				"english": "purple"
+			},
+			{
+				"chinese": "苹果",
+				"english": "apple"
+			},
+			{
+				"chinese": "包",
+				"english": "bag"
+			},
+			{
+				"chinese": "风筝",
+				"english": "kite"
+			},
+			{
+				"chinese": "草",
+				"english": "grass"
+			},
+			{
+				"chinese": "橙色",
+				"english": "orange"
+			},
+			{
+				"chinese": "蓝色",
+				"english": "blue"
+			},
+			{
+				"chinese": "棕色",
+				"english": "brown"
+			},
+			{
+				"chinese": "红色",
+				"english": "red"
+			},
+			{
+				"chinese": "绿色",
+				"english": "green"
+			},
+			{
+				"chinese": "公园",
+				"english": "park"
+			},
+			{
+				"chinese": "他",
+				"english": "he"
+			},
+			{
+				"chinese": "她",
+				"english": "she"
+			},
+			{
+				"chinese": "它",
+				"english": "it"
+			},
+			{
+				"chinese": "他们/她们/它们",
+				"english": "they"
+			},
+			{
+				"chinese": "瓢虫",
+				"english": "ladybird"
+			},
+			{
+				"chinese": "鸟",
+				"english": "bird"
+			},
+			{
+				"chinese": "蝴蝶（复数）",
+				"english": "butterflies"
+			},
+			{
+				"chinese": "美丽的",
+				"english": "beautiful"
+			}
+		],
+		"phrases": [{
+			"chinese": "看见苹果",
+			"english": "see an apple"
+		}],
+		"sentences": [{
+			"chinese": "我能看见一个苹果。",
+			"english": "I can see an apple."
+		}]
+	},
+	"m1u3": {
+		"words": [{
+				"chinese": "彩虹",
+				"english": "rainbow"
+			},
+			{
+				"chinese": "在外面",
+				"english": "outside"
+			},
+			{
+				"chinese": "窗户",
+				"english": "window"
+			},
+			{
+				"chinese": "两个",
+				"english": "two"
+			},
+			{
+				"chinese": "棕色",
+				"english": "brown"
+			},
+			{
+				"chinese": "触摸",
+				"english": "touch"
+			},
+			{
+				"chinese": "感觉",
+				"english": "feel"
+			},
+			{
+				"chinese": "观看",
+				"english": "watch"
+			},
+			{
+				"chinese": "手表（复数）",
+				"english": "watches"
+			},
+			{
+				"chinese": "铅笔盒",
+				"english": "pencil case"
+			},
+			{
+				"chinese": "软的",
+				"english": "soft"
+			},
+			{
+				"chinese": "硬的",
+				"english": "hard"
+			},
+			{
+				"chinese": "粗糙的",
+				"english": "rough"
+			},
+			{
+				"chinese": "光滑的",
+				"english": "smooth"
+			},
+			{
+				"chinese": "热的",
+				"english": "hot"
+			},
+			{
+				"chinese": "冷的",
+				"english": "cold"
+			},
+			{
+				"chinese": "品尝",
+				"english": "taste"
+			},
+			{
+				"chinese": "舌头",
+				"english": "tongue"
+			},
+			{
+				"chinese": "闻",
+				"english": "smell"
+			},
+			{
+				"chinese": "猜测",
+				"english": "guess"
+			},
+			{
+				"chinese": "打开",
+				"english": "open"
+			},
+			{
+				"chinese": "关闭",
+				"english": "close"
+			},
+			{
+				"chinese": "梨",
+				"english": "pear"
+			},
+			{
+				"chinese": "桃子",
+				"english": "peach"
+			},
+			{
+				"chinese": "桃子（复数）",
+				"english": "peaches"
+			},
+			{
+				"chinese": "洋娃娃",
+				"english": "doll"
+			},
+			{
+				"chinese": "菠萝",
+				"english": "pineapple"
+			},
+			{
+				"chinese": "手表",
+				"english": "watch"
+			},
+			{
+				"chinese": "老虎",
+				"english": "tiger"
+			}
+		],
+		"phrases": [{
+			"chinese": "白色的道路",
+			"english": "white road"
+		}],
+		"sentences": [{
+			"chinese": "这条道路是白色的。",
+			"english": "This road is white."
+		}]
+	},
+	"m2u1": {
+		"words": [{
+				"chinese": "喜欢",
+				"english": "like"
+			},
+			{
+				"chinese": "跑",
+				"english": "run"
+			},
+			{
+				"chinese": "跑（现在分词）",
+				"english": "running"
+			},
+			{
+				"chinese": "滑冰",
+				"english": "skate"
+			},
+			{
+				"chinese": "滑冰（现在分词）",
+				"english": "skating"
+			},
+			{
+				"chinese": "骑",
+				"english": "ride"
+			},
+			{
+				"chinese": "骑（现在分词）",
+				"english": "riding"
+			},
+			{
+				"chinese": "自行车",
+				"english": "bicycle"
+			},
+			{
+				"chinese": "自行车",
+				"english": "bike"
+			},
+			{
+				"chinese": "单脚跳",
+				"english": "hop"
+			},
+			{
+				"chinese": "单脚跳（现在分词）",
+				"english": "hopping"
+			},
+			{
+				"chinese": "跳绳",
+				"english": "skip"
+			},
+			{
+				"chinese": "跳绳（现在分词）",
+				"english": "skipping"
+			},
+			{
+				"chinese": "唱歌",
+				"english": "sing"
+			},
+			{
+				"chinese": "唱歌（现在分词）",
+				"english": "singing"
+			},
+			{
+				"chinese": "跳舞",
+				"english": "dance"
+			},
+			{
+				"chinese": "跳舞（现在分词）",
+				"english": "dancing"
+			},
+			{
+				"chinese": "写",
+				"english": "write"
+			},
+			{
+				"chinese": "写（现在分词）",
+				"english": "writing"
+			},
+			{
+				"chinese": "青蛙",
+				"english": "frog"
+			},
+			{
+				"chinese": "跳",
+				"english": "jump"
+			},
+			{
+				"chinese": "跳（现在分词）",
+				"english": "jumping"
+			},
+			{
+				"chinese": "游泳",
+				"english": "swim"
+			},
+			{
+				"chinese": "游泳（现在分词）",
+				"english": "swimming"
+			},
+			{
+				"chinese": "画",
+				"english": "draw"
+			},
+			{
+				"chinese": "画（现在分词）",
+				"english": "drawing"
+			},
+			{
+				"chinese": "读",
+				"english": "read"
+			},
+			{
+				"chinese": "读（现在分词）",
+				"english": "reading"
+			},
+			{
+				"chinese": "飞",
+				"english": "fly"
+			},
+			{
+				"chinese": "飞（现在分词）",
+				"english": "flying"
+			},
+			{
+				"chinese": "玩",
+				"english": "play"
+			},
+			{
+				"chinese": "玩（现在分词）",
+				"english": "playing"
+			}
+		],
+		"phrases": [{
+			"chinese": "喜欢飞",
+			"english": "like to fly"
+		}],
+		"sentences": [{
+			"chinese": "小鸟喜欢飞。",
+			"english": "Birds like to fly."
+		}]
+	},
+	"m2u2": {
+		"words": [{
+				"chinese": "食物",
+				"english": "food"
+			},
+			{
+				"chinese": "汉堡",
+				"english": "hamburger"
+			},
+			{
+				"chinese": "披萨",
+				"english": "pizza"
+			},
+			{
+				"chinese": "沙拉",
+				"english": "salad"
+			},
+			{
+				"chinese": "鱼",
+				"english": "fish"
+			},
+			{
+				"chinese": "鸡肉",
+				"english": "chicken"
+			},
+			{
+				"chinese": "胡萝卜",
+				"english": "carrot"
+			},
+			{
+				"chinese": "香蕉",
+				"english": "banana"
+			},
+			{
+				"chinese": "苹果",
+				"english": "apple"
+			},
+			{
+				"chinese": "梨",
+				"english": "pear"
+			},
+			{
+				"chinese": "桃子",
+				"english": "peach"
+			},
+			{
+				"chinese": "橙子",
+				"english": "orange"
+			},
+			{
+				"chinese": "米饭",
+				"english": "rice"
+			},
+			{
+				"chinese": "汤",
+				"english": "soup"
+			},
+			{
+				"chinese": "面条",
+				"english": "noodles"
+			},
+			{
+				"chinese": "鸡蛋",
+				"english": "egg"
+			},
+			{
+				"chinese": "果冻",
+				"english": "jelly"
+			},
+			{
+				"chinese": "冰淇淋",
+				"english": "ice cream"
+			},
+			{
+				"chinese": "糖果",
+				"english": "sweet"
+			},
+			{
+				"chinese": "饼干",
+				"english": "biscuit"
+			},
+			{
+				"chinese": "可乐",
+				"english": "cola"
+			},
+			{
+				"chinese": "果汁",
+				"english": "juice"
+			},
+			{
+				"chinese": "牛奶",
+				"english": "milk"
+			},
+			{
+				"chinese": "水",
+				"english": "water"
+			},
+			{
+				"chinese": "馅饼",
+				"english": "pie"
+			},
+			{
+				"chinese": "蛋糕",
+				"english": "cake"
+			},
+			{
+				"chinese": "长颈鹿",
+				"english": "giraffe"
+			},
+			{
+				"chinese": "蛇",
+				"english": "snake"
+			},
+			{
+				"chinese": "大象",
+				"english": "elephant"
+			},
+			{
+				"chinese": "斑马",
+				"english": "zebra"
+			},
+			{
+				"chinese": "小鸡",
+				"english": "chick"
+			},
+			{
+				"chinese": "鸭子",
+				"english": "duck"
+			},
+			{
+				"chinese": "牛",
+				"english": "cow"
+			},
+			{
+				"chinese": "猪",
+				"english": "pig"
+			},
+			{
+				"chinese": "青蛙",
+				"english": "frog"
+			},
+			{
+				"chinese": "兔子",
+				"english": "rabbit"
+			},
+			{
+				"chinese": "蜜蜂",
+				"english": "bee"
+			},
+			{
+				"chinese": "蝴蝶",
+				"english": "butterfly"
+			},
+			{
+				"chinese": "瓢虫",
+				"english": "ladybird"
+			},
+			{
+				"chinese": "昆虫",
+				"english": "insect"
+			},
+			{
+				"chinese": "鸟",
+				"english": "bird"
+			},
+			{
+				"chinese": "绵羊",
+				"english": "sheep"
+			},
+			{
+				"chinese": "母鸡",
+				"english": "hen"
+			},
+			{
+				"chinese": "熊",
+				"english": "bear"
+			},
+			{
+				"chinese": "老虎",
+				"english": "tiger"
+			},
+			{
+				"chinese": "猴子",
+				"english": "monkey"
+			},
+			{
+				"chinese": "熊猫",
+				"english": "panda"
+			},
+			{
+				"chinese": "狗",
+				"english": "dog"
+			},
+			{
+				"chinese": "猫",
+				"english": "cat"
+			},
+			{
+				"chinese": "狼",
+				"english": "wolf"
+			},
+			{
+				"chinese": "狐狸",
+				"english": "fox"
+			},
+			{
+				"chinese": "河马",
+				"english": "hippo"
+			},
+			{
+				"chinese": "自行车",
+				"english": "bicycle"
+			},
+			{
+				"chinese": "自行车",
+				"english": "bike"
+			},
+			{
+				"chinese": "最喜欢的",
+				"english": "favourite"
+			},
+			{
+				"chinese": "美味的",
+				"english": "yummy"
+			}
+		],
+		"phrases": [{
+			"chinese": "示例词组1",
+			"english": "example phrase 1"
+		}],
+		"sentences": [{
+			"chinese": "示例句子1",
+			"english": "example sentence 1"
+		}]
+	},
+	"m2u3": {
+		"words": [{
+				"chinese": "示例单词1",
+				"english": "example word 1"
+			},
+			{
+				"chinese": "示例单词2",
+				"english": "example word 2"
+			}
+		],
+		"phrases": [{
+			"chinese": "示例词组1",
+			"english": "example phrase 1"
+		}],
+		"sentences": [{
+			"chinese": "示例句子1",
+			"english": "example sentence 1"
+		}]
+	},
+	"m3u1": {
+		"words": [{
+				"chinese": "季节",
+				"english": "season"
+			},
+			{
+				"chinese": "春天",
+				"english": "spring"
+			},
+			{
+				"chinese": "夏天",
+				"english": "summer"
+			},
+			{
+				"chinese": "秋天",
+				"english": "autumn"
+			},
+			{
+				"chinese": "冬天",
+				"english": "winter"
+			},
+			{
+				"chinese": "天气",
+				"english": "weather"
+			},
+			{
+				"chinese": "晴朗的",
+				"english": "sunny"
+			},
+			{
+				"chinese": "太阳",
+				"english": "sun"
+			},
+			{
+				"chinese": "多云的",
+				"english": "cloudy"
+			},
+			{
+				"chinese": "云",
+				"english": "cloud"
+			},
+			{
+				"chinese": "有雨的",
+				"english": "rainy"
+			},
+			{
+				"chinese": "雨",
+				"english": "rain"
+			},
+			{
+				"chinese": "有风的",
+				"english": "windy"
+			},
+			{
+				"chinese": "风",
+				"english": "wind"
+			},
+			{
+				"chinese": "温暖的",
+				"english": "warm"
+			},
+			{
+				"chinese": "炎热的",
+				"english": "hot"
+			},
+			{
+				"chinese": "凉爽的",
+				"english": "cool"
+			},
+			{
+				"chinese": "寒冷的",
+				"english": "cold"
+			},
+			{
+				"chinese": "在外面",
+				"english": "outside"
+			},
+			{
+				"chinese": "雪人（单数）",
+				"english": "snowman"
+			},
+			{
+				"chinese": "雪人（复数）",
+				"english": "snowmen"
+			}
+		],
+		"phrases": [{
+			"chinese": "示例词组1",
+			"english": "example phrase 1"
+		}],
+		"sentences": [{
+				"chinese": "在春天，我喜欢在公园里骑自行车。",
+				"english": "In spring, I like riding my bicycle in the park."
+			},
+			{
+				"chinese": "在夏天，我喜欢在水里游泳。",
+				"english": "In summer, I like swimming in the water."
+			},
+			{
+				"chinese": "在秋天，我喜欢在公园里放风筝。",
+				"english": "In autumn, I like flying a kite in the park."
+			},
+			{
+				"chinese": "在冬天，我喜欢滑冰和堆雪人。",
+				"english": "In winter, I like skating on the ice and making snowmen."
+			},
+			{
+				"chinese": "你喜欢夏天么？不，我不喜欢。",
+				"english": "Do you like summer? No, I don't."
+			},
+			{
+				"chinese": "你喜欢冬天么？是的，我喜欢。",
+				"english": "Do you like winter? Yes, I do."
+			},
+			{
+				"chinese": "春天舒服又温暖。",
+				"english": "Spring is nice and warm."
+			},
+			{
+				"chinese": "夏天晴朗又炎热。",
+				"english": "Summer is sunny and hot."
+			},
+			{
+				"chinese": "秋天多风又凉爽。",
+				"english": "Autumn is windy and cool."
+			},
+			{
+				"chinese": "冬天多云又寒冷。",
+				"english": "Winter is cloudy and cold."
+			},
+			{
+				"chinese": "你喜欢什么季节？我喜欢秋天。",
+				"english": "What season do you like? I like autumn."
+			},
+			{
+				"chinese": "天气怎么样？",
+				"english": "How is the weather?"
+			},
+			{
+				"chinese": "我最喜欢的季节是秋天。",
+				"english": "My favourite season is autumn."
+			}
+		]
+	},
+	"m3u2": {
+		"words": [{
+				"chinese": "示例单词1",
+				"english": "example word 1"
+			},
+			{
+				"chinese": "示例单词2",
+				"english": "example word 2"
+			}
+		],
+		"phrases": [{
+			"chinese": "示例词组1",
+			"english": "example phrase 1"
+		}],
+		"sentences": [{
+			"chinese": "示例句子1",
+			"english": "example sentence 1"
+		}]
+	},
+	"m3u3": {
+		"words": [{
+				"chinese": "示例单词1",
+				"english": "example word 1"
+			},
+			{
+				"chinese": "示例单词2",
+				"english": "example word 2"
+			}
+		],
+		"phrases": [{
+			"chinese": "示例词组1",
+			"english": "example phrase 1"
+		}],
+		"sentences": [{
+			"chinese": "示例句子1",
+			"english": "example sentence 1"
+		}]
+	},
+	"m4u1": {
+		"words": [{
+				"chinese": "示例单词1",
+				"english": "example word 1"
+			},
+			{
+				"chinese": "示例单词2",
+				"english": "example word 2"
+			}
+		],
+		"phrases": [{
+			"chinese": "示例词组1",
+			"english": "example phrase 1"
+		}],
+		"sentences": [{
+			"chinese": "示例句子1",
+			"english": "example sentence 1"
+		}]
+	},
+	"m4u2": {
+		"words": [{
+				"chinese": "示例单词1",
+				"english": "example word 1"
+			},
+			{
+				"chinese": "示例单词2",
+				"english": "example word 2"
+			}
+		],
+		"phrases": [{
+			"chinese": "示例词组1",
+			"english": "example phrase 1"
+		}],
+		"sentences": [{
+			"chinese": "示例句子1",
+			"english": "example sentence 1"
+		}]
+	},
+	"m4u3": {
+		"words": [{
+				"chinese": "示例单词1",
+				"english": "example word 1"
+			},
+			{
+				"chinese": "示例单词2",
+				"english": "example word 2"
+			}
+		],
+		"phrases": [{
+			"chinese": "示例词组1",
+			"english": "example phrase 1"
+		}],
+		"sentences": [{
+			"chinese": "示例句子1",
+			"english": "example sentence 1"
+		}]
+	}
 }
