@@ -263,7 +263,9 @@
             {"chinese": "雪人（单数）", "english": "snowman"},
             {"chinese": "雪人（复数）", "english": "snowmen"}
         ],
-        "phrases": [],
+        "phrases": [
+            {"chinese": "示例词组1", "english": "example phrase 1"}
+        ],
         "sentences": [
             {"chinese": "在春天，我喜欢在公园里骑自行车。", "english": "In spring, I like riding my bicycle in the park."},
             {"chinese": "在夏天，我喜欢在水里游泳。", "english": "In summer, I like swimming in the water."},
