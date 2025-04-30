@@ -85,14 +85,19 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 18px;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
         }
         .show-answer {
             background-color: #3498db;
             color: white;
             width: 100%;
         }
-        .show-answer:hover {
+        .show-answer.revealed {
+            background-color: #2980b9;
+            cursor: default;
+            opacity: 0.8;
+        }
+        .show-answer:hover:not(.revealed) {
             background-color: #2980b9;
         }
         .remembered {
@@ -233,7 +238,7 @@
         <button class="word-type-btn" data-type="sentences">句子</button>
     </div>
     
-    <!-- Word Containers for each module -->
+    <!-- 单词容器 -->
     <div id="am1-words" class="word-container">
         <div class="progress">进度: <span id="am1-progress">0</span>/<span id="am1-total">0</span> (<span id="am1-completed">0</span> 已记住)</div>
         <div id="am1-card" class="card">
@@ -488,13 +493,14 @@
                 m.chinese.textContent = m.words[m.currentIndex].chinese;
                 m.answer.textContent = m.words[m.currentIndex].english;
                 m.answer.classList.remove('revealed');
+                m.showAnswerBtn.classList.remove('revealed');
                 m.showAnswerBtn.style.display = "block";
                 m.rememberedBtn.style.display = "block";
                 m.notRememberedBtn.style.display = "block";
             } else {
                 m.chinese.textContent = "已完成所有内容复习！";
                 m.answer.textContent = "";
-                m.showAnswerBtn.style.display = "none";
+                m.showAnswerBtn.style.display = "block";
                 m.rememberedBtn.style.display = "none";
                 m.notRememberedBtn.style.display = "none";
             }
@@ -526,13 +532,14 @@
         function showAnswer(module, type) {
             const m = modules[module][type];
             m.answer.classList.add('revealed');
-            m.showAnswerBtn.style.display = "none";
+            m.showAnswerBtn.classList.add('revealed');
         }
 
         function markAsRemembered(module, type) {
             const m = modules[module][type];
             if (m.currentIndex < m.words.length) {
                 m.answer.classList.add('revealed');
+                m.showAnswerBtn.classList.add('revealed');
                 
                 m.remembered.push(m.words[m.currentIndex]);
                 m.currentIndex++;
@@ -548,12 +555,12 @@
                     m.chinese.textContent = m.words[m.currentIndex].chinese;
                     m.answer.textContent = m.words[m.currentIndex].english;
                     m.answer.classList.remove('revealed');
-                    m.showAnswerBtn.style.display = "block";
+                    m.showAnswerBtn.classList.remove('revealed');
                     m.progress.textContent = m.currentIndex + 1;
                 } else {
                     m.chinese.textContent = "已完成所有内容复习！";
                     m.answer.textContent = "";
-                    m.showAnswerBtn.style.display = "none";
+                    m.showAnswerBtn.style.display = "block";
                     m.rememberedBtn.style.display = "none";
                     m.notRememberedBtn.style.display = "none";
                 }
@@ -564,6 +571,7 @@
             const m = modules[module][type];
             if (m.currentIndex < m.words.length) {
                 m.answer.classList.add('revealed');
+                m.showAnswerBtn.classList.add('revealed');
                 
                 const notRememberedWord = m.words[m.currentIndex];
                 m.words.splice(m.currentIndex, 1);
@@ -584,7 +592,7 @@
                 m.chinese.textContent = m.words[m.currentIndex].chinese;
                 m.answer.textContent = m.words[m.currentIndex].english;
                 m.answer.classList.remove('revealed');
-                m.showAnswerBtn.style.display = "block";
+                m.showAnswerBtn.classList.remove('revealed');
                 m.progress.textContent = m.currentIndex + 1;
             }
         }
