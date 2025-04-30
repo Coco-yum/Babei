@@ -42,10 +42,9 @@
             text-align: center;
         }
         .answer {
-            /* 保持容器始终可见 */
             min-height: 60px;
             font-size: 28px;
-            color: transparent; /* 文字颜色透明 */
+            color: transparent;
             margin: 25px 0;
             padding: 15px;
             background-color: #e8f5e9;
@@ -55,18 +54,18 @@
             align-items: center;
             justify-content: center;
             position: relative;
+            transition: color 0.3s ease;
         }
         .answer.revealed {
-            color: #27ae60; /* 显示时恢复颜色 */
+            color: #27ae60;
         }
-
         .answer::before {
             content: "点击显示答案";
             color: #7f8c8d;
             position: absolute;
             font-size: 18px;
+            pointer-events: none;
         }
-
         .answer.revealed::before {
             display: none;
         }
@@ -332,13 +331,9 @@
                 if (!response.ok) throw new Error('Network response was not ok');
                 wordData = await response.json();
                 
-                // 确保wordData结构正确
-                console.log("Loaded word data:", wordData);
-                
                 initializeModules();
                 initializeEventListeners();
                 
-                // 初始化所有模块
                 Object.keys(modules).forEach(module => {
                     ['words', 'phrases', 'sentences'].forEach(type => {
                         if (wordData[module] && wordData[module][type]) {
@@ -384,25 +379,21 @@
 
         // 初始化事件监听器
         function initializeEventListeners() {
-            // 模块选择按钮
             document.querySelectorAll('.module-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     switchModule(btn.dataset.module);
                 });
             });
 
-            // 内容类型选择按钮
             document.querySelectorAll('.word-type-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     switchType(btn.dataset.type);
                 });
             });
 
-            // 重置和结束按钮
             document.getElementById('reset-all').addEventListener('click', resetAllProgress);
             document.getElementById('finish-session').addEventListener('click', finishSession);
 
-            // 为每个模块添加事件监听
             const moduleIds = ['am1', 'am2', 'am3', 'am4'];
             moduleIds.forEach(module => {
                 document.getElementById(`${module}-show-answer`).addEventListener('click', () => showAnswer(module, currentType));
@@ -410,7 +401,6 @@
                 document.getElementById(`${module}-not-remembered`).addEventListener('click', () => markAsNotRemembered(module, currentType));
             });
 
-            // 邮件表单提交
             document.getElementById('email-form').addEventListener('submit', function(e) {
                 e.preventDefault();
                 const userEmail = document.getElementById('user-email').value;
@@ -451,18 +441,15 @@
             });
         }
 
-        // 从LocalStorage加载模块数据
         function loadModuleData(module, type) {
             const savedData = localStorage.getItem(`wordReview_${module}_${type}`);
             return savedData ? JSON.parse(savedData) : null;
         }
 
-        // 保存模块数据到LocalStorage
         function saveModuleData(module, type, data) {
             localStorage.setItem(`wordReview_${module}_${type}`, JSON.stringify(data));
         }
 
-        // 初始化模块
         function initModule(module, type, forceReset = false) {
             let savedData = null;
             
@@ -471,10 +458,7 @@
             }
             
             const moduleData = wordData[module];
-            if (!moduleData) {
-                console.error(`Module ${module} not found in wordData`);
-                return;
-            }
+            if (!moduleData) return;
             
             const data = moduleData[type] || [];
             const m = modules[module][type];
@@ -492,7 +476,6 @@
             updateModuleUI(module, type);
         }
 
-        // 更新模块UI
         function updateModuleUI(module, type) {
             const m = modules[module][type];
             const data = wordData[module]?.[type] || [];
@@ -504,20 +487,19 @@
             if (m.currentIndex < m.words.length) {
                 m.chinese.textContent = m.words[m.currentIndex].chinese;
                 m.answer.textContent = m.words[m.currentIndex].english;
-                m.answer.style.display = "none";
+                m.answer.classList.remove('revealed');
                 m.showAnswerBtn.style.display = "block";
                 m.rememberedBtn.style.display = "block";
                 m.notRememberedBtn.style.display = "block";
             } else {
                 m.chinese.textContent = "已完成所有内容复习！";
-                m.answer.style.display = "none";
+                m.answer.textContent = "";
                 m.showAnswerBtn.style.display = "none";
                 m.rememberedBtn.style.display = "none";
                 m.notRememberedBtn.style.display = "none";
             }
         }
 
-        // 切换模块
         function switchModule(module) {
             currentModule = module;
             document.querySelectorAll('.word-container').forEach(el => {
@@ -532,7 +514,6 @@
             initModule(module, currentType);
         }
 
-        // 切换内容类型
         function switchType(type) {
             currentType = type;
             document.querySelectorAll('.word-type-btn').forEach(btn => {
@@ -542,45 +523,16 @@
             initModule(currentModule, currentType);
         }
 
-        // 显示答案
         function showAnswer(module, type) {
             const m = modules[module][type];
-            m.answer.classList.add('revealed'); // 添加显示类
-            m.showAnswerBtn.style.display = "none"; // 隐藏按钮
+            m.answer.classList.add('revealed');
+            m.showAnswerBtn.style.display = "none";
         }
 
-        // 在updateModuleUI中修改初始化状态
-        function updateModuleUI(module, type) {
-            const m = modules[module][type];
-            //...其他代码保持不变
-            
-            if (m.currentIndex < m.words.length) {
-                m.chinese.textContent = m.words[m.currentIndex].chinese;
-                m.answer.textContent = m.words[m.currentIndex].english;
-                m.answer.classList.remove('revealed'); // 初始化时隐藏内容
-                m.showAnswerBtn.style.display = "block"; // 显示按钮
-                //...其他代码保持不变
-            }
-        }
-
-        // 在markAsRemembered和markAsNotRemembered中重置状态
-        function markAsRemembered(module, type) {
-            const m = modules[module][type];
-            m.answer.classList.add('revealed'); // 显示当前答案
-            //...后续逻辑保持不变
-        }
-
-        function markAsNotRemembered(module, type) {
-            const m = modules[module][type];
-            m.answer.classList.add('revealed'); // 显示当前答案
-            //...后续逻辑保持不变
-        }
-
-        // 标记为记住
         function markAsRemembered(module, type) {
             const m = modules[module][type];
             if (m.currentIndex < m.words.length) {
-                m.answer.style.display = "block";
+                m.answer.classList.add('revealed');
                 
                 m.remembered.push(m.words[m.currentIndex]);
                 m.currentIndex++;
@@ -595,11 +547,12 @@
                 if (m.currentIndex < m.words.length) {
                     m.chinese.textContent = m.words[m.currentIndex].chinese;
                     m.answer.textContent = m.words[m.currentIndex].english;
-                    m.answer.style.display = "none";
+                    m.answer.classList.remove('revealed');
+                    m.showAnswerBtn.style.display = "block";
                     m.progress.textContent = m.currentIndex + 1;
                 } else {
                     m.chinese.textContent = "已完成所有内容复习！";
-                    m.answer.style.display = "none";
+                    m.answer.textContent = "";
                     m.showAnswerBtn.style.display = "none";
                     m.rememberedBtn.style.display = "none";
                     m.notRememberedBtn.style.display = "none";
@@ -607,11 +560,10 @@
             }
         }
 
-        // 标记为未记住
         function markAsNotRemembered(module, type) {
             const m = modules[module][type];
             if (m.currentIndex < m.words.length) {
-                m.answer.style.display = "block";
+                m.answer.classList.add('revealed');
                 
                 const notRememberedWord = m.words[m.currentIndex];
                 m.words.splice(m.currentIndex, 1);
@@ -631,18 +583,17 @@
                 
                 m.chinese.textContent = m.words[m.currentIndex].chinese;
                 m.answer.textContent = m.words[m.currentIndex].english;
-                m.answer.style.display = "none";
+                m.answer.classList.remove('revealed');
+                m.showAnswerBtn.style.display = "block";
                 m.progress.textContent = m.currentIndex + 1;
             }
         }
 
-        // 重置模块数据
         function resetModuleData(module, type) {
             localStorage.removeItem(`wordReview_${module}_${type}`);
             initModule(module, type, true);
         }
 
-        // 重置所有进度
         function resetAllProgress() {
             if (confirm("确定要重置所有复习进度吗？这将清除所有已记住的内容记录。")) {
                 Object.keys(modules).forEach(module => {
@@ -657,7 +608,6 @@
             }
         }
 
-        // 结束本次打卡
         function finishSession() {
             const listElement = document.getElementById('not-remembered-words');
             listElement.innerHTML = '';
@@ -712,7 +662,6 @@
             document.getElementById('email-form').style.display = 'block';
         }
 
-        // 获取类型名称
         function getTypeName(type) {
             return {
                 'words': '单词',
@@ -721,7 +670,6 @@
             }[type];
         }
 
-        // 启动应用
         document.addEventListener('DOMContentLoaded', initializeApp);
     </script>
 </body>
