@@ -111,7 +111,7 @@ button {
 .show-answer.revealed {
     background-color: #2980b9;
     cursor: default;
-    opacity: 0.8;
+  /*  opacity: 0.8;     */  
 }
 
 .show-answer:hover:not(.revealed) {
@@ -122,7 +122,7 @@ button {
 .remembered {
     background-color: #2ecc71;
     color: white;
-   /*    flex: 1;*/
+       flex: 1;
 }
 
 .remembered:hover {
@@ -133,7 +133,7 @@ button {
 .not-remembered {
     background-color: #e74c3c;
     color: white;
-     /*  flex: 1;*/  
+       flex: 1;
 }
 
 .not-remembered:hover {
