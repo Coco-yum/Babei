@@ -44,7 +44,7 @@
         .answer {
             min-height: 60px;
             font-size: 28px;
-            color: #27ae60;
+            color: transparent;
             margin: 25px 0;
             padding: 15px;
             background-color: #e8f5e9;
@@ -53,6 +53,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .answer.revealed {
+            color: #27ae60;
+        }
+        .answer::before {
+            content: "点击显示答案";
+            color: #7f8c8d;
+            position: absolute;
+            font-size: 18px;
+            pointer-events: none;
+        }
+        .answer.revealed::before {
+            display: none;
         }
         .buttons {
             display: flex;
@@ -70,14 +85,19 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 18px;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
         }
         .show-answer {
             background-color: #3498db;
             color: white;
             width: 100%;
         }
-        .show-answer:hover {
+        .show-answer.revealed {
+            background-color: #2980b9;
+            cursor: default;
+            opacity: 0.8;
+        }
+        .show-answer:hover:not(.revealed) {
             background-color: #2980b9;
         }
         .remembered {
@@ -615,14 +635,15 @@
             if (m.currentIndex < m.words.length) {
                 m.chinese.textContent = m.words[m.currentIndex].chinese;
                 m.answer.textContent = m.words[m.currentIndex].english;
-                m.answer.style.display = "none";
+                m.answer.classList.remove('revealed');
+                m.showAnswerBtn.classList.remove('revealed');
                 m.showAnswerBtn.style.display = "block";
                 m.rememberedBtn.style.display = "block";
                 m.notRememberedBtn.style.display = "block";
             } else {
                 m.chinese.textContent = "已完成所有内容复习！";
-                m.answer.style.display = "none";
-                m.showAnswerBtn.style.display = "none";
+                m.answer.textContent = "";
+                m.showAnswerBtn.style.display = "block";
                 m.rememberedBtn.style.display = "none";
                 m.notRememberedBtn.style.display = "none";
             }
@@ -656,14 +677,16 @@
         // 显示答案
         function showAnswer(module, type) {
             const m = modules[module][type];
-            m.answer.style.display = "block";
+            m.answer.classList.add('revealed');
+            m.showAnswerBtn.classList.add('revealed');
         }
 
         // 标记为记住
         function markAsRemembered(module, type) {
             const m = modules[module][type];
             if (m.currentIndex < m.words.length) {
-                m.answer.style.display = "block";
+                m.answer.classList.add('revealed');
+                m.showAnswerBtn.classList.add('revealed');
                 
                 m.remembered.push(m.words[m.currentIndex]);
                 m.currentIndex++;
@@ -678,12 +701,13 @@
                 if (m.currentIndex < m.words.length) {
                     m.chinese.textContent = m.words[m.currentIndex].chinese;
                     m.answer.textContent = m.words[m.currentIndex].english;
-                    m.answer.style.display = "none";
+                    m.answer.classList.remove('revealed');
+                    m.showAnswerBtn.classList.remove('revealed');
                     m.progress.textContent = m.currentIndex + 1;
                 } else {
                     m.chinese.textContent = "已完成所有内容复习！";
-                    m.answer.style.display = "none";
-                    m.showAnswerBtn.style.display = "none";
+                    m.answer.textContent = "";
+                    m.showAnswerBtn.style.display = "block";
                     m.rememberedBtn.style.display = "none";
                     m.notRememberedBtn.style.display = "none";
                 }
@@ -694,7 +718,8 @@
         function markAsNotRemembered(module, type) {
             const m = modules[module][type];
             if (m.currentIndex < m.words.length) {
-                m.answer.style.display = "block";
+                m.answer.classList.add('revealed');
+                m.showAnswerBtn.classList.add('revealed');
                 
                 const notRememberedWord = m.words[m.currentIndex];
                 m.words.splice(m.currentIndex, 1);
@@ -714,7 +739,8 @@
                 
                 m.chinese.textContent = m.words[m.currentIndex].chinese;
                 m.answer.textContent = m.words[m.currentIndex].english;
-                m.answer.style.display = "none";
+                m.answer.classList.remove('revealed');
+                m.showAnswerBtn.classList.remove('revealed');
                 m.progress.textContent = m.currentIndex + 1;
             }
         }
