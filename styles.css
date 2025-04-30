@@ -66,7 +66,7 @@ h1 {
 }
 
 .answer::before {
-    content: "点击显示答案";
+    content: "答案";
     color: #7f8c8d;
     position: absolute;
     font-size: 18px;
@@ -104,7 +104,7 @@ button {
 .show-answer {
     background-color: #3498db;
     color: white;
-    flex: 1;
+   
   /*  width: 100%;*/  
 }
 
@@ -122,7 +122,7 @@ button {
 .remembered {
     background-color: #2ecc71;
     color: white;
-    flex: 1;
+   /*    flex: 1;*/
 }
 
 .remembered:hover {
@@ -133,7 +133,7 @@ button {
 .not-remembered {
     background-color: #e74c3c;
     color: white;
-    flex: 1;
+     /*  flex: 1;*/  
 }
 
 .not-remembered:hover {
