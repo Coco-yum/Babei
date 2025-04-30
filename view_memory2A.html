@@ -42,9 +42,10 @@
             text-align: center;
         }
         .answer {
+            /* 保持容器始终可见 */
             min-height: 60px;
             font-size: 28px;
-            color: #27ae60;
+            color: transparent; /* 文字颜色透明 */
             margin: 25px 0;
             padding: 15px;
             background-color: #e8f5e9;
@@ -53,6 +54,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
+        }
+        .answer.revealed {
+            color: #27ae60; /* 显示时恢复颜色 */
+        }
+
+        .answer::before {
+            content: "点击显示答案";
+            color: #7f8c8d;
+            position: absolute;
+            font-size: 18px;
+        }
+
+        .answer.revealed::before {
+            display: none;
         }
         .buttons {
             display: flex;
@@ -529,7 +545,35 @@
         // 显示答案
         function showAnswer(module, type) {
             const m = modules[module][type];
-            m.answer.style.display = "block";
+            m.answer.classList.add('revealed'); // 添加显示类
+            m.showAnswerBtn.style.display = "none"; // 隐藏按钮
+        }
+
+        // 在updateModuleUI中修改初始化状态
+        function updateModuleUI(module, type) {
+            const m = modules[module][type];
+            //...其他代码保持不变
+            
+            if (m.currentIndex < m.words.length) {
+                m.chinese.textContent = m.words[m.currentIndex].chinese;
+                m.answer.textContent = m.words[m.currentIndex].english;
+                m.answer.classList.remove('revealed'); // 初始化时隐藏内容
+                m.showAnswerBtn.style.display = "block"; // 显示按钮
+                //...其他代码保持不变
+            }
+        }
+
+        // 在markAsRemembered和markAsNotRemembered中重置状态
+        function markAsRemembered(module, type) {
+            const m = modules[module][type];
+            m.answer.classList.add('revealed'); // 显示当前答案
+            //...后续逻辑保持不变
+        }
+
+        function markAsNotRemembered(module, type) {
+            const m = modules[module][type];
+            m.answer.classList.add('revealed'); // 显示当前答案
+            //...后续逻辑保持不变
         }
 
         // 标记为记住
