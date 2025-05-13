@@ -1,4 +1,4 @@
-module,type,chinese,english
+module,type,chinese,english,status 
 m1u1,words,听（动作）,listen
 m1u1,words,听见,hear
 m1u1,words,看见,see
