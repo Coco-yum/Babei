@@ -245,7 +245,7 @@
         function parseCSV(csvText) {
             const lines = csvText.split('\n');
             const result = {};
-            const headers = lines[0].split(',');
+            const headers = lines[0].split(',').map(header => header.trim());
             
             for (let i = 1; i < lines.length; i++) {
                 if (lines[i].trim() === '') continue;
@@ -254,8 +254,11 @@
                 const row = {};
                 
                 for (let j = 0; j < headers.length; j++) {
-                    row[headers[j]] = values[j].trim();
+                    row[headers[j]] = values[j] ? values[j].trim() : '';
                 }
+                
+                // 只处理status为0的数据
+                if (row.status && row.status !== '0') continue;
                 
                 // 构建数据结构
                 const module = row.module;
