@@ -1,0 +1,602 @@
+module,type,chinese,english,status
+am1,words,你好,hello,0
+am1,words,早上,morning,0
+am1,words,下午,afternoon,0
+am1,words,傍晚,evening,0
+am1,words,夜晚,night,0
+am1,words,好的（身体、天气）,fine,0
+am1,words,太太、夫人,Mrs,0
+am1,words,山姆（小狗名）,Sam,0
+am1,words,妈妈（口语称呼）,Mum,0
+am1,words,艾迪（男名）,Eddie,0
+am1,words,爱丽丝（女名）,Alice,0
+am1,words,今天,today,0
+am1,words,天,day,0
+am1,words,好的,well,0
+am1,words,苹果,apple,0
+am1,words,包,bag,0
+am1,words,男孩,boy,0
+am1,words,女孩,girl,0
+am1,words,大的,big,0
+am1,words,小的,small,0
+am1,words,高的,tall,0
+am1,words,矮的、短的,short,0
+am1,words,胖的,fat,0
+am1,words,瘦的,thin,0
+am1,words,我（第一人称）,I,0
+am1,words,是,am,0
+am1,words,你、你们,you,0
+am1,words,是,are,0
+am1,words,谁,who,0
+am1,words,丹尼（男孩名）,Danny,0
+am1,words,玛丽（女孩名）,Mary,0
+am1,words,凯蒂（女孩名）,Kitty,0
+am1,words,小姐,Miss,0
+am1,words,猫,cat,0
+am1,words,狗,dog,0
+am1,words,一,one,0
+am1,words,二,two,0
+am1,words,三,three,0
+am1,words,四,four,0
+am1,words,五,five,0
+am1,words,六,six,0
+am1,words,七,seven,0
+am1,words,八,eight,0
+am1,words,九,nine,0
+am1,words,十,ten,0
+am1,words,同班同学,classmate,0
+am1,words,新的、新来的,new,0
+am1,words,旧的,old,0
+am1,words,年轻的,young,0
+am1,words,膝盖,knee,0
+am1,words,树枝,stick,0
+am1,words,蛇,snake,0
+am1,words,你的（所有格）,your,0
+am1,words,对不起,sorry,0
+am1,words,彼德（男名）,Peter,0
+am1,words,汤姆（男名）,Tom,0
+am1,words,大象,elephant,0
+am1,phrases,一头大象,an elephant,0
+am1,phrases,五头大象,five elephants,0
+am1,phrases,碰下你的膝盖,touch your knees,0
+am1,phrases,捡树枝,pick up sticks,0
+am1,phrases,画一条蛇,draw a snake,0
+am1,phrases,再做一次,do it again,0
+am1,phrases,一位新同学,a new classmate,0
+am1,sentences,我是am，你是are，is用于他、她、它。,I am/you are/is for he she it.,0
+am1,sentences,多少个碗？有四个碗。,How many bowls? --There are four bowls.,0
+am1,sentences,多少个勺子？有一个。,How many spoons? --There is one.,0
+am1,sentences,在厨房里有一只猫。,There is a cat in the kitchen.,0
+am1,sentences,在桌上有两只碗。,There are two bowls on the table.,0
+am1,sentences,在房间里有一张桌子和一把椅子。,There is a table and a chair in the room.,0
+am1,sentences,碗在地上。,The bowls are on the floor.,0
+am1,sentences,温迪用手关上了窗。,Wendy closes the window with her hand.,0
+am1,sentences,不要摘花。对不起。,Don't pick the flowers. --I'm sorry.,0
+am1,sentences,不要爬树，丹尼。对不起。,Don't climb the tree，Danny. --I'm sorry.,0
+am1,sentences,我喜欢这个公园。它又大又美丽。,I like this park. It's big and nice.,0
+am1,sentences,看看这朵花。它真漂亮。,Look at this flower. It's beautiful.,0
+am1,sentences,这是什么？它是个蜜蜂。,What's this? --It's a bee.,0
+am1,sentences,一只斑马在一个黄色的盒子里。,A zebra is in a yellow box.,0
+am2,words,跑步,run,0
+am2,words,写字,write,0
+am2,words,游泳,swim,0
+am2,words,飞,fly,0
+am2,words,唱,sing,0
+am2,words,画,draw,0
+am2,words,读,read,0
+am2,words,跳舞,dance,0
+am2,words,跳绳,skip,0
+am2,words,骑（车）,ride,0
+am2,words,会,can,0
+am2,words,不会,can't,0
+am2,words,超级女孩（名字）,Supergirl,0
+am2,words,但是（转折）,but,0
+am2,words,她（第三人称单数）,she,0
+am2,words,他（第三人称单数）,he,0
+am2,words,它（第三人称单数）,it,0
+am2,words,什么,what,0
+am2,words,女孩,girl,0
+am2,words,手,hand,0
+am2,words,大门,gate,0
+am2,words,有（第三人称单数）,has,0
+am2,words,盘子,plate,0
+am2,words,她的（所有格）,her,0
+am2,words,家庭,family,0
+am2,words,年轻的,young,0
+am2,words,年老的,old,0
+am2,words,兄弟,brother,0
+am2,words,姐妹,sister,0
+am2,words,妈妈,mother,0
+am2,words,爸爸,father,0
+am2,words,妈妈（爱称）,mummy,0
+am2,words,爸爸（爱称）,daddy,0
+am2,words,(外)祖父,grandfather,0
+am2,words,(外)祖母,grandmother,0
+am2,words,是（第三人称单数）,is,0
+am2,words,不是,isn't,0
+am2,words,朋友,friend,0
+am2,words,同班同学,classmate,0
+am2,words,萨莉（女孩名）,Sally,0
+am2,words,吉姆（男孩名）,Jim,0
+am2,words,哈利（男孩名）,Harry,0
+am2,words,我的,my,0
+am2,words,你的,your,0
+am2,words,这个,this,0
+am2,words,那个,that,0
+am2,words,昆虫,insect,0
+am2,words,广口瓶,jar,0
+am2,words,头发,hair,0
+am2,words,头,head,0
+am2,words,脸,face,0
+am2,words,眼睛,eye,0
+am2,words,耳朵,ear,0
+am2,words,鼻子,nose,0
+am2,words,嘴巴,mouth,0
+am2,words,手,hand,0
+am2,words,圆的,round,0
+am2,words,大的,big,0
+am2,words,小的,small,0
+am2,words,长的,long,0
+am2,words,短的、矮的,short,0
+am2,words,高的,tall,0
+am2,words,巨人（名字）,Giant,0
+am2,words,巨人,giant,0
+am2,words,我是,I'm,0
+am2,words,你是,You're,0
+am2,words,我（主格）,I,0
+am2,words,我（宾格）,me,0
+am2,words,我的（所有格）,my,0
+am2,words,你、你们,you,0
+am2,words,你的、你们的,your,0
+am2,words,风筝,kite,0
+am2,words,狮子,lion,0
+am2,words,喜欢,like,0
+am2,phrases,又高又大的,big and tall,0
+am2,phrases,苗条漂亮的,thin and nice,0
+am2,phrases,小巧可爱的,sweet and small,0
+am2,phrases,和蔼可亲的,kind and dear,0
+am2,phrases,一只昆虫,an insect,0
+am2,phrases,跳绳,skip rope,0
+am2,phrases,放风筝,fly a kite,0
+am2,phrases,踢足球,play football,0
+am2,phrases,骑自行车,ride a bicycle,0
+am2,phrases,一只眼睛,an eye,0
+am2,phrases,一只耳朵,an ear,0
+am2,phrases,一张开心的脸,a happy face,0
+am2,phrases,一张开心的脸,a funny face,0
+am2,phrases,一张可爱的脸,a cute face,0
+am2,phrases,一只大狮子,a big lion,0
+am2,phrases,一个小风筝,a small kite,0
+am2,sentences,我是巨人。你是超级女孩。,I'm Giant. You're Supergirl.,0
+am2,sentences,我是瘦的。你是胖的。,I'm thin. You're fat.,0
+am2,sentences,我的头发是短的。你的头发是长的。,My hair is short. Your hair is long.,0
+am2,sentences,我的鼻子是大的。你的鼻子是小的。,My nose is big. Your nose is small.,0
+am2,sentences,我的眼睛是大的。你的耳朵是小的。,My eyes are big. Your ears are small.,0
+am2,sentences,你的鼻子不是很大。,Your nose is not very big.,0
+am3,words,滑滑梯,slide,0
+am3,words,秋千,swing,0
+am3,words,跷跷板,seesaw,0
+am3,words,什么,what,0
+am3,words,颜色,colour,0
+am3,words,红色,red,0
+am3,words,黄色,yellow,0
+am3,words,蓝色,blue,0
+am3,words,绿色,green,0
+am3,words,橙色（桔子）,orange,0
+am3,words,棕色,brown,0
+am3,words,白色,white,0
+am3,words,黑色,black,0
+am3,words,看见,see,0
+am3,words,向上,up,0
+am3,words,向下,down,0
+am3,words,他/她/它们,they,0
+am3,words,老鼠,mouse,0
+am3,words,网,net,0
+am3,words,男人,man,0
+am3,words,书包,bag,0
+am3,words,盒子,box,0
+am3,words,盒子（复数）,boxes,0
+am3,words,书本,book,0
+am3,words,课桌,desk,0
+am3,words,椅子,chair,0
+am3,words,铅笔盒,pencil case,0
+am3,words,房间,room,0
+am3,words,放,put,0
+am3,words,在...里面,in,0
+am3,words,在...上面,on,0
+am3,words,在...下面,under,0
+am3,words,请,please,0
+am3,words,爱,love,0
+am3,words,使用,use,0
+am3,words,保持,keep,0
+am3,words,干净的,clean,0
+am3,words,桔子（橙色）,orange,0
+am3,words,一只桔子,an orange,0
+am3,words,猪,pig,0
+am3,words,宝拉（女孩名）,Paula,0
+am3,words,腿,leg,0
+am3,words,来,come,0
+am3,words,吃,eat,0
+am3,words,厨房,kitchen,0
+am3,words,碗,bowl,0
+am3,words,盘子,plate,0
+am3,words,勺子,spoon,0
+am3,words,叉子,fork,0
+am3,words,筷子（复数）,chopsticks,0
+am3,words,烧菜、烹饪,cook,0
+am3,words,晚饭,dinner,0
+am3,words,给,give,0
+am3,words,准备好的,ready,0
+am3,words,金吉（名字）,Ginger,0
+am3,words,淘气的,naughty,0
+am3,words,桌子、餐桌,table,0
+am3,words,（双脚）跳,jump,0
+am3,words,跳绳,skip,0
+am3,words,地板,floor,0
+am3,words,在......上面,on,0
+am3,words,在......下面,under,0
+am3,words,在......里面,in,0
+am3,words,女王,queen,0
+am3,words,兔子,rabbit,0
+am3,words,坐,sit,0
+am3,words,面条,noodles,0
+am3,words,汤,soup,0
+am3,words,鸡、鸡肉,chicken,0
+am3,words,鱼、鱼肉,fish,0
+am3,phrases,在儿童乐园,In the children's garden,0
+am3,phrases,一只昆虫,an insect,0
+am3,phrases,跳绳,skip rope,0
+am3,phrases,放风筝,fly a kite,0
+am3,phrases,踢足球,play football,0
+am3,phrases,骑自行车,ride a bicycle,0
+am3,phrases,一只眼睛,an eye,0
+am3,phrases,一只耳朵,an ear,0
+am3,phrases,一张开心的脸,a happy face,0
+am3,phrases,一张开心的脸,a funny face,0
+am3,phrases,一张可爱的脸,a cute face,0
+am3,phrases,一只大狮子,a big lion,0
+am3,phrases,一个小风筝,a small kite,0
+am3,sentences,你能看到什么？我能看到一个跷跷板。,What can you see? --I can see a seesaw.,0
+am3,sentences,它是什么颜色？它是黄色的。,What colour is it? --It's yellow.,0
+am3,sentences,你们（你）喜欢玩。他们喜欢玩。,You like to play. They like to play.,0
+am3,sentences,那人有一张网。老鼠在网里。,The man has a net. The mouse is in the net.,0
+am3,sentences,请把盒子放在椅子上面。,Put the box on the chair，please.,0
+am3,sentences,请把铅笔放在书包里面。,Put the pencils in the bag，please.,0
+am3,sentences,把球放在课桌下面。好的。,Put the ball under the desk. All right.,0
+am3,sentences,看看你的房间。我很抱歉。,Look at your room. I'm sorry.,0
+am3,sentences,我每天用这个盒子。我每天使它保持干净。,I use the box every day! I keep it clean every day!,0
+am3,sentences,要勺子吗？不用，谢谢。,"""--A spoon? --No，thanks.",0
+am3,sentences,筷子要吗？是的，请给我。,"""--Chopsticks?--Yes，please.",0
+am3,sentences,请给我一个盘子。给你。,Give me a plate，please. --Here you are.,0
+am3,sentences,晚饭准备好了。我来了。,Dinner is ready! --I'm coming.,0
+am3,sentences,这是我家的厨房。,This is my kitchen.,0
+am4,words,天空,sky,0
+am4,words,太阳,sun,0
+am4,words,月亮,moon,0
+am4,words,星星,star,0
+am4,words,明亮的,bright,0
+am4,words,闪烁,twinkle,0
+am4,words,小的,little,0
+am4,words,高的,high,0
+am4,words,钻石,diamond,0
+am4,words,汤（不可数）,soup,0
+am4,words,桌子,table,0
+am4,words,汤姆（男名）,Tom,0
+am4,words,光滑的,smooth,0
+am4,words,柔软的,soft,0
+am4,words,森林,forest,0
+am4,words,狐狸,fox,0
+am4,words,狐狸（复数）,foxes,0
+am4,words,河马,hippo,0
+am4,words,肉（不可数）,meat,0
+am4,words,草（不可数）,grass,0
+am4,words,野生的,wild,0
+am4,words,动物,animal,0
+am4,words,猴子,monkey,0
+am4,words,兔子,rabbit,0
+am4,words,好看的,nice,0
+am4,words,单脚跳,hop,0
+am4,words,可爱的,cute,0
+am4,words,顽皮的,naughty,0
+am4,words,棕色,brown,0
+am4,words,白色,white,0
+am4,words,荡秋千,swing,0
+am4,words,雨伞,umbrella,0
+am4,words,面包车,van,0
+am4,words,窗户,window,0
+am4,words,温迪（女名）,Wendy,0
+am4,words,黑色,black,0
+am4,words,雨点,raindrop,0
+am4,words,关,close,0
+am4,words,街道,street,0
+am4,words,花朵,flower,0
+am4,words,树,tree,0
+am4,words,不要,don’t,0
+am4,words,采摘,pick,0
+am4,words,对不起,sorry,0
+am4,words,爬,climb,0
+am4,words,画画,draw,0
+am4,words,涂色,colour,0
+am4,words,颜色,cut,0
+am4,words,公园,park,0
+am4,words,漂亮的,beautiful,0
+am4,words,帮忙,help,0
+am4,words,哭,cry,0
+am4,words,盒子,box,0
+am4,words,黄色,yellow,0
+am4,words,斑马,zebra,0
+am4,words,动物园,zoo,0
+am4,phrases,在天空中,in the sky,0
+am4,phrases,光滑又柔软的,smooth and soft,0
+am4,phrases,坐在桌子上,sit on the table,0
+am4,phrases,一个动物,an animal,0
+am4,phrases,一把伞,an umbrella,0
+am4,phrases,关窗,close the window,0
+am4,phrases,河马的嘴巴,the hippo’s mouth,0
+am4,phrases,在街上,in the street,0
+am4,phrases,采花,pick the flowers,0
+am4,phrases,爬树,climb the tree,0
+am4,phrases,在公园里,in the park,0
+am4,sentences,看看天空。,Look at the sky.,0
+am4,sentences,看着我。,Look at me.,0
+am4,sentences,你能看到什么？我能看见太阳。,What can you see? --- I can see the sun.,0
+am4,sentences,你能看到星星吗？是的，我能。,Can you see the stars? --- Yes，I can.,0
+am4,sentences,你能看到月亮吗？不，我不能。,Can you see the moon? --- No，I can’t.,0
+am4,sentences,月亮是大的吗？是的。它是大的。它是明亮的。,Is the moon big? ---Yes. It’s big. It’s bright.,0
+am4,sentences,汤姆的兔子光滑又柔软。,Tom’s rabbit is smooth and soft.,0
+am4,sentences,看这只狮子。它很大。它喜欢吃肉。,Look at the lion. It’s big. It likes meat.,0
+am4,sentences,看这只河马的嘴巴。这么大。,Look at the hippo’s mouth. It’s so big.,0
+am4,sentences,温迪在面包车里，手里拿着两把雨伞。,Wendy is in a van，with two umbrellas in her hands.,0
+am4,sentences,她把它们带给她的朋友们。,She takes them to her friends.,0
+am4,sentences,雨点落在她的头上。,Raindrops fall on her head.,0
+am4,sentences,温迪用手关上了窗。,Wendy closes the window with her hand.,0
+am4,sentences,不要摘花。对不起。,Don’t pick the flowers. ---I’m sorry.,0
+am4,sentences,不要爬树，丹尼。对不起。,Don’t climb the tree，Danny. ---I’m sorry.,0
+am4,sentences,我喜欢这个公园。,I like this park.,0
+m1u1,words,听（动作）,listen,0
+m1u1,words,听见,hear,0
+m1u1,words,看见,see,0
+m1u1,words,看（动作）,look,0
+m1u1,words,火车,train,0
+m1u1,words,公交车,bus,0
+m1u1,words,公交车（复数）,buses,0
+m1u1,words,汽车,car,0
+m1u1,words,小货车,van,0
+m1u1,words,自行车,bicycle,0
+m1u1,words,自行车,bike,0
+m1u1,words,船,ship,0
+m1u1,words,绵羊（单数）,sheep,0
+m1u1,words,绵羊（复数）,sheep,0
+m1u1,words,在......旁边,beside,0
+m1u1,words,睡觉,sleep,0
+m1u1,words,公交站,bus stop,0
+m1u1,words,车站,station,0
+m1u1,words,道路,road,0
+m1u1,words,声音,sound,0
+m1u1,words,嘀声,beep,0
+m1u1,words,呼啸声（火车）,choo,0
+m1u1,words,嘀嘟声,boop,0
+m1u1,words,等待,wait,0
+m1u1,phrases,听音乐,listen to music,0
+m1u1,sentences,我喜欢听音乐。,I like listening to music.,0
+m1u2,words,蝴蝶,butterfly,0
+m1u2,words,昆虫,insect,0
+m1u2,words,狮子,lion,0
+m1u2,words,老鼠,mouse,0
+m1u2,words,橙子,orange,0
+m1u2,words,猪,pig,0
+m1u2,words,兔子,rabbit,0
+m1u2,words,雨伞,umbrella,0
+m1u2,words,箱子,box,0
+m1u2,words,黄色,yellow,0
+m1u2,words,斑马,zebra,0
+m1u2,words,狗,dog,0
+m1u2,words,猫,cat,0
+m1u2,words,大象,elephant,0
+m1u2,words,颜色,colour,0
+m1u2,words,白色,white,0
+m1u2,words,黑色,black,0
+m1u2,words,粉色,pink,0
+m1u2,words,紫色,purple,0
+m1u2,words,苹果,apple,0
+m1u2,words,包,bag,0
+m1u2,words,风筝,kite,0
+m1u2,words,草,grass,0
+m1u2,words,橙色,orange,0
+m1u2,words,蓝色,blue,0
+m1u2,words,棕色,brown,0
+m1u2,words,红色,red,0
+m1u2,words,绿色,green,0
+m1u2,words,公园,park,0
+m1u2,words,他,he,0
+m1u2,words,她,she,0
+m1u2,words,它,it,0
+m1u2,words,他们/她们/它们,they,0
+m1u2,words,瓢虫,ladybird,0
+m1u2,words,鸟,bird,0
+m1u2,words,蝴蝶（复数）,butterflies,0
+m1u2,words,美丽的,beautiful,0
+m1u2,phrases,看见苹果,see an apple,0
+m1u2,sentences,我能看见一个苹果。,I can see an apple.,0
+m1u3,words,彩虹,rainbow,0
+m1u3,words,在外面,outside,0
+m1u3,words,窗户,window,0
+m1u3,words,两个,two,0
+m1u3,words,棕色,brown,0
+m1u3,words,触摸,touch,0
+m1u3,words,感觉,feel,0
+m1u3,words,观看,watch,0
+m1u3,words,手表（复数）,watches,0
+m1u3,words,铅笔盒,pencil case,0
+m1u3,words,软的,soft,0
+m1u3,words,硬的,hard,0
+m1u3,words,粗糙的,rough,0
+m1u3,words,光滑的,smooth,0
+m1u3,words,热的,hot,0
+m1u3,words,冷的,cold,0
+m1u3,words,品尝,taste,0
+m1u3,words,舌头,tongue,0
+m1u3,words,闻,smell,0
+m1u3,words,猜测,guess,0
+m1u3,words,打开,open,0
+m1u3,words,关闭,close,0
+m1u3,words,梨,pear,0
+m1u3,words,桃子,peach,0
+m1u3,words,桃子（复数）,peaches,0
+m1u3,words,洋娃娃,doll,0
+m1u3,words,菠萝,pineapple,0
+m1u3,words,手表,watch,0
+m1u3,words,老虎,tiger,0
+m1u3,phrases,白色的道路,white road,0
+m1u3,sentences,这条道路是白色的。,This road is white.,0
+m2u1,words,喜欢,like,0
+m2u1,words,跑,run,0
+m2u1,words,跑（现在分词）,running,0
+m2u1,words,滑冰,skate,0
+m2u1,words,滑冰（现在分词）,skating,0
+m2u1,words,骑,ride,0
+m2u1,words,骑（现在分词）,riding,0
+m2u1,words,自行车,bicycle,0
+m2u1,words,自行车,bike,0
+m2u1,words,单脚跳,hop,0
+m2u1,words,单脚跳（现在分词）,hopping,0
+m2u1,words,跳绳,skip,0
+m2u1,words,跳绳（现在分词）,skipping,0
+m2u1,words,唱歌,sing,0
+m2u1,words,唱歌（现在分词）,singing,0
+m2u1,words,跳舞,dance,0
+m2u1,words,跳舞（现在分词）,dancing,0
+m2u1,words,写,write,0
+m2u1,words,写（现在分词）,writing,0
+m2u1,words,青蛙,frog,0
+m2u1,words,跳,jump,0
+m2u1,words,跳（现在分词）,jumping,0
+m2u1,words,游泳,swim,0
+m2u1,words,游泳（现在分词）,swimming,0
+m2u1,words,画,draw,0
+m2u1,words,画（现在分词）,drawing,0
+m2u1,words,读,read,0
+m2u1,words,读（现在分词）,reading,0
+m2u1,words,飞,fly,0
+m2u1,words,飞（现在分词）,flying,0
+m2u1,words,玩,play,0
+m2u1,words,玩（现在分词）,playing,0
+m2u1,phrases,喜欢飞,like to fly,0
+m2u1,sentences,小鸟喜欢飞。,Birds like to fly.,0
+m2u2,words,食物,food,0
+m2u2,words,汉堡,hamburger,0
+m2u2,words,披萨,pizza,0
+m2u2,words,沙拉,salad,0
+m2u2,words,鱼,fish,0
+m2u2,words,鸡肉,chicken,0
+m2u2,words,胡萝卜,carrot,0
+m2u2,words,香蕉,banana,0
+m2u2,words,苹果,apple,0
+m2u2,words,梨,pear,0
+m2u2,words,桃子,peach,0
+m2u2,words,橙子,orange,0
+m2u2,words,米饭,rice,0
+m2u2,words,汤,soup,0
+m2u2,words,面条,noodles,0
+m2u2,words,鸡蛋,egg,0
+m2u2,words,果冻,jelly,0
+m2u2,words,冰淇淋,ice cream,0
+m2u2,words,糖果,sweet,0
+m2u2,words,饼干,biscuit,0
+m2u2,words,可乐,cola,0
+m2u2,words,果汁,juice,0
+m2u2,words,牛奶,milk,0
+m2u2,words,水,water,0
+m2u2,words,馅饼,pie,0
+m2u2,words,蛋糕,cake,0
+m2u2,words,长颈鹿,giraffe,0
+m2u2,words,蛇,snake,0
+m2u2,words,大象,elephant,0
+m2u2,words,斑马,zebra,0
+m2u2,words,小鸡,chick,0
+m2u2,words,鸭子,duck,0
+m2u2,words,牛,cow,0
+m2u2,words,猪,pig,0
+m2u2,words,青蛙,frog,0
+m2u2,words,兔子,rabbit,0
+m2u2,words,蜜蜂,bee,0
+m2u2,words,蝴蝶,butterfly,0
+m2u2,words,瓢虫,ladybird,0
+m2u2,words,昆虫,insect,0
+m2u2,words,鸟,bird,0
+m2u2,words,绵羊,sheep,0
+m2u2,words,母鸡,hen,0
+m2u2,words,熊,bear,0
+m2u2,words,老虎,tiger,0
+m2u2,words,猴子,monkey,0
+m2u2,words,熊猫,panda,0
+m2u2,words,狗,dog,0
+m2u2,words,猫,cat,0
+m2u2,words,狼,wolf,0
+m2u2,words,狐狸,fox,0
+m2u2,words,河马,hippo,0
+m2u2,words,自行车,bicycle,0
+m2u2,words,自行车,bike,0
+m2u2,words,最喜欢的,favourite,0
+m2u2,words,美味的,yummy,0
+m2u2,phrases,示例词组1,example phrase 1,0
+m2u2,sentences,示例句子1,example sentence 1,0
+m2u3,words,示例单词1,example word 1,0
+m2u3,words,示例单词2,example word 2,0
+m2u3,phrases,示例词组1,example phrase 1,0
+m2u3,sentences,示例句子1,example sentence 1,0
+m3u1,words,季节,season,0
+m3u1,words,春天,spring,0
+m3u1,words,夏天,summer,0
+m3u1,words,秋天,autumn,0
+m3u1,words,冬天,winter,0
+m3u1,words,天气,weather,0
+m3u1,words,晴朗的,sunny,0
+m3u1,words,太阳,sun,0
+m3u1,words,多云的,cloudy,0
+m3u1,words,云,cloud,0
+m3u1,words,有雨的,rainy,0
+m3u1,words,雨,rain,0
+m3u1,words,有风的,windy,0
+m3u1,words,风,wind,0
+m3u1,words,温暖的,warm,0
+m3u1,words,炎热的,hot,0
+m3u1,words,凉爽的,cool,0
+m3u1,words,寒冷的,cold,0
+m3u1,words,在外面,outside,0
+m3u1,words,雪人（单数）,snowman,0
+m3u1,words,雪人（复数）,snowmen,0
+m3u1,phrases,示例词组1,example phrase 1,0
+m3u1,sentences,在春天，我喜欢在公园里骑自行车。,In spring I like riding my bicycle in the park.,0
+m3u1,sentences,在夏天，我喜欢在水里游泳。,In summer I like swimming in the water.,0
+m3u1,sentences,在秋天，我喜欢在公园里放风筝。,In autumn I like flying a kite in the park.,0
+m3u1,sentences,在冬天，我喜欢滑冰和堆雪人。,In winter I like skating on the ice and making snowmen.,0
+m3u1,sentences,你喜欢夏天么？不，我不喜欢。,Do you like summer? No，I don't.,0
+m3u1,sentences,你喜欢冬天么？是的，我喜欢。,Do you like winter? Yes，I do.,0
+m3u1,sentences,春天舒服又温暖。,Spring is nice and warm.,0
+m3u1,sentences,夏天晴朗又炎热。,Summer is sunny and hot.,0
+m3u1,sentences,秋天多风又凉爽。,Autumn is windy and cool.,0
+m3u1,sentences,冬天多云又寒冷。,Winter is cloudy and cold.,0
+m3u1,sentences,你喜欢什么季节？我喜欢秋天。,What season do you like? I like autumn.,0
+m3u1,sentences,天气怎么样？,How is the weather?,0
+m3u1,sentences,我最喜欢的季节是秋天。,My favourite season is autumn.,0
+m3u2,words,示例单词1,example word 1,0
+m3u2,words,示例单词2,example word 2,0
+m3u2,phrases,示例词组1,example phrase 1,0
+m3u2,sentences,示例句子1,example sentence 1,0
+m3u3,words,示例单词1,example word 1,0
+m3u3,words,示例单词2,example word 2,0
+m3u3,phrases,示例词组1,example phrase 1,0
+m3u3,sentences,示例句子1,example sentence 1,0
+m4u1,words,示例单词1,example word 1,0
+m4u1,words,示例单词2,example word 2,0
+m4u1,phrases,示例词组1,example phrase 1,0
+m4u1,sentences,示例句子1,example sentence 1,0
+m4u2,words,示例单词1,example word 1,0
+m4u2,words,示例单词2,example word 2,0
+m4u2,phrases,示例词组1,example phrase 1,0
+m4u2,sentences,示例句子1,example sentence 1,0
+m4u3,words,示例单词1,example word 1,0
+m4u3,words,示例单词2,example word 2,0
+m4u3,phrases,示例词组1,example phrase 1,0
+m4u3,sentences,示例句子1,example sentence 1,0
