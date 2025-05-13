@@ -3,58 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>单词数据管理</title>
+    <title>单词数据管理 - GitHub版</title>
     <style>
-        /* 保持原有样式不变 */
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        .filters { margin-bottom: 20px; padding: 15px; background: #f5f5f5; }
-        .filter-group { margin-right: 20px; display: inline-block; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #4CAF50; color: white; }
-        tr:nth-child(even) { background-color: #f2f2f2; }
-        .edit-form { margin-top: 20px; padding: 15px; background: #f0f8ff; }
-        input[type="text"], select { padding: 6px; margin: 5px; width: 200px; }
-        button { padding: 8px 15px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .filters { 
+            margin-bottom: 20px; 
+            padding: 15px; 
+            background: #f5f5f5; 
+            border-radius: 5px;
+        }
+        .filter-group { 
+            margin-right: 20px; 
+            display: inline-block; 
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { 
+            background-color: #4CAF50; 
+            color: white; 
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f1f1f1; }
+        .edit-form { 
+            margin-top: 20px; 
+            padding: 20px; 
+            background: #f0f8ff; 
+            border-radius: 5px;
+        }
+        input[type="text"], select { 
+            padding: 8px; 
+            margin: 5px; 
+            width: 200px; 
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button { 
+            padding: 8px 15px; 
+            background: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 4px;
+            cursor: pointer; 
+            margin-right: 10px;
+        }
         button:hover { background: #45a049; }
+        button.danger { background: #f44336; }
+        button.danger:hover { background: #d32f2f; }
+        .status-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .status-0 { background: #4CAF50; color: white; }
+        .status-1 { background: #f44336; color: white; }
+        .actions { margin-top: 20px; }
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            display: none;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
-    <h1>单词数据管理 (GitHub Pages版)</h1>
-    
-    <!-- 新增文件上传区域 -->
-    <div class="file-upload" style="margin-bottom: 20px;">
-        <input type="file" id="csv-upload" accept=".csv">
-        <button onclick="document.getElementById('csv-upload').click()">上传CSV文件</button>
-        <span id="file-name" style="margin-left:10px;"></span>
+    <div class="notification" id="notification"></div>
+
+    <div class="header">
+        <h1>单词数据管理</h1>
+        <div>
+            <button onclick="loadFromGitHub()">从GitHub重新加载</button>
+            <button onclick="exportCSV()" class="primary">保存到GitHub</button>
+        </div>
     </div>
 
-    <!-- 保持原有筛选功能不变 -->
     <div class="filters">
         <div class="filter-group">
             <label>模块：
                 <select id="filter-module">
-                    <option value="">全部</option>
-                    <option>m1u1</option>
-                    <option>m1u2</option>
-                    <!-- 其他模块选项 -->
+                    <option value="">全部模块</option>
+                    <!-- 动态生成 -->
                 </select>
             </label>
         </div>
         <div class="filter-group">
             <label>类型：
                 <select id="filter-type">
-                    <option value="">全部</option>
-                    <option>words</option>
-                    <option>phrases</option>
-                    <option>sentences</option>
+                    <option value="">全部类型</option>
+                    <option value="words">单词</option>
+                    <option value="phrases">词组</option>
+                    <option value="sentences">句子</option>
                 </select>
             </label>
         </div>
-        <button onclick="loadData()">筛选</button>
+        <div class="filter-group">
+            <label>状态：
+                <select id="filter-status">
+                    <option value="">全部状态</option>
+                    <option value="0">启用</option>
+                    <option value="1">禁用</option>
+                </select>
+            </label>
+        </div>
+        <button onclick="applyFilters()">筛选</button>
+        <button onclick="resetFilters()">重置筛选</button>
     </div>
 
-    <!-- 保持表格结构不变 -->
+    <div id="loading" style="display: none;">加载中...</div>
+
     <table id="data-table">
         <thead>
             <tr>
@@ -69,83 +153,311 @@
         <tbody id="table-body"></tbody>
     </table>
 
-    <!-- 保持编辑表单不变 -->
     <div class="edit-form">
         <h3>新增/编辑单词</h3>
-        <input type="text" id="input-module" placeholder="模块 (如m1u1)">
-        <input type="text" id="input-type" placeholder="类型 (words/phrases/sentences)">
-        <input type="text" id="input-chinese" placeholder="中文">
-        <input type="text" id="input-english" placeholder="英文">
-        <select id="input-status">
-            <option value="0">启用</option>
-            <option value="1">禁用</option>
-        </select>
-        <button onclick="saveNewItem()">保存</button>
+        <div>
+            <input type="text" id="input-module" placeholder="模块 (如 m1u1)" required>
+            <select id="input-type" required>
+                <option value="">选择类型</option>
+                <option value="words">单词</option>
+                <option value="phrases">词组</option>
+                <option value="sentences">句子</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" id="input-chinese" placeholder="中文" required>
+            <input type="text" id="input-english" placeholder="英文" required>
+        </div>
+        <div>
+            <select id="input-status">
+                <option value="0">启用</option>
+                <option value="1">禁用</option>
+            </select>
+            <button onclick="saveItem()">保存</button>
+            <button onclick="clearForm()" class="danger">取消</button>
+        </div>
     </div>
 
-    <!-- 修改操作按钮 -->
-    <div style="margin-top: 20px;">
-        <button onclick="exportCSV()">下载修改后的CSV</button>
-        <button onclick="clearLocalData()">重置数据</button>
+    <div class="actions">
+        <button onclick="addNewItem()">新增单词</button>
+        <button onclick="exportCSV()">下载CSV</button>
+        <button onclick="showHelp()">使用帮助</button>
     </div>
 
     <script>
-        // 使用LocalStorage存储数据
-        const STORAGE_KEY = 'wordData';
+        // 配置GitHub仓库信息
+        const GITHUB_REPO = 'https://github.com/Coco-yum/Babei'; // 例如: 'yourname/yourrepo'
+        const CSV_PATH = 'word-data.csv'; // CSV文件路径
+        const BRANCH = 'main'; // 默认分支
+        
         let allData = [];
         let filteredData = [];
-
-        // 文件上传处理
-        document.getElementById('csv-upload').addEventListener('change', function(e) {
-            const file = e.target.files[0];
-            if (file) {
-                document.getElementById('file-name').textContent = file.name;
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    allData = parseCSV(e.target.result);
-                    localStorage.setItem(STORAGE_KEY, JSON.stringify(allData));
-                    loadData();
-                };
-                reader.readAsText(file);
-            }
+        let currentEditIndex = -1;
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadFromGitHub();
+            populateModuleFilter();
         });
-
-        // 初始化加载本地数据
-        function initData() {
-            const savedData = localStorage.getItem(STORAGE_KEY);
-            if (savedData) {
-                allData = JSON.parse(savedData);
-                loadData();
+        
+        // 从GitHub加载CSV
+        async function loadFromGitHub() {
+            showLoading(true);
+            try {
+                const url = `https://raw.githubusercontent.com/${GITHUB_REPO}/${BRANCH}/${CSV_PATH}?t=${Date.now()}`;
+                const response = await fetch(url);
+                
+                if (!response.ok) {
+                    throw new Error(`加载失败: ${response.status}`);
+                }
+                
+                const csvText = await response.text();
+                allData = parseCSV(csvText);
+                applyFilters();
+                showNotification('数据加载成功', 'success');
+            } catch (error) {
+                console.error('加载CSV失败:', error);
+                showNotification(`加载失败: ${error.message}`, 'error');
+            } finally {
+                showLoading(false);
             }
         }
-
-        // 修改后的CSV解析函数
+        
+        // 解析CSV
         function parseCSV(csvText) {
             const rows = csvText.split('\n').filter(row => row.trim() !== '');
-            const headers = rows[0].split(',').map(h => h.trim());
+            if (rows.length === 0) return [];
             
-            return rows.slice(1).map(row => {
-                const values = row.split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/);
-                const obj = {};
-                headers.forEach((header, index) => {
-                    let value = values[index] ? values[index].trim().replace(/^"|"$/g, '') : '';
-                    // 自动添加status字段
-                    if(header === 'status') {
-                        obj[header] = value || '0'; 
-                    } else {
-                        obj[header] = value;
-                    }
+            const headers = rows[0].split(',').map(h => h.trim());
+            const requiredFields = ['module', 'type', 'chinese', 'english'];
+            
+            if (!requiredFields.every(field => headers.includes(field))) {
+                throw new Error('CSV文件缺少必要字段');
+            }
+            
+            return rows.slice(1).map((row, index) => {
+                const values = splitCSVRow(row);
+                const item = {};
+                
+                headers.forEach((header, i) => {
+                    item[header] = values[i] ? values[i].trim().replace(/^"|"$/g, '') : '';
                 });
-                // 如果原始CSV没有status列，自动添加
-                if(!headers.includes('status')) {
-                    obj.status = '0';
+                
+                // 确保有status字段
+                if (!('status' in item)) {
+                    item.status = '0';
                 }
-                return obj;
+                
+                return item;
             });
         }
-
-        // 修改后的导出函数
+        
+        // 处理带引号的CSV行
+        function splitCSVRow(row) {
+            const result = [];
+            let inQuotes = false;
+            let currentField = '';
+            
+            for (let i = 0; i < row.length; i++) {
+                const char = row[i];
+                
+                if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === ',' && !inQuotes) {
+                    result.push(currentField);
+                    currentField = '';
+                } else {
+                    currentField += char;
+                }
+            }
+            
+            result.push(currentField);
+            return result;
+        }
+        
+        // 填充模块筛选器
+        function populateModuleFilter() {
+            const moduleFilter = document.getElementById('filter-module');
+            const modules = [...new Set(allData.map(item => item.module))].sort();
+            
+            modules.forEach(module => {
+                const option = document.createElement('option');
+                option.value = module;
+                option.textContent = module;
+                moduleFilter.appendChild(option);
+            });
+        }
+        
+        // 应用筛选
+        function applyFilters() {
+            const module = document.getElementById('filter-module').value;
+            const type = document.getElementById('filter-type').value;
+            const status = document.getElementById('filter-status").value;
+            
+            filteredData = allData.filter(item => {
+                return (!module || item.module === module) &&
+                       (!type || item.type === type) &&
+                       (status === '' || item.status === status);
+            });
+            
+            renderTable();
+        }
+        
+        // 重置筛选
+        function resetFilters() {
+            document.getElementById('filter-module').value = '';
+            document.getElementById('filter-type').value = '';
+            document.getElementById('filter-status").value = '';
+            applyFilters();
+        }
+        
+        // 渲染表格
+        function renderTable() {
+            const tbody = document.getElementById('table-body');
+            tbody.innerHTML = '';
+            
+            if (filteredData.length === 0) {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td colspan="6" style="text-align: center;">没有找到匹配的数据</td>`;
+                tbody.appendChild(tr);
+                return;
+            }
+            
+            filteredData.forEach((item, index) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${item.module}</td>
+                    <td>${getTypeDisplayName(item.type)}</td>
+                    <td>${item.chinese}</td>
+                    <td>${item.english}</td>
+                    <td>
+                        <span class="status-badge status-${item.status}">
+                            ${item.status === '0' ? '启用' : '禁用'}
+                        </span>
+                    </td>
+                    <td>
+                        <button onclick="editItem(${index})">编辑</button>
+                        <button onclick="toggleStatus(${index})" class="${item.status === '0' ? 'danger' : ''}">
+                            ${item.status === '0' ? '禁用' : '启用'}
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+        
+        // 获取类型显示名称
+        function getTypeDisplayName(type) {
+            const typeNames = {
+                'words': '单词',
+                'phrases': '词组',
+                'sentences': '句子'
+            };
+            return typeNames[type] || type;
+        }
+        
+        // 新增单词
+        function addNewItem() {
+            currentEditIndex = -1;
+            clearForm();
+            document.getElementById('input-module').focus();
+        }
+        
+        // 编辑单词
+        function editItem(index) {
+            currentEditIndex = index;
+            const item = filteredData[index];
+            
+            document.getElementById('input-module').value = item.module;
+            document.getElementById('input-type').value = item.type;
+            document.getElementById('input-chinese').value = item.chinese;
+            document.getElementById('input-english').value = item.english;
+            document.getElementById('input-status").value = item.status;
+            
+            window.scrollTo({ top: document.querySelector('.edit-form').offsetTop - 20, behavior: 'smooth' });
+        }
+        
+        // 切换状态
+        function toggleStatus(index) {
+            const item = filteredData[index];
+            item.status = item.status === '0' ? '1' : '0';
+            
+            // 更新主数据
+            const mainIndex = allData.findIndex(x => 
+                x.module === item.module && 
+                x.type === item.type && 
+                x.chinese === item.chinese && 
+                x.english === item.english
+            );
+            
+            if (mainIndex !== -1) {
+                allData[mainIndex].status = item.status;
+            }
+            
+            renderTable();
+            showNotification('状态已更新', 'success');
+        }
+        
+        // 保存单词
+        function saveItem() {
+            const module = document.getElementById('input-module').value.trim();
+            const type = document.getElementById('input-type').value;
+            const chinese = document.getElementById('input-chinese').value.trim();
+            const english = document.getElementById('input-english').value.trim();
+            const status = document.getElementById('input-status").value;
+            
+            if (!module || !type || !chinese || !english) {
+                showNotification('请填写所有必填字段', 'error');
+                return;
+            }
+            
+            const newItem = { module, type, chinese, english, status };
+            
+            if (currentEditIndex === -1) {
+                // 新增
+                allData.push(newItem);
+                showNotification('单词已添加', 'success');
+            } else {
+                // 编辑
+                const oldItem = filteredData[currentEditIndex];
+                
+                // 更新主数据
+                const mainIndex = allData.findIndex(x => 
+                    x.module === oldItem.module && 
+                    x.type === oldItem.type && 
+                    x.chinese === oldItem.chinese && 
+                    x.english === oldItem.english
+                );
+                
+                if (mainIndex !== -1) {
+                    allData[mainIndex] = newItem;
+                }
+                
+                showNotification('单词已更新', 'success');
+            }
+            
+            applyFilters();
+            clearForm();
+            populateModuleFilter();
+        }
+        
+        // 清空表单
+        function clearForm() {
+            document.getElementById('input-module').value = '';
+            document.getElementById('input-type').value = '';
+            document.getElementById('input-chinese').value = '';
+            document.getElementById('input-english').value = '';
+            document.getElementById('input-status").value = '0';
+            currentEditIndex = -1;
+        }
+        
+        // 导出CSV
         function exportCSV() {
+            if (allData.length === 0) {
+                showNotification('没有数据可导出', 'error');
+                return;
+            }
+            
             const headers = ['module', 'type', 'chinese', 'english', 'status'];
             const csvContent = [
                 headers.join(','),
@@ -153,7 +465,7 @@
                     `"${item[header] || ''}"`
                 ).join(','))
             ].join('\n');
-
+            
             const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             const url = URL.createObjectURL(blob);
@@ -162,22 +474,51 @@
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+            
+            showNotification('CSV文件已生成', 'success');
         }
-
-        // 新增重置函数
-        function clearLocalData() {
-            if(confirm('确定要清除所有本地修改吗？')) {
-                localStorage.removeItem(STORAGE_KEY);
-                allData = [];
-                loadData();
-                document.getElementById('file-name').textContent = '';
-            }
+        
+        // 保存到GitHub (需要用户手动操作)
+        function saveToGitHub() {
+            exportCSV();
+            showNotification(`
+                请执行以下操作保存到GitHub:<br>
+                1. 下载生成的CSV文件<br>
+                2. 替换仓库中的 ${CSV_PATH} 文件<br>
+                3. 提交并推送更改
+            `, 'info', 10000);
         }
-
-        // 保持其他函数不变（loadData, renderTable, updateStatus, editItem, deleteItem, saveNewItem等）
-
-        // 初始化加载
-        document.addEventListener('DOMContentLoaded', initData);
+        
+        // 显示通知
+        function showNotification(message, type = 'info', duration = 3000) {
+            const notification = document.getElementById('notification');
+            notification.textContent = '';
+            notification.innerHTML = message;
+            notification.className = 'notification';
+            notification.classList.add(type);
+            notification.style.display = 'block';
+            
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, duration);
+        }
+        
+        // 显示加载状态
+        function showLoading(show) {
+            document.getElementById('loading').style.display = show ? 'block' : 'none';
+        }
+        
+        // 显示帮助
+        function showHelp() {
+            showNotification(`
+                <strong>使用说明:</strong><br>
+                1. 点击"从GitHub重新加载"获取最新数据<br>
+                2. 使用筛选功能查找特定单词<br>
+                3. 点击"编辑"修改单词或"禁用"按钮切换状态<br>
+                4. 点击"新增单词"添加新条目<br>
+                5. 点击"保存到GitHub"下载CSV并手动更新仓库
+            `, 'info', 10000);
+        }
     </script>
 </body>
 </html>
