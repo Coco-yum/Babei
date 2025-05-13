@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单词数据管理</title>
+    <style>
+        /* 保持原有样式不变 */
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .filters { margin-bottom: 20px; padding: 15px; background: #f5f5f5; }
+        .filter-group { margin-right: 20px; display: inline-block; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .edit-form { margin-top: 20px; padding: 15px; background: #f0f8ff; }
+        input[type="text"], select { padding: 6px; margin: 5px; width: 200px; }
+        button { padding: 8px 15px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>单词数据管理 (GitHub Pages版)</h1>
+    
+    <!-- 新增文件上传区域 -->
+    <div class="file-upload" style="margin-bottom: 20px;">
+        <input type="file" id="csv-upload" accept=".csv">
+        <button onclick="document.getElementById('csv-upload').click()">上传CSV文件</button>
+        <span id="file-name" style="margin-left:10px;"></span>
+    </div>
+
+    <!-- 保持原有筛选功能不变 -->
+    <div class="filters">
+        <div class="filter-group">
+            <label>模块：
+                <select id="filter-module">
+                    <option value="">全部</option>
+                    <option>m1u1</option>
+                    <option>m1u2</option>
+                    <!-- 其他模块选项 -->
+                </select>
+            </label>
+        </div>
+        <div class="filter-group">
+            <label>类型：
+                <select id="filter-type">
+                    <option value="">全部</option>
+                    <option>words</option>
+                    <option>phrases</option>
+                    <option>sentences</option>
+                </select>
+            </label>
+        </div>
+        <button onclick="loadData()">筛选</button>
+    </div>
+
+    <!-- 保持表格结构不变 -->
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>模块</th>
+                <th>类型</th>
+                <th>中文</th>
+                <th>英文</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <!-- 保持编辑表单不变 -->
+    <div class="edit-form">
+        <h3>新增/编辑单词</h3>
+        <input type="text" id="input-module" placeholder="模块 (如m1u1)">
+        <input type="text" id="input-type" placeholder="类型 (words/phrases/sentences)">
+        <input type="text" id="input-chinese" placeholder="中文">
+        <input type="text" id="input-english" placeholder="英文">
+        <select id="input-status">
+            <option value="0">启用</option>
+            <option value="1">禁用</option>
+        </select>
+        <button onclick="saveNewItem()">保存</button>
+    </div>
+
+    <!-- 修改操作按钮 -->
+    <div style="margin-top: 20px;">
+        <button onclick="exportCSV()">下载修改后的CSV</button>
+        <button onclick="clearLocalData()">重置数据</button>
+    </div>
+
+    <script>
+        // 使用LocalStorage存储数据
+        const STORAGE_KEY = 'wordData';
+        let allData = [];
+        let filteredData = [];
+
+        // 文件上传处理
+        document.getElementById('csv-upload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                document.getElementById('file-name').textContent = file.name;
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    allData = parseCSV(e.target.result);
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(allData));
+                    loadData();
+                };
+                reader.readAsText(file);
+            }
+        });
+
+        // 初始化加载本地数据
+        function initData() {
+            const savedData = localStorage.getItem(STORAGE_KEY);
+            if (savedData) {
+                allData = JSON.parse(savedData);
+                loadData();
+            }
+        }
+
+        // 修改后的CSV解析函数
+        function parseCSV(csvText) {
+            const rows = csvText.split('\n').filter(row => row.trim() !== '');
+            const headers = rows[0].split(',').map(h => h.trim());
+            
+            return rows.slice(1).map(row => {
+                const values = row.split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/);
+                const obj = {};
+                headers.forEach((header, index) => {
+                    let value = values[index] ? values[index].trim().replace(/^"|"$/g, '') : '';
+                    // 自动添加status字段
+                    if(header === 'status') {
+                        obj[header] = value || '0'; 
+                    } else {
+                        obj[header] = value;
+                    }
+                });
+                // 如果原始CSV没有status列，自动添加
+                if(!headers.includes('status')) {
+                    obj.status = '0';
+                }
+                return obj;
+            });
+        }
+
+        // 修改后的导出函数
+        function exportCSV() {
+            const headers = ['module', 'type', 'chinese', 'english', 'status'];
+            const csvContent = [
+                headers.join(','),
+                ...allData.map(item => headers.map(header => 
+                    `"${item[header] || ''}"`
+                ).join(','))
+            ].join('\n');
+
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.href = url;
+            link.setAttribute('download', 'word-data.csv');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // 新增重置函数
+        function clearLocalData() {
+            if(confirm('确定要清除所有本地修改吗？')) {
+                localStorage.removeItem(STORAGE_KEY);
+                allData = [];
+                loadData();
+                document.getElementById('file-name').textContent = '';
+            }
+        }
+
+        // 保持其他函数不变（loadData, renderTable, updateStatus, editItem, deleteItem, saveNewItem等）
+
+        // 初始化加载
+        document.addEventListener('DOMContentLoaded', initData);
+    </script>
+</body>
+</html>
