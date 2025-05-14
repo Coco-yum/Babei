@@ -287,7 +287,9 @@
                 // 修改为加载CSV文件
                 const response = await fetch('word-data.csv');
                 if (!response.ok) throw new Error('Network response was not ok');
-                const csvText = new TextDecoder('utf-8').decode(await response.arrayBuffer());
+                const arrayBuffer = await response.arrayBuffer();
+                // 确保使用正确的字符编码
+                const csvText = new TextDecoder('utf-8').decode(arrayBuffer);
                 
                 // 解析CSV数据
                 wordData = parseCSV(csvText);
