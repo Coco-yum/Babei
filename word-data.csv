@@ -1,677 +1,677 @@
 module,type,chinese,english,status
-am1,words,ÄãºÃ,hello,0
-am1,words,ÔçÉÏ,morning,0
-am1,words,ÏÂÎç,afternoon,0
-am1,words,°øÍí,evening,0
-am1,words,Ò¹Íí,night,0
-am1,words,ºÃµÄ£¨ÉíÌå¡¢ÌìÆø£©,fine,0
-am1,words,Ì«Ì«¡¢·òÈË,Mrs,0
-am1,words,É½Ä·£¨Ğ¡¹·Ãû£©,Sam,0
-am1,words,ÂèÂè£¨¿ÚÓï³Æºô£©,Mum,0
-am1,words,°¬µÏ£¨ÄĞÃû£©,Eddie,0
-am1,words,°®ÀöË¿£¨Å®Ãû£©,Alice,0
-am1,words,½ñÌì,today,0
-am1,words,Ìì,day,0
-am1,words,ºÃµÄ,well,0
-am1,words,Æ»¹û,apple,0
-am1,words,°ü,bag,0
-am1,words,ÄĞº¢,boy,0
-am1,words,Å®º¢,girl,0
-am1,words,´óµÄ,big,0
-am1,words,Ğ¡µÄ,small,0
-am1,words,¸ßµÄ,tall,0
-am1,words,°«µÄ¡¢¶ÌµÄ,short,0
-am1,words,ÅÖµÄ,fat,0
-am1,words,ÊİµÄ,thin,0
-am1,words,ÎÒ£¨µÚÒ»ÈË³Æ£©,I,0
-am1,words,ÊÇ,am,0
-am1,words,Äã¡¢ÄãÃÇ,you,0
-am1,words,ÊÇ,are,0
-am1,words,Ë­,who,0
-am1,words,µ¤Äá£¨ÄĞº¢Ãû£©,Danny,0
-am1,words,ÂêÀö£¨Å®º¢Ãû£©,Mary,0
-am1,words,¿­µÙ£¨Å®º¢Ãû£©,Kitty,0
-am1,words,Ğ¡½ã,Miss,0
-am1,words,Ã¨,cat,0
-am1,words,¹·,dog,0
-am1,words,Ò»,one,0
-am1,words,¶ş,two,0
-am1,words,Èı,three,0
-am1,words,ËÄ,four,0
-am1,words,Îå,five,0
-am1,words,Áù,six,0
-am1,words,Æß,seven,0
-am1,words,°Ë,eight,0
-am1,words,¾Å,nine,0
-am1,words,Ê®,ten,0
-am1,words,Í¬°àÍ¬Ñ§,classmate,0
-am1,words,ĞÂµÄ¡¢ĞÂÀ´µÄ,new,0
-am1,words,¾ÉµÄ,old,0
-am1,words,ÄêÇáµÄ,young,0
-am1,words,Ï¥¸Ç,knee,0
-am1,words,Ê÷Ö¦,stick,0
-am1,words,Éß,snake,0
-am1,words,ÄãµÄ£¨ËùÓĞ¸ñ£©,your,0
-am1,words,¶Ô²»Æğ,sorry,0
-am1,words,±ËµÂ£¨ÄĞÃû£©,Peter,0
-am1,words,ÌÀÄ·£¨ÄĞÃû£©,Tom,0
-am1,words,´óÏó,elephant,0
-am1,phrases,Ò»Í·´óÏó,an elephant,0
-am1,phrases,ÎåÍ·´óÏó,five elephants,0
-am1,phrases,ÅöÏÂÄãµÄÏ¥¸Ç,touch your knees,0
-am1,phrases,¼ñÊ÷Ö¦,pick up sticks,0
-am1,phrases,»­Ò»ÌõÉß,draw a snake,0
-am1,phrases,ÔÙ×öÒ»´Î,do it again,0
-am1,phrases,Ò»Î»ĞÂÍ¬Ñ§,a new classmate,0
-am1,sentences,ÎÒÊÇam£¬ÄãÊÇare£¬isÓÃÓÚËû¡¢Ëı¡¢Ëü¡£,I am/you are/is for he she it.,0
-am1,sentences,¶àÉÙ¸öÍë£¿ÓĞËÄ¸öÍë¡£,How many bowls? --There are four bowls.,0
-am1,sentences,¶àÉÙ¸öÉ××Ó£¿ÓĞÒ»¸ö¡£,How many spoons? --There is one.,0
-am1,sentences,ÔÚ³ø·¿ÀïÓĞÒ»Ö»Ã¨¡£,There is a cat in the kitchen.,0
-am1,sentences,ÔÚ×ÀÉÏÓĞÁ½Ö»Íë¡£,There are two bowls on the table.,0
-am1,sentences,ÔÚ·¿¼äÀïÓĞÒ»ÕÅ×À×ÓºÍÒ»°ÑÒÎ×Ó¡£,There is a table and a chair in the room.,0
-am1,sentences,ÍëÔÚµØÉÏ¡£,The bowls are on the floor.,0
-am1,sentences,ÎÂµÏÓÃÊÖ¹ØÉÏÁË´°¡£,Wendy closes the window with her hand.,0
-am1,sentences,²»ÒªÕª»¨¡£¶Ô²»Æğ¡£,Don't pick the flowers. --I'm sorry.,0
-am1,sentences,²»ÒªÅÀÊ÷£¬µ¤Äá¡£¶Ô²»Æğ¡£,Don't climb the tree£¬Danny. --I'm sorry.,0
-am1,sentences,ÎÒÏ²»¶Õâ¸ö¹«Ô°¡£ËüÓÖ´óÓÖÃÀÀö¡£,I like this park. It's big and nice.,0
-am1,sentences,¿´¿´Õâ¶ä»¨¡£ËüÕæÆ¯ÁÁ¡£,Look at this flower. It's beautiful.,0
-am1,sentences,ÕâÊÇÊ²Ã´£¿ËüÊÇ¸öÃÛ·ä¡£,What's this? --It's a bee.,0
-am1,sentences,Ò»Ö»°ßÂíÔÚÒ»¸ö»ÆÉ«µÄºĞ×ÓÀï¡£,A zebra is in a yellow box.,0
-am2,words,ÅÜ²½,run,0
-am2,words,Ğ´×Ö,write,0
-am2,words,ÓÎÓ¾,swim,0
-am2,words,·É,fly,0
-am2,words,³ª,sing,0
-am2,words,»­,draw,0
-am2,words,¶Á,read,0
-am2,words,ÌøÎè,dance,0
-am2,words,ÌøÉş,skip,0
-am2,words,Æï£¨³µ£©,ride,0
-am2,words,»á,can,0
-am2,words,²»»á,can't,0
-am2,words,³¬¼¶Å®º¢£¨Ãû×Ö£©,Supergirl,0
-am2,words,µ«ÊÇ£¨×ªÕÛ£©,but,0
-am2,words,Ëı£¨µÚÈıÈË³Æµ¥Êı£©,she,0
-am2,words,Ëû£¨µÚÈıÈË³Æµ¥Êı£©,he,0
-am2,words,Ëü£¨µÚÈıÈË³Æµ¥Êı£©,it,0
-am2,words,Ê²Ã´,what,0
-am2,words,Å®º¢,girl,0
-am2,words,ÊÖ,hand,0
-am2,words,´óÃÅ,gate,0
-am2,words,ÓĞ£¨µÚÈıÈË³Æµ¥Êı£©,has,0
-am2,words,ÅÌ×Ó,plate,0
-am2,words,ËıµÄ£¨ËùÓĞ¸ñ£©,her,0
-am2,words,¼ÒÍ¥,family,0
-am2,words,ÄêÇáµÄ,young,0
-am2,words,ÄêÀÏµÄ,old,0
-am2,words,ĞÖµÜ,brother,0
-am2,words,½ãÃÃ,sister,0
-am2,words,ÂèÂè,mother,0
-am2,words,°Ö°Ö,father,0
-am2,words,ÂèÂè£¨°®³Æ£©,mummy,0
-am2,words,°Ö°Ö£¨°®³Æ£©,daddy,0
-am2,words,(Íâ)×æ¸¸,grandfather,0
-am2,words,(Íâ)×æÄ¸,grandmother,0
-am2,words,ÊÇ£¨µÚÈıÈË³Æµ¥Êı£©,is,0
-am2,words,²»ÊÇ,isn't,0
-am2,words,ÅóÓÑ,friend,0
-am2,words,Í¬°àÍ¬Ñ§,classmate,0
-am2,words,ÈøÀò£¨Å®º¢Ãû£©,Sally,0
-am2,words,¼ªÄ·£¨ÄĞº¢Ãû£©,Jim,0
-am2,words,¹şÀû£¨ÄĞº¢Ãû£©,Harry,0
-am2,words,ÎÒµÄ,my,0
-am2,words,ÄãµÄ,your,0
-am2,words,Õâ¸ö,this,0
-am2,words,ÄÇ¸ö,that,0
-am2,words,À¥³æ,insect,0
-am2,words,¹ã¿ÚÆ¿,jar,0
-am2,words,Í··¢,hair,0
-am2,words,Í·,head,0
-am2,words,Á³,face,0
-am2,words,ÑÛ¾¦,eye,0
-am2,words,¶ú¶ä,ear,0
-am2,words,±Ç×Ó,nose,0
-am2,words,×ì°Í,mouth,0
-am2,words,ÊÖ,hand,0
-am2,words,Ô²µÄ,round,0
-am2,words,´óµÄ,big,0
-am2,words,Ğ¡µÄ,small,0
-am2,words,³¤µÄ,long,0
-am2,words,¶ÌµÄ¡¢°«µÄ,short,0
-am2,words,¸ßµÄ,tall,0
-am2,words,¾ŞÈË£¨Ãû×Ö£©,Giant,0
-am2,words,¾ŞÈË,giant,0
-am2,words,ÎÒÊÇ,I'm,0
-am2,words,ÄãÊÇ,You're,0
-am2,words,ÎÒ£¨Ö÷¸ñ£©,I,0
-am2,words,ÎÒ£¨±ö¸ñ£©,me,0
-am2,words,ÎÒµÄ£¨ËùÓĞ¸ñ£©,my,0
-am2,words,Äã¡¢ÄãÃÇ,you,0
-am2,words,ÄãµÄ¡¢ÄãÃÇµÄ,your,0
-am2,words,·çóİ,kite,0
-am2,words,Ê¨×Ó,lion,0
-am2,words,Ï²»¶,like,0
-am2,phrases,ÓÖ¸ßÓÖ´óµÄ,big and tall,0
-am2,phrases,ÃçÌõÆ¯ÁÁµÄ,thin and nice,0
-am2,phrases,Ğ¡ÇÉ¿É°®µÄ,sweet and small,0
-am2,phrases,ºÍ°ª¿ÉÇ×µÄ,kind and dear,0
-am2,phrases,Ò»Ö»À¥³æ,an insect,0
-am2,phrases,ÌøÉş,skip rope,0
-am2,phrases,·Å·çóİ,fly a kite,0
-am2,phrases,Ìß×ãÇò,play football,0
-am2,phrases,Æï×ÔĞĞ³µ,ride a bicycle,0
-am2,phrases,Ò»Ö»ÑÛ¾¦,an eye,0
-am2,phrases,Ò»Ö»¶ú¶ä,an ear,0
-am2,phrases,Ò»ÕÅ¿ªĞÄµÄÁ³,a happy face,0
-am2,phrases,Ò»ÕÅ¿ªĞÄµÄÁ³,a funny face,0
-am2,phrases,Ò»ÕÅ¿É°®µÄÁ³,a cute face,0
-am2,phrases,Ò»Ö»´óÊ¨×Ó,a big lion,0
-am2,phrases,Ò»¸öĞ¡·çóİ,a small kite,0
-am2,sentences,ÎÒÊÇ¾ŞÈË¡£ÄãÊÇ³¬¼¶Å®º¢¡£,I'm Giant. You're Supergirl.,0
-am2,sentences,ÎÒÊÇÊİµÄ¡£ÄãÊÇÅÖµÄ¡£,I'm thin. You're fat.,0
-am2,sentences,ÎÒµÄÍ··¢ÊÇ¶ÌµÄ¡£ÄãµÄÍ··¢ÊÇ³¤µÄ¡£,My hair is short. Your hair is long.,0
-am2,sentences,ÎÒµÄ±Ç×ÓÊÇ´óµÄ¡£ÄãµÄ±Ç×ÓÊÇĞ¡µÄ¡£,My nose is big. Your nose is small.,0
-am2,sentences,ÎÒµÄÑÛ¾¦ÊÇ´óµÄ¡£ÄãµÄ¶ú¶äÊÇĞ¡µÄ¡£,My eyes are big. Your ears are small.,0
-am2,sentences,ÄãµÄ±Ç×Ó²»ÊÇºÜ´ó¡£,Your nose is not very big.,0
-am3,words,»¬»¬Ìİ,slide,0
-am3,words,ÇïÇ§,swing,0
-am3,words,õÎõÎ°å,seesaw,0
-am3,words,Ê²Ã´,what,0
-am3,words,ÑÕÉ«,colour,0
-am3,words,ºìÉ«,red,0
-am3,words,»ÆÉ«,yellow,0
-am3,words,À¶É«,blue,0
-am3,words,ÂÌÉ«,green,0
-am3,words,³ÈÉ«£¨½Û×Ó£©,orange,0
-am3,words,×ØÉ«,brown,0
-am3,words,°×É«,white,0
-am3,words,ºÚÉ«,black,0
-am3,words,¿´¼û,see,0
-am3,words,ÏòÉÏ,up,0
-am3,words,ÏòÏÂ,down,0
-am3,words,Ëû/Ëı/ËüÃÇ,they,0
-am3,words,ÀÏÊó,mouse,0
-am3,words,Íø,net,0
-am3,words,ÄĞÈË,man,0
-am3,words,Êé°ü,bag,0
-am3,words,ºĞ×Ó,box,0
-am3,words,ºĞ×Ó£¨¸´Êı£©,boxes,0
-am3,words,Êé±¾,book,0
-am3,words,¿Î×À,desk,0
-am3,words,ÒÎ×Ó,chair,0
-am3,words,Ç¦±ÊºĞ,pencil case,0
-am3,words,·¿¼ä,room,0
-am3,words,·Å,put,0
-am3,words,ÔÚ...ÀïÃæ,in,0
-am3,words,ÔÚ...ÉÏÃæ,on,0
-am3,words,ÔÚ...ÏÂÃæ,under,0
-am3,words,Çë,please,0
-am3,words,°®,love,0
-am3,words,Ê¹ÓÃ,use,0
-am3,words,±£³Ö,keep,0
-am3,words,¸É¾»µÄ,clean,0
-am3,words,½Û×Ó£¨³ÈÉ«£©,orange,0
-am3,words,Ò»Ö»½Û×Ó,an orange,0
-am3,words,Öí,pig,0
-am3,words,±¦À­£¨Å®º¢Ãû£©,Paula,0
-am3,words,ÍÈ,leg,0
-am3,words,À´,come,0
-am3,words,³Ô,eat,0
-am3,words,³ø·¿,kitchen,0
-am3,words,Íë,bowl,0
-am3,words,ÅÌ×Ó,plate,0
-am3,words,É××Ó,spoon,0
-am3,words,²æ×Ó,fork,0
-am3,words,¿ê×Ó£¨¸´Êı£©,chopsticks,0
-am3,words,ÉÕ²Ë¡¢Åëâ¿,cook,0
-am3,words,Íí·¹,dinner,0
-am3,words,¸ø,give,0
-am3,words,×¼±¸ºÃµÄ,ready,0
-am3,words,½ğ¼ª£¨Ãû×Ö£©,Ginger,0
-am3,words,ÌÔÆøµÄ,naughty,0
-am3,words,×À×Ó¡¢²Í×À,table,0
-am3,words,£¨Ë«½Å£©Ìø,jump,0
-am3,words,ÌøÉş,skip,0
-am3,words,µØ°å,floor,0
-am3,words,ÔÚ......ÉÏÃæ,on,0
-am3,words,ÔÚ......ÏÂÃæ,under,0
-am3,words,ÔÚ......ÀïÃæ,in,0
-am3,words,Å®Íõ,queen,0
-am3,words,ÍÃ×Ó,rabbit,0
-am3,words,×ø,sit,0
-am3,words,ÃæÌõ,noodles,0
-am3,words,ÌÀ,soup,0
-am3,words,¼¦¡¢¼¦Èâ,chicken,0
-am3,words,Óã¡¢ÓãÈâ,fish,0
-am3,phrases,ÔÚ¶ùÍ¯ÀÖÔ°,In the children's garden,0
-am3,phrases,Ò»Ö»À¥³æ,an insect,0
-am3,phrases,ÌøÉş,skip rope,0
-am3,phrases,·Å·çóİ,fly a kite,0
-am3,phrases,Ìß×ãÇò,play football,0
-am3,phrases,Æï×ÔĞĞ³µ,ride a bicycle,0
-am3,phrases,Ò»Ö»ÑÛ¾¦,an eye,0
-am3,phrases,Ò»Ö»¶ú¶ä,an ear,0
-am3,phrases,Ò»ÕÅ¿ªĞÄµÄÁ³,a happy face,0
-am3,phrases,Ò»ÕÅ¿ªĞÄµÄÁ³,a funny face,0
-am3,phrases,Ò»ÕÅ¿É°®µÄÁ³,a cute face,0
-am3,phrases,Ò»Ö»´óÊ¨×Ó,a big lion,0
-am3,phrases,Ò»¸öĞ¡·çóİ,a small kite,0
-am3,sentences,ÄãÄÜ¿´µ½Ê²Ã´£¿ÎÒÄÜ¿´µ½Ò»¸öõÎõÎ°å¡£,What can you see? --I can see a seesaw.,0
-am3,sentences,ËüÊÇÊ²Ã´ÑÕÉ«£¿ËüÊÇ»ÆÉ«µÄ¡£,What colour is it? --It's yellow.,0
-am3,sentences,ÄãÃÇ£¨Äã£©Ï²»¶Íæ¡£ËûÃÇÏ²»¶Íæ¡£,You like to play. They like to play.,0
-am3,sentences,ÄÇÈËÓĞÒ»ÕÅÍø¡£ÀÏÊóÔÚÍøÀï¡£,The man has a net. The mouse is in the net.,0
-am3,sentences,Çë°ÑºĞ×Ó·ÅÔÚÒÎ×ÓÉÏÃæ¡£,Put the box on the chair£¬please.,0
-am3,sentences,Çë°ÑÇ¦±Ê·ÅÔÚÊé°üÀïÃæ¡£,Put the pencils in the bag£¬please.,0
-am3,sentences,°ÑÇò·ÅÔÚ¿Î×ÀÏÂÃæ¡£ºÃµÄ¡£,Put the ball under the desk. All right.,0
-am3,sentences,¿´¿´ÄãµÄ·¿¼ä¡£ÎÒºÜ±§Ç¸¡£,Look at your room. I'm sorry.,0
-am3,sentences,ÎÒÃ¿ÌìÓÃÕâ¸öºĞ×Ó¡£ÎÒÃ¿ÌìÊ¹Ëü±£³Ö¸É¾»¡£,I use the box every day! I keep it clean every day!,0
-am3,sentences,ÒªÉ××ÓÂğ£¿²»ÓÃ£¬Ğ»Ğ»¡£,"""--A spoon? --No£¬thanks.",0
-am3,sentences,¿ê×ÓÒªÂğ£¿ÊÇµÄ£¬Çë¸øÎÒ¡£,"""--Chopsticks?--Yes£¬please.",0
-am3,sentences,Çë¸øÎÒÒ»¸öÅÌ×Ó¡£¸øÄã¡£,Give me a plate£¬please. --Here you are.,0
-am3,sentences,Íí·¹×¼±¸ºÃÁË¡£ÎÒÀ´ÁË¡£,Dinner is ready! --I'm coming.,0
-am3,sentences,ÕâÊÇÎÒ¼ÒµÄ³ø·¿¡£,This is my kitchen.,0
-am4,words,Ìì¿Õ,sky,0
-am4,words,Ì«Ñô,sun,0
-am4,words,ÔÂÁÁ,moon,0
-am4,words,ĞÇĞÇ,star,0
-am4,words,Ã÷ÁÁµÄ,bright,0
-am4,words,ÉÁË¸,twinkle,0
-am4,words,Ğ¡µÄ,little,0
-am4,words,¸ßµÄ,high,0
-am4,words,×êÊ¯,diamond,0
-am4,words,ÌÀ£¨²»¿ÉÊı£©,soup,0
-am4,words,×À×Ó,table,0
-am4,words,ÌÀÄ·£¨ÄĞÃû£©,Tom,0
-am4,words,¹â»¬µÄ,smooth,0
-am4,words,ÈáÈíµÄ,soft,0
-am4,words,É­ÁÖ,forest,0
-am4,words,ºüÀê,fox,0
-am4,words,ºüÀê£¨¸´Êı£©,foxes,0
-am4,words,ºÓÂí,hippo,0
-am4,words,Èâ£¨²»¿ÉÊı£©,meat,0
-am4,words,²İ£¨²»¿ÉÊı£©,grass,0
-am4,words,Ò°ÉúµÄ,wild,0
-am4,words,¶¯Îï,animal,0
-am4,words,ºï×Ó,monkey,0
-am4,words,ÍÃ×Ó,rabbit,0
-am4,words,ºÃ¿´µÄ,nice,0
-am4,words,µ¥½ÅÌø,hop,0
-am4,words,¿É°®µÄ,cute,0
-am4,words,ÍçÆ¤µÄ,naughty,0
-am4,words,×ØÉ«,brown,0
-am4,words,°×É«,white,0
-am4,words,µ´ÇïÇ§,swing,0
-am4,words,ÓêÉ¡,umbrella,0
-am4,words,Ãæ°ü³µ,van,0
-am4,words,´°»§,window,0
-am4,words,ÎÂµÏ£¨Å®Ãû£©,Wendy,0
-am4,words,ºÚÉ«,black,0
-am4,words,Óêµã,raindrop,0
-am4,words,¹Ø,close,0
-am4,words,½ÖµÀ,street,0
-am4,words,»¨¶ä,flower,0
-am4,words,Ê÷,tree,0
-am4,words,²»Òª,don¡¯t,0
-am4,words,²ÉÕª,pick,0
-am4,words,¶Ô²»Æğ,sorry,0
-am4,words,ÅÀ,climb,0
-am4,words,»­»­,draw,0
-am4,words,Í¿É«,colour,0
-am4,words,ÑÕÉ«,cut,0
-am4,words,¹«Ô°,park,0
-am4,words,Æ¯ÁÁµÄ,beautiful,0
-am4,words,°ïÃ¦,help,0
-am4,words,¿Ş,cry,0
-am4,words,ºĞ×Ó,box,0
-am4,words,»ÆÉ«,yellow,0
-am4,words,°ßÂí,zebra,0
-am4,words,¶¯ÎïÔ°,zoo,0
-am4,phrases,ÔÚÌì¿ÕÖĞ,in the sky,0
-am4,phrases,¹â»¬ÓÖÈáÈíµÄ,smooth and soft,0
-am4,phrases,×øÔÚ×À×ÓÉÏ,sit on the table,0
-am4,phrases,Ò»¸ö¶¯Îï,an animal,0
-am4,phrases,Ò»°ÑÉ¡,an umbrella,0
-am4,phrases,¹Ø´°,close the window,0
-am4,phrases,ºÓÂíµÄ×ì°Í,the hippo¡¯s mouth,0
-am4,phrases,ÔÚ½ÖÉÏ,in the street,0
-am4,phrases,²É»¨,pick the flowers,0
-am4,phrases,ÅÀÊ÷,climb the tree,0
-am4,phrases,ÔÚ¹«Ô°Àï,in the park,0
-am4,sentences,¿´¿´Ìì¿Õ¡£,Look at the sky.,0
-am4,sentences,¿´×ÅÎÒ¡£,Look at me.,0
-am4,sentences,ÄãÄÜ¿´µ½Ê²Ã´£¿ÎÒÄÜ¿´¼ûÌ«Ñô¡£,What can you see? --- I can see the sun.,0
-am4,sentences,ÄãÄÜ¿´µ½ĞÇĞÇÂğ£¿ÊÇµÄ£¬ÎÒÄÜ¡£,Can you see the stars? --- Yes£¬I can.,0
-am4,sentences,ÄãÄÜ¿´µ½ÔÂÁÁÂğ£¿²»£¬ÎÒ²»ÄÜ¡£,Can you see the moon? --- No£¬I can¡¯t.,0
-am4,sentences,ÔÂÁÁÊÇ´óµÄÂğ£¿ÊÇµÄ¡£ËüÊÇ´óµÄ¡£ËüÊÇÃ÷ÁÁµÄ¡£,Is the moon big? ---Yes. It¡¯s big. It¡¯s bright.,0
-am4,sentences,ÌÀÄ·µÄÍÃ×Ó¹â»¬ÓÖÈáÈí¡£,Tom¡¯s rabbit is smooth and soft.,0
-am4,sentences,¿´ÕâÖ»Ê¨×Ó¡£ËüºÜ´ó¡£ËüÏ²»¶³ÔÈâ¡£,Look at the lion. It¡¯s big. It likes meat.,0
-am4,sentences,¿´ÕâÖ»ºÓÂíµÄ×ì°Í¡£ÕâÃ´´ó¡£,Look at the hippo¡¯s mouth. It¡¯s so big.,0
-am4,sentences,ÎÂµÏÔÚÃæ°ü³µÀï£¬ÊÖÀïÄÃ×ÅÁ½°ÑÓêÉ¡¡£,Wendy is in a van£¬with two umbrellas in her hands.,0
-am4,sentences,Ëı°ÑËüÃÇ´ø¸øËıµÄÅóÓÑÃÇ¡£,She takes them to her friends.,0
-am4,sentences,ÓêµãÂäÔÚËıµÄÍ·ÉÏ¡£,Raindrops fall on her head.,0
-am4,sentences,ÎÂµÏÓÃÊÖ¹ØÉÏÁË´°¡£,Wendy closes the window with her hand.,0
-am4,sentences,²»ÒªÕª»¨¡£¶Ô²»Æğ¡£,Don¡¯t pick the flowers. ---I¡¯m sorry.,0
-am4,sentences,²»ÒªÅÀÊ÷£¬µ¤Äá¡£¶Ô²»Æğ¡£,Don¡¯t climb the tree£¬Danny. ---I¡¯m sorry.,0
-am4,sentences,ÎÒÏ²»¶Õâ¸ö¹«Ô°¡£,I like this park.,0
-m1u1,words,Ìı£¨¶¯×÷£©,listen,0
-m1u1,words,Ìı¼û,hear,0
-m1u1,words,¿´¼û,see,0
-m1u1,words,¿´£¨¶¯×÷£©,look,0
-m1u1,words,»ğ³µ,train,0
-m1u1,words,¹«½»³µ,bus,0
-m1u1,words,¹«½»³µ£¨¸´Êı£©,buses,0
-m1u1,words,Æû³µ,car,0
-m1u1,words,Ğ¡»õ³µ,van,0
-m1u1,words,×ÔĞĞ³µ,bicycle,0
-m1u1,words,×ÔĞĞ³µ,bike,0
-m1u1,words,´¬,ship,0
-m1u1,words,ÃàÑò£¨µ¥Êı£©,sheep,0
-m1u1,words,ÃàÑò£¨¸´Êı£©,sheep,0
-m1u1,words,ÔÚ......ÅÔ±ß,beside,0
-m1u1,words,Ë¯¾õ,sleep,0
-m1u1,words,¹«½»Õ¾,bus stop,0
-m1u1,words,³µÕ¾,station,0
-m1u1,words,µÀÂ·,road,0
-m1u1,words,ÉùÒô,sound,0
-m1u1,words,àÖÉù,beep,0
-m1u1,words,ºôĞ¥Éù£¨»ğ³µ£©,choo,0
-m1u1,words,àÖà½Éù,boop,0
-m1u1,words,µÈ´ı,wait,0
-m1u1,phrases,ÌıÒôÀÖ,listen to music,0
-m1u1,sentences,ÎÒÏ²»¶ÌıÒôÀÖ¡£,I like listening to music.,0
-m1u2,words,ºûµû,butterfly,0
-m1u2,words,À¥³æ,insect,0
-m1u2,words,Ê¨×Ó,lion,0
-m1u2,words,ÀÏÊó,mouse,0
-m1u2,words,³È×Ó,orange,0
-m1u2,words,Öí,pig,0
-m1u2,words,ÍÃ×Ó,rabbit,0
-m1u2,words,ÓêÉ¡,umbrella,0
-m1u2,words,Ïä×Ó,box,0
-m1u2,words,»ÆÉ«,yellow,0
-m1u2,words,°ßÂí,zebra,0
-m1u2,words,¹·,dog,0
-m1u2,words,Ã¨,cat,0
-m1u2,words,´óÏó,elephant,0
-m1u2,words,ÑÕÉ«,colour,0
-m1u2,words,°×É«,white,0
-m1u2,words,ºÚÉ«,black,0
-m1u2,words,·ÛÉ«,pink,0
-m1u2,words,×ÏÉ«,purple,0
-m1u2,words,Æ»¹û,apple,0
-m1u2,words,°ü,bag,0
-m1u2,words,·çóİ,kite,0
-m1u2,words,²İ,grass,0
-m1u2,words,³ÈÉ«,orange,0
-m1u2,words,À¶É«,blue,0
-m1u2,words,×ØÉ«,brown,0
-m1u2,words,ºìÉ«,red,0
-m1u2,words,ÂÌÉ«,green,0
-m1u2,words,¹«Ô°,park,0
-m1u2,words,Ëû,he,0
-m1u2,words,Ëı,she,0
-m1u2,words,Ëü,it,0
-m1u2,words,ËûÃÇ/ËıÃÇ/ËüÃÇ,they,0
-m1u2,words,Æ°³æ,ladybird,0
-m1u2,words,Äñ,bird,0
-m1u2,words,ºûµû£¨¸´Êı£©,butterflies,0
-m1u2,words,ÃÀÀöµÄ,beautiful,0
-m1u2,phrases,¿´¼ûÆ»¹û,see an apple,0
-m1u2,sentences,ÎÒÄÜ¿´¼ûÒ»¸öÆ»¹û¡£,I can see an apple.,0
-m1u3,words,²Êºç,rainbow,0
-m1u3,words,ÔÚÍâÃæ,outside,0
-m1u3,words,´°»§,window,0
-m1u3,words,Á½¸ö,two,0
-m1u3,words,×ØÉ«,brown,0
-m1u3,words,´¥Ãş,touch,0
-m1u3,words,¸Ğ¾õ,feel,0
-m1u3,words,¹Û¿´,watch,0
-m1u3,words,ÊÖ±í£¨¸´Êı£©,watches,0
-m1u3,words,Ç¦±ÊºĞ,pencil case,0
-m1u3,words,ÈíµÄ,soft,0
-m1u3,words,Ó²µÄ,hard,0
-m1u3,words,´Ö²ÚµÄ,rough,0
-m1u3,words,¹â»¬µÄ,smooth,0
-m1u3,words,ÈÈµÄ,hot,0
-m1u3,words,ÀäµÄ,cold,0
-m1u3,words,Æ·³¢,taste,0
-m1u3,words,ÉàÍ·,tongue,0
-m1u3,words,ÎÅ,smell,0
-m1u3,words,²Â²â,guess,0
-m1u3,words,´ò¿ª,open,0
-m1u3,words,¹Ø±Õ,close,0
-m1u3,words,Àæ,pear,0
-m1u3,words,ÌÒ×Ó,peach,0
-m1u3,words,ÌÒ×Ó£¨¸´Êı£©,peaches,0
-m1u3,words,ÑóÍŞÍŞ,doll,0
-m1u3,words,²¤ÂÜ,pineapple,0
-m1u3,words,ÊÖ±í,watch,0
-m1u3,words,ÀÏ»¢,tiger,0
-m1u3,phrases,°×É«µÄµÀÂ·,white road,0
-m1u3,sentences,ÕâÌõµÀÂ·ÊÇ°×É«µÄ¡£,This road is white.,0
-m2u1,words,Ï²»¶,like,0
-m2u1,words,ÅÜ,run,0
-m2u1,words,ÅÜ£¨ÏÖÔÚ·Ö´Ê£©,running,0
-m2u1,words,»¬±ù,skate,0
-m2u1,words,»¬±ù£¨ÏÖÔÚ·Ö´Ê£©,skating,0
-m2u1,words,Æï,ride,0
-m2u1,words,Æï£¨ÏÖÔÚ·Ö´Ê£©,riding,0
-m2u1,words,×ÔĞĞ³µ,bicycle,0
-m2u1,words,×ÔĞĞ³µ,bike,0
-m2u1,words,µ¥½ÅÌø,hop,0
-m2u1,words,µ¥½ÅÌø£¨ÏÖÔÚ·Ö´Ê£©,hopping,0
-m2u1,words,ÌøÉş,skip,0
-m2u1,words,ÌøÉş£¨ÏÖÔÚ·Ö´Ê£©,skipping,0
-m2u1,words,³ª¸è,sing,0
-m2u1,words,³ª¸è£¨ÏÖÔÚ·Ö´Ê£©,singing,0
-m2u1,words,ÌøÎè,dance,0
-m2u1,words,ÌøÎè£¨ÏÖÔÚ·Ö´Ê£©,dancing,0
-m2u1,words,Ğ´,write,0
-m2u1,words,Ğ´£¨ÏÖÔÚ·Ö´Ê£©,writing,0
-m2u1,words,ÇàÍÜ,frog,0
-m2u1,words,Ìø,jump,0
-m2u1,words,Ìø£¨ÏÖÔÚ·Ö´Ê£©,jumping,0
-m2u1,words,ÓÎÓ¾,swim,0
-m2u1,words,ÓÎÓ¾£¨ÏÖÔÚ·Ö´Ê£©,swimming,0
-m2u1,words,»­,draw,0
-m2u1,words,»­£¨ÏÖÔÚ·Ö´Ê£©,drawing,0
-m2u1,words,¶Á,read,0
-m2u1,words,¶Á£¨ÏÖÔÚ·Ö´Ê£©,reading,0
-m2u1,words,·É,fly,0
-m2u1,words,·É£¨ÏÖÔÚ·Ö´Ê£©,flying,0
-m2u1,words,Íæ,play,0
-m2u1,words,Íæ£¨ÏÖÔÚ·Ö´Ê£©,playing,0
-m2u1,phrases,Ï²»¶·É,like to fly,0
-m2u1,sentences,Ğ¡ÄñÏ²»¶·É¡£,Birds like to fly.,0
-m2u2,words,Ê³Îï,food,0
-m2u2,words,ºº±¤,hamburger,0
-m2u2,words,ÅûÈø,pizza,0
-m2u2,words,É³À­,salad,0
-m2u2,words,Óã,fish,0
-m2u2,words,¼¦Èâ,chicken,0
-m2u2,words,ºúÂÜ²·,carrot,0
-m2u2,words,Ïã½¶,banana,0
-m2u2,words,Æ»¹û,apple,0
-m2u2,words,Àæ,pear,0
-m2u2,words,ÌÒ×Ó,peach,0
-m2u2,words,³È×Ó,orange,0
-m2u2,words,Ã×·¹,rice,0
-m2u2,words,ÌÀ,soup,0
-m2u2,words,ÃæÌõ,noodles,0
-m2u2,words,¼¦µ°,egg,0
-m2u2,words,¹û¶³,jelly,0
-m2u2,words,±ùä¿ÁÜ,ice cream,0
-m2u2,words,ÌÇ¹û,sweet,0
-m2u2,words,±ı¸É,biscuit,0
-m2u2,words,¿ÉÀÖ,cola,0
-m2u2,words,¹ûÖ­,juice,0
-m2u2,words,Å£ÄÌ,milk,0
-m2u2,words,Ë®,water,0
-m2u2,words,ÏÚ±ı,pie,0
-m2u2,words,µ°¸â,cake,0
-m2u2,words,³¤¾±Â¹,giraffe,0
-m2u2,words,Éß,snake,0
-m2u2,words,´óÏó,elephant,0
-m2u2,words,°ßÂí,zebra,0
-m2u2,words,Ğ¡¼¦,chick,0
-m2u2,words,Ñ¼×Ó,duck,0
-m2u2,words,Å£,cow,0
-m2u2,words,Öí,pig,0
-m2u2,words,ÇàÍÜ,frog,0
-m2u2,words,ÍÃ×Ó,rabbit,0
-m2u2,words,ÃÛ·ä,bee,0
-m2u2,words,ºûµû,butterfly,0
-m2u2,words,Æ°³æ,ladybird,0
-m2u2,words,À¥³æ,insect,0
-m2u2,words,Äñ,bird,0
-m2u2,words,ÃàÑò,sheep,0
-m2u2,words,Ä¸¼¦,hen,0
-m2u2,words,ĞÜ,bear,0
-m2u2,words,ÀÏ»¢,tiger,0
-m2u2,words,ºï×Ó,monkey,0
-m2u2,words,ĞÜÃ¨,panda,0
-m2u2,words,¹·,dog,0
-m2u2,words,Ã¨,cat,0
-m2u2,words,ÀÇ,wolf,0
-m2u2,words,ºüÀê,fox,0
-m2u2,words,ºÓÂí,hippo,0
-m2u2,words,×ÔĞĞ³µ,bicycle,0
-m2u2,words,×ÔĞĞ³µ,bike,0
-m2u2,words,×îÏ²»¶µÄ,favourite,0
-m2u2,words,ÃÀÎ¶µÄ,yummy,0
-m2u2,phrases,Ê¾Àı´Ê×é1,example phrase 1,0
-m2u2,sentences,Ê¾Àı¾ä×Ó1,example sentence 1,0
-m2u3,words,³¤¾±Â¹,giraffe,0
-m2u3,words,Éß,snake,0
-m2u3,words,´óÏó,elephant,0
-m2u3,words,°ßÂí,zebra,0
-m2u3,words,Ğ¡¼¦,chick,0
-m2u3,words,Ñ¼×Ó,duck,0
-m2u3,words,ÄÌÅ£,cow,0
-m2u3,words,Öí,pig,0
-m2u3,words,ÇàÍÜ,frog,0
-m2u3,words,ÍÃ×Ó,rabbit,0
-m2u3,words,ÃÛ·ä,bee,0
-m2u3,words,ºûµû,butterfly,0
-m2u3,words,Æ°³æ,ladybird,0
-m2u3,words,À¥³æ,insect,0
-m2u3,words,Äñ,bird,0
-m2u3,words,ÃàÑò,sheep,0
-m2u3,words,Ä¸¼¦,hen,0
-m2u3,words,ĞÜ,bear,0
-m2u3,words,ÀÏ»¢,tiger,0
-m2u3,words,ºï×Ó,monkey,0
-m2u3,words,ĞÜÃ¨,panda,0
-m2u3,words,¹·,dog,0
-m2u3,words,Ã¨,cat,0
-m2u3,words,ÀÇ,wolf,0
-m2u3,words,ºüÀê,fox,0
-m2u3,words,ºÓÂí,hippo,0
-m2u3,words,Óã,fish,0
-m2u3,phrases,ËüÃÇÊÇÊ²Ã´£¿,What are they?,0
-m2u3,phrases,ËüÃÇÊÇ°ßÂí¡£,They are zebras.,0
-m2u3,phrases,ÄãÏ²»¶°ßÂíÂğ£¿,Do you like zebras?,0
-m2u3,phrases,ËüÃÇÊÇºÚ°×µÄ¡£,They are black and white.,0
-m2u3,sentences,ËüÃÇÊÇÊ²Ã´£¿ËüÃÇÊÇ°ßÂí¡£,What are they? They are zebras.,0
-m2u3,sentences,ÄãÏ²»¶°ßÂíÂğ£¿ÊÇµÄ£¬ÎÒÏ²»¶¡£/ ²»£¬ÎÒ²»Ï²»¶¡£,"Do you like zebras? Yes, I do. / No, I don't.",0
-m2u3,sentences,ËüÃÇÊÇ°ßÂí¡£ËüÃÇÊÇºÚ°×µÄ¡£ËüÃÇ»áÅÜ¡£,They are zebras. They are black and white. They can run¡£,0
-m3u1,words,¼¾½Ú,season,0
-m3u1,words,´ºÌì,spring,0
-m3u1,words,ÏÄÌì,summer,0
-m3u1,words,ÇïÌì,autumn,0
-m3u1,words,¶¬Ìì,winter,0
-m3u1,words,ÌìÆø,weather,0
-m3u1,words,ÇçÀÊµÄ,sunny,0
-m3u1,words,Ì«Ñô,sun,0
-m3u1,words,¶àÔÆµÄ,cloudy,0
-m3u1,words,ÔÆ,cloud,0
-m3u1,words,ÓĞÓêµÄ,rainy,0
-m3u1,words,Óê,rain,0
-m3u1,words,ÓĞ·çµÄ,windy,0
-m3u1,words,·ç,wind,0
-m3u1,words,ÎÂÅ¯µÄ,warm,0
-m3u1,words,Ñ×ÈÈµÄ,hot,0
-m3u1,words,Á¹Ë¬µÄ,cool,0
-m3u1,words,º®ÀäµÄ,cold,0
-m3u1,words,ÔÚÍâÃæ,outside,0
-m3u1,words,Ñ©ÈË£¨µ¥Êı£©,snowman,0
-m3u1,words,Ñ©ÈË£¨¸´Êı£©,snowmen,0
-m3u1,phrases,Ê¾Àı´Ê×é1,example phrase 1,0
-m3u1,sentences,ÔÚ´ºÌì£¬ÎÒÏ²»¶ÔÚ¹«Ô°ÀïÆï×ÔĞĞ³µ¡£,In spring I like riding my bicycle in the park.,0
-m3u1,sentences,ÔÚÏÄÌì£¬ÎÒÏ²»¶ÔÚË®ÀïÓÎÓ¾¡£,In summer I like swimming in the water.,0
-m3u1,sentences,ÔÚÇïÌì£¬ÎÒÏ²»¶ÔÚ¹«Ô°Àï·Å·çóİ¡£,In autumn I like flying a kite in the park.,0
-m3u1,sentences,ÔÚ¶¬Ìì£¬ÎÒÏ²»¶»¬±ùºÍ¶ÑÑ©ÈË¡£,In winter I like skating on the ice and making snowmen.,0
-m3u1,sentences,ÄãÏ²»¶ÏÄÌìÃ´£¿²»£¬ÎÒ²»Ï²»¶¡£,Do you like summer? No£¬I don't.,0
-m3u1,sentences,ÄãÏ²»¶¶¬ÌìÃ´£¿ÊÇµÄ£¬ÎÒÏ²»¶¡£,Do you like winter? Yes£¬I do.,0
-m3u1,sentences,´ºÌìÊæ·şÓÖÎÂÅ¯¡£,Spring is nice and warm.,0
-m3u1,sentences,ÏÄÌìÇçÀÊÓÖÑ×ÈÈ¡£,Summer is sunny and hot.,0
-m3u1,sentences,ÇïÌì¶à·çÓÖÁ¹Ë¬¡£,Autumn is windy and cool.,0
-m3u1,sentences,¶¬Ìì¶àÔÆÓÖº®Àä¡£,Winter is cloudy and cold.,0
-m3u1,sentences,ÄãÏ²»¶Ê²Ã´¼¾½Ú£¿ÎÒÏ²»¶ÇïÌì¡£,What season do you like? I like autumn.,0
-m3u1,sentences,ÌìÆøÔõÃ´Ñù£¿,How is the weather?,0
-m3u1,sentences,ÎÒ×îÏ²»¶µÄ¼¾½ÚÊÇÇïÌì¡£,My favourite season is autumn.,0
-m3u2,words,¹«¹²Æû³µ,bus,0
-m3u2,words,à½à½Éù£¨ÄâÉù´Ê£©,boop,0
-m3u2,words,»ğ³µ,train,0
-m3u2,words,»ğ³µÉù£¨ÄâÉù´Ê£©,choo,0
-m3u2,words,»õ³µ,van,0
-m3u2,words,ßÙßÙÉù£¨ÄâÉù´Ê£©,beep,0
-m3u2,words,³ß×Ó,ruler,0
-m3u2,words,¹æÔò,rule,0
-m3u2,words,½»Í¨µÆ,light,0
-m3u2,words,½»Í¨,traffic,0
-m3u2,words,Í£Ö¹,stop,0
-m3u2,words,Ç°½ø,go,0
-m3u2,words,µÈ´ı,wait,0
-m3u2,words,¿ì,fast,0
-m3u2,words,Âı,slow,0
-m3u2,words,Í£³µ,park,0
-m3u2,phrases,µÆÊÇ»ÆÉ«µÄ¡£µÈ´ı£¡,The light is yellow. Wait!,0
-m3u2,phrases,¿´µÆ¡£ËüÊÇºìÉ«µÄ¡£,Look at the light. It's red.,0
-m3u2,phrases,ÈÃÎÒÃÇÔÚÂ·±ßÍ£ÏÂ¡£,Let's stop by the road.,0
-m3u2,phrases,µÆÊÇÂÌÉ«µÄ¡£,The light is green.,0
-m3u2,phrases,ÈÃÎÒÃÇ¹ıÂíÂ·¡£,Let's cross the road.,0
-m3u2,sentences,µÆÊÇ»ÆÉ«µÄ¡£µÈ´ı£¡,The light is yellow. Wait!,0
-m3u2,sentences,¿´µÆ¡£ËüÊÇºìÉ«µÄ¡£ÈÃÎÒÃÇÔÚÂ·±ßÍ£ÏÂ¡£,Look at the light. It's red. Let's stop by the road.,0
-m3u2,sentences,µÆÊÇÂÌÉ«µÄ¡£ÈÃÎÒÃÇ¹ıÂíÂ·¡£,The light is green. Let's cross the road.,0
-m3u3,words,ÒÂ·ş,clothes,0
-m3u3,words,¼¾½Ú,season,0
-m3u3,words,ÌìÆø,weather,0
-m3u3,words,´ºÌì,spring,0
-m3u3,words,ÏÄÌì,summer,0
-m3u3,words,ÇïÌì,autumn,0
-m3u3,words,¶¬Ìì,winter,0
-m3u3,words,ÎÂÅ¯µÄ,warm,0
-m3u3,words,ÈÈµÄ,hot,0
-m3u3,words,Á¹Ë¬µÄ,cool,0
-m3u3,words,º®ÀäµÄ,cold,0
-m3u3,words,ÇçÀÊµÄ,sunny,0
-m3u3,words,¶à·çµÄ,windy,0
-m3u3,words,¶àÔÆµÄ,cloudy,0
-m3u3,words,Á¬ÒÂÈ¹,dress,0
-m3u3,words,È¹×Ó,skirt,0
-m3u3,words,TĞô,T-shirt,0
-m3u3,words,¶Ì¿ã,shorts,0
-m3u3,words,ÄĞÊ½³ÄÉÀ,shirt,0
-m3u3,words,Å®Ê½³ÄÉÀ,blouse,0
-m3u3,words,³¤¿ã,trousers,0
-m3u3,words,ÍâÌ×,coat,0
-m3u3,phrases,ÄãÏ²»¶ÄÄ¸ö¼¾½Ú£¿,What season do you like?,0
-m3u3,phrases,ÎÒÏ²»¶´ºÌì¡£,I like spring.,0
-m3u3,phrases,Ëü/´ºÌìÎÂÅ¯¶øÊæÊÊ¡£,It's nice and warm. / Spring is nice and warm.,0
-m3u3,phrases,ÎÒÎª´ºÌì×¼±¸ÁËÃ«ÒÂºÍ³¤¿ã¡£,I have a sweater and trousers for spring.,0
-m3u3,sentences,ÄãÏ²»¶ÄÄ¸ö¼¾½Ú£¿ÎÒÏ²»¶´ºÌì¡£,What season do you like? I like spring.,0
-m3u3,sentences,´ºÌìÎÂÅ¯¶øÊæÊÊ¡£,Spring is nice and warm.,0
-m3u3,sentences,ÎÒÎª´ºÌì×¼±¸ÁËÃ«ÒÂºÍ³¤¿ã¡£,I have a sweater and trousers for spring.,0
-m4u1,words,Ê¾Àıµ¥´Ê1,example word 1,0
-m4u1,words,Ê¾Àıµ¥´Ê2,example word 2,0
-m4u1,phrases,Ê¾Àı´Ê×é1,example phrase 1,0
-m4u1,sentences,Ê¾Àı¾ä×Ó1,example sentence 1,0
-m4u2,words,Ê¾Àıµ¥´Ê1,example word 1,0
-m4u2,words,Ê¾Àıµ¥´Ê2,example word 2,0
-m4u2,phrases,Ê¾Àı´Ê×é1,example phrase 1,0
-m4u2,sentences,Ê¾Àı¾ä×Ó1,example sentence 1,0
-m4u3,words,Ê¾Àıµ¥´Ê1,example word 1,0
-m4u3,words,Ê¾Àıµ¥´Ê2,example word 2,0
-m4u3,phrases,Ê¾Àı´Ê×é1,example phrase 1,0
-m4u3,sentences,Ê¾Àı¾ä×Ó1,example sentence 1,0
+am1,words,ä½ å¥½,hello,0
+am1,words,æ—©ä¸Š,morning,0
+am1,words,ä¸‹åˆ,afternoon,0
+am1,words,å‚æ™š,evening,0
+am1,words,å¤œæ™š,night,0
+am1,words,å¥½çš„ï¼ˆèº«ä½“ã€å¤©æ°”ï¼‰,fine,0
+am1,words,å¤ªå¤ªã€å¤«äºº,Mrs,0
+am1,words,å±±å§†ï¼ˆå°ç‹—åï¼‰,Sam,0
+am1,words,å¦ˆå¦ˆï¼ˆå£è¯­ç§°å‘¼ï¼‰,Mum,0
+am1,words,è‰¾è¿ªï¼ˆç”·åï¼‰,Eddie,0
+am1,words,çˆ±ä¸½ä¸ï¼ˆå¥³åï¼‰,Alice,0
+am1,words,ä»Šå¤©,today,0
+am1,words,å¤©,day,0
+am1,words,å¥½çš„,well,0
+am1,words,è‹¹æœ,apple,0
+am1,words,åŒ…,bag,0
+am1,words,ç”·å­©,boy,0
+am1,words,å¥³å­©,girl,0
+am1,words,å¤§çš„,big,0
+am1,words,å°çš„,small,0
+am1,words,é«˜çš„,tall,0
+am1,words,çŸ®çš„ã€çŸ­çš„,short,0
+am1,words,èƒ–çš„,fat,0
+am1,words,ç˜¦çš„,thin,0
+am1,words,æˆ‘ï¼ˆç¬¬ä¸€äººç§°ï¼‰,I,0
+am1,words,æ˜¯,am,0
+am1,words,ä½ ã€ä½ ä»¬,you,0
+am1,words,æ˜¯,are,0
+am1,words,è°,who,0
+am1,words,ä¸¹å°¼ï¼ˆç”·å­©åï¼‰,Danny,0
+am1,words,ç›ä¸½ï¼ˆå¥³å­©åï¼‰,Mary,0
+am1,words,å‡¯è’‚ï¼ˆå¥³å­©åï¼‰,Kitty,0
+am1,words,å°å§,Miss,0
+am1,words,çŒ«,cat,0
+am1,words,ç‹—,dog,0
+am1,words,ä¸€,one,0
+am1,words,äºŒ,two,0
+am1,words,ä¸‰,three,0
+am1,words,å››,four,0
+am1,words,äº”,five,0
+am1,words,å…­,six,0
+am1,words,ä¸ƒ,seven,0
+am1,words,å…«,eight,0
+am1,words,ä¹,nine,0
+am1,words,å,ten,0
+am1,words,åŒç­åŒå­¦,classmate,0
+am1,words,æ–°çš„ã€æ–°æ¥çš„,new,0
+am1,words,æ—§çš„,old,0
+am1,words,å¹´è½»çš„,young,0
+am1,words,è†ç›–,knee,0
+am1,words,æ ‘æ,stick,0
+am1,words,è›‡,snake,0
+am1,words,ä½ çš„ï¼ˆæ‰€æœ‰æ ¼ï¼‰,your,0
+am1,words,å¯¹ä¸èµ·,sorry,0
+am1,words,å½¼å¾·ï¼ˆç”·åï¼‰,Peter,0
+am1,words,æ±¤å§†ï¼ˆç”·åï¼‰,Tom,0
+am1,words,å¤§è±¡,elephant,0
+am1,phrases,ä¸€å¤´å¤§è±¡,an elephant,0
+am1,phrases,äº”å¤´å¤§è±¡,five elephants,0
+am1,phrases,ç¢°ä¸‹ä½ çš„è†ç›–,touch your knees,0
+am1,phrases,æ¡æ ‘æ,pick up sticks,0
+am1,phrases,ç”»ä¸€æ¡è›‡,draw a snake,0
+am1,phrases,å†åšä¸€æ¬¡,do it again,0
+am1,phrases,ä¸€ä½æ–°åŒå­¦,a new classmate,0
+am1,sentences,æˆ‘æ˜¯amï¼Œä½ æ˜¯areï¼Œisç”¨äºä»–ã€å¥¹ã€å®ƒã€‚,I am/you are/is for he she it.,0
+am1,sentences,å¤šå°‘ä¸ªç¢—ï¼Ÿæœ‰å››ä¸ªç¢—ã€‚,How many bowls? --There are four bowls.,0
+am1,sentences,å¤šå°‘ä¸ªå‹ºå­ï¼Ÿæœ‰ä¸€ä¸ªã€‚,How many spoons? --There is one.,0
+am1,sentences,åœ¨å¨æˆ¿é‡Œæœ‰ä¸€åªçŒ«ã€‚,There is a cat in the kitchen.,0
+am1,sentences,åœ¨æ¡Œä¸Šæœ‰ä¸¤åªç¢—ã€‚,There are two bowls on the table.,0
+am1,sentences,åœ¨æˆ¿é—´é‡Œæœ‰ä¸€å¼ æ¡Œå­å’Œä¸€æŠŠæ¤…å­ã€‚,There is a table and a chair in the room.,0
+am1,sentences,ç¢—åœ¨åœ°ä¸Šã€‚,The bowls are on the floor.,0
+am1,sentences,æ¸©è¿ªç”¨æ‰‹å…³ä¸Šäº†çª—ã€‚,Wendy closes the window with her hand.,0
+am1,sentences,ä¸è¦æ‘˜èŠ±ã€‚å¯¹ä¸èµ·ã€‚,Don't pick the flowers. --I'm sorry.,0
+am1,sentences,ä¸è¦çˆ¬æ ‘ï¼Œä¸¹å°¼ã€‚å¯¹ä¸èµ·ã€‚,Don't climb the treeï¼ŒDanny. --I'm sorry.,0
+am1,sentences,æˆ‘å–œæ¬¢è¿™ä¸ªå…¬å›­ã€‚å®ƒåˆå¤§åˆç¾ä¸½ã€‚,I like this park. It's big and nice.,0
+am1,sentences,çœ‹çœ‹è¿™æœµèŠ±ã€‚å®ƒçœŸæ¼‚äº®ã€‚,Look at this flower. It's beautiful.,0
+am1,sentences,è¿™æ˜¯ä»€ä¹ˆï¼Ÿå®ƒæ˜¯ä¸ªèœœèœ‚ã€‚,What's this? --It's a bee.,0
+am1,sentences,ä¸€åªæ–‘é©¬åœ¨ä¸€ä¸ªé»„è‰²çš„ç›’å­é‡Œã€‚,A zebra is in a yellow box.,0
+am2,words,è·‘æ­¥,run,0
+am2,words,å†™å­—,write,0
+am2,words,æ¸¸æ³³,swim,0
+am2,words,é£,fly,0
+am2,words,å”±,sing,0
+am2,words,ç”»,draw,0
+am2,words,è¯»,read,0
+am2,words,è·³èˆ,dance,0
+am2,words,è·³ç»³,skip,0
+am2,words,éª‘ï¼ˆè½¦ï¼‰,ride,0
+am2,words,ä¼š,can,0
+am2,words,ä¸ä¼š,can't,0
+am2,words,è¶…çº§å¥³å­©ï¼ˆåå­—ï¼‰,Supergirl,0
+am2,words,ä½†æ˜¯ï¼ˆè½¬æŠ˜ï¼‰,but,0
+am2,words,å¥¹ï¼ˆç¬¬ä¸‰äººç§°å•æ•°ï¼‰,she,0
+am2,words,ä»–ï¼ˆç¬¬ä¸‰äººç§°å•æ•°ï¼‰,he,0
+am2,words,å®ƒï¼ˆç¬¬ä¸‰äººç§°å•æ•°ï¼‰,it,0
+am2,words,ä»€ä¹ˆ,what,0
+am2,words,å¥³å­©,girl,0
+am2,words,æ‰‹,hand,0
+am2,words,å¤§é—¨,gate,0
+am2,words,æœ‰ï¼ˆç¬¬ä¸‰äººç§°å•æ•°ï¼‰,has,0
+am2,words,ç›˜å­,plate,0
+am2,words,å¥¹çš„ï¼ˆæ‰€æœ‰æ ¼ï¼‰,her,0
+am2,words,å®¶åº­,family,0
+am2,words,å¹´è½»çš„,young,0
+am2,words,å¹´è€çš„,old,0
+am2,words,å…„å¼Ÿ,brother,0
+am2,words,å§å¦¹,sister,0
+am2,words,å¦ˆå¦ˆ,mother,0
+am2,words,çˆ¸çˆ¸,father,0
+am2,words,å¦ˆå¦ˆï¼ˆçˆ±ç§°ï¼‰,mummy,0
+am2,words,çˆ¸çˆ¸ï¼ˆçˆ±ç§°ï¼‰,daddy,0
+am2,words,(å¤–)ç¥–çˆ¶,grandfather,0
+am2,words,(å¤–)ç¥–æ¯,grandmother,0
+am2,words,æ˜¯ï¼ˆç¬¬ä¸‰äººç§°å•æ•°ï¼‰,is,0
+am2,words,ä¸æ˜¯,isn't,0
+am2,words,æœ‹å‹,friend,0
+am2,words,åŒç­åŒå­¦,classmate,0
+am2,words,è¨è‰ï¼ˆå¥³å­©åï¼‰,Sally,0
+am2,words,å‰å§†ï¼ˆç”·å­©åï¼‰,Jim,0
+am2,words,å“ˆåˆ©ï¼ˆç”·å­©åï¼‰,Harry,0
+am2,words,æˆ‘çš„,my,0
+am2,words,ä½ çš„,your,0
+am2,words,è¿™ä¸ª,this,0
+am2,words,é‚£ä¸ª,that,0
+am2,words,æ˜†è™«,insect,0
+am2,words,å¹¿å£ç“¶,jar,0
+am2,words,å¤´å‘,hair,0
+am2,words,å¤´,head,0
+am2,words,è„¸,face,0
+am2,words,çœ¼ç›,eye,0
+am2,words,è€³æœµ,ear,0
+am2,words,é¼»å­,nose,0
+am2,words,å˜´å·´,mouth,0
+am2,words,æ‰‹,hand,0
+am2,words,åœ†çš„,round,0
+am2,words,å¤§çš„,big,0
+am2,words,å°çš„,small,0
+am2,words,é•¿çš„,long,0
+am2,words,çŸ­çš„ã€çŸ®çš„,short,0
+am2,words,é«˜çš„,tall,0
+am2,words,å·¨äººï¼ˆåå­—ï¼‰,Giant,0
+am2,words,å·¨äºº,giant,0
+am2,words,æˆ‘æ˜¯,I'm,0
+am2,words,ä½ æ˜¯,You're,0
+am2,words,æˆ‘ï¼ˆä¸»æ ¼ï¼‰,I,0
+am2,words,æˆ‘ï¼ˆå®¾æ ¼ï¼‰,me,0
+am2,words,æˆ‘çš„ï¼ˆæ‰€æœ‰æ ¼ï¼‰,my,0
+am2,words,ä½ ã€ä½ ä»¬,you,0
+am2,words,ä½ çš„ã€ä½ ä»¬çš„,your,0
+am2,words,é£ç­,kite,0
+am2,words,ç‹®å­,lion,0
+am2,words,å–œæ¬¢,like,0
+am2,phrases,åˆé«˜åˆå¤§çš„,big and tall,0
+am2,phrases,è‹—æ¡æ¼‚äº®çš„,thin and nice,0
+am2,phrases,å°å·§å¯çˆ±çš„,sweet and small,0
+am2,phrases,å’Œè”¼å¯äº²çš„,kind and dear,0
+am2,phrases,ä¸€åªæ˜†è™«,an insect,0
+am2,phrases,è·³ç»³,skip rope,0
+am2,phrases,æ”¾é£ç­,fly a kite,0
+am2,phrases,è¸¢è¶³çƒ,play football,0
+am2,phrases,éª‘è‡ªè¡Œè½¦,ride a bicycle,0
+am2,phrases,ä¸€åªçœ¼ç›,an eye,0
+am2,phrases,ä¸€åªè€³æœµ,an ear,0
+am2,phrases,ä¸€å¼ å¼€å¿ƒçš„è„¸,a happy face,0
+am2,phrases,ä¸€å¼ å¼€å¿ƒçš„è„¸,a funny face,0
+am2,phrases,ä¸€å¼ å¯çˆ±çš„è„¸,a cute face,0
+am2,phrases,ä¸€åªå¤§ç‹®å­,a big lion,0
+am2,phrases,ä¸€ä¸ªå°é£ç­,a small kite,0
+am2,sentences,æˆ‘æ˜¯å·¨äººã€‚ä½ æ˜¯è¶…çº§å¥³å­©ã€‚,I'm Giant. You're Supergirl.,0
+am2,sentences,æˆ‘æ˜¯ç˜¦çš„ã€‚ä½ æ˜¯èƒ–çš„ã€‚,I'm thin. You're fat.,0
+am2,sentences,æˆ‘çš„å¤´å‘æ˜¯çŸ­çš„ã€‚ä½ çš„å¤´å‘æ˜¯é•¿çš„ã€‚,My hair is short. Your hair is long.,0
+am2,sentences,æˆ‘çš„é¼»å­æ˜¯å¤§çš„ã€‚ä½ çš„é¼»å­æ˜¯å°çš„ã€‚,My nose is big. Your nose is small.,0
+am2,sentences,æˆ‘çš„çœ¼ç›æ˜¯å¤§çš„ã€‚ä½ çš„è€³æœµæ˜¯å°çš„ã€‚,My eyes are big. Your ears are small.,0
+am2,sentences,ä½ çš„é¼»å­ä¸æ˜¯å¾ˆå¤§ã€‚,Your nose is not very big.,0
+am3,words,æ»‘æ»‘æ¢¯,slide,0
+am3,words,ç§‹åƒ,swing,0
+am3,words,è··è··æ¿,seesaw,0
+am3,words,ä»€ä¹ˆ,what,0
+am3,words,é¢œè‰²,colour,0
+am3,words,çº¢è‰²,red,0
+am3,words,é»„è‰²,yellow,0
+am3,words,è“è‰²,blue,0
+am3,words,ç»¿è‰²,green,0
+am3,words,æ©™è‰²ï¼ˆæ¡”å­ï¼‰,orange,0
+am3,words,æ£•è‰²,brown,0
+am3,words,ç™½è‰²,white,0
+am3,words,é»‘è‰²,black,0
+am3,words,çœ‹è§,see,0
+am3,words,å‘ä¸Š,up,0
+am3,words,å‘ä¸‹,down,0
+am3,words,ä»–/å¥¹/å®ƒä»¬,they,0
+am3,words,è€é¼ ,mouse,0
+am3,words,ç½‘,net,0
+am3,words,ç”·äºº,man,0
+am3,words,ä¹¦åŒ…,bag,0
+am3,words,ç›’å­,box,0
+am3,words,ç›’å­ï¼ˆå¤æ•°ï¼‰,boxes,0
+am3,words,ä¹¦æœ¬,book,0
+am3,words,è¯¾æ¡Œ,desk,0
+am3,words,æ¤…å­,chair,0
+am3,words,é“…ç¬”ç›’,pencil case,0
+am3,words,æˆ¿é—´,room,0
+am3,words,æ”¾,put,0
+am3,words,åœ¨...é‡Œé¢,in,0
+am3,words,åœ¨...ä¸Šé¢,on,0
+am3,words,åœ¨...ä¸‹é¢,under,0
+am3,words,è¯·,please,0
+am3,words,çˆ±,love,0
+am3,words,ä½¿ç”¨,use,0
+am3,words,ä¿æŒ,keep,0
+am3,words,å¹²å‡€çš„,clean,0
+am3,words,æ¡”å­ï¼ˆæ©™è‰²ï¼‰,orange,0
+am3,words,ä¸€åªæ¡”å­,an orange,0
+am3,words,çŒª,pig,0
+am3,words,å®æ‹‰ï¼ˆå¥³å­©åï¼‰,Paula,0
+am3,words,è…¿,leg,0
+am3,words,æ¥,come,0
+am3,words,åƒ,eat,0
+am3,words,å¨æˆ¿,kitchen,0
+am3,words,ç¢—,bowl,0
+am3,words,ç›˜å­,plate,0
+am3,words,å‹ºå­,spoon,0
+am3,words,å‰å­,fork,0
+am3,words,ç­·å­ï¼ˆå¤æ•°ï¼‰,chopsticks,0
+am3,words,çƒ§èœã€çƒ¹é¥ª,cook,0
+am3,words,æ™šé¥­,dinner,0
+am3,words,ç»™,give,0
+am3,words,å‡†å¤‡å¥½çš„,ready,0
+am3,words,é‡‘å‰ï¼ˆåå­—ï¼‰,Ginger,0
+am3,words,æ·˜æ°”çš„,naughty,0
+am3,words,æ¡Œå­ã€é¤æ¡Œ,table,0
+am3,words,ï¼ˆåŒè„šï¼‰è·³,jump,0
+am3,words,è·³ç»³,skip,0
+am3,words,åœ°æ¿,floor,0
+am3,words,åœ¨......ä¸Šé¢,on,0
+am3,words,åœ¨......ä¸‹é¢,under,0
+am3,words,åœ¨......é‡Œé¢,in,0
+am3,words,å¥³ç‹,queen,0
+am3,words,å…”å­,rabbit,0
+am3,words,å,sit,0
+am3,words,é¢æ¡,noodles,0
+am3,words,æ±¤,soup,0
+am3,words,é¸¡ã€é¸¡è‚‰,chicken,0
+am3,words,é±¼ã€é±¼è‚‰,fish,0
+am3,phrases,åœ¨å„¿ç«¥ä¹å›­,In the children's garden,0
+am3,phrases,ä¸€åªæ˜†è™«,an insect,0
+am3,phrases,è·³ç»³,skip rope,0
+am3,phrases,æ”¾é£ç­,fly a kite,0
+am3,phrases,è¸¢è¶³çƒ,play football,0
+am3,phrases,éª‘è‡ªè¡Œè½¦,ride a bicycle,0
+am3,phrases,ä¸€åªçœ¼ç›,an eye,0
+am3,phrases,ä¸€åªè€³æœµ,an ear,0
+am3,phrases,ä¸€å¼ å¼€å¿ƒçš„è„¸,a happy face,0
+am3,phrases,ä¸€å¼ å¼€å¿ƒçš„è„¸,a funny face,0
+am3,phrases,ä¸€å¼ å¯çˆ±çš„è„¸,a cute face,0
+am3,phrases,ä¸€åªå¤§ç‹®å­,a big lion,0
+am3,phrases,ä¸€ä¸ªå°é£ç­,a small kite,0
+am3,sentences,ä½ èƒ½çœ‹åˆ°ä»€ä¹ˆï¼Ÿæˆ‘èƒ½çœ‹åˆ°ä¸€ä¸ªè··è··æ¿ã€‚,What can you see? --I can see a seesaw.,0
+am3,sentences,å®ƒæ˜¯ä»€ä¹ˆé¢œè‰²ï¼Ÿå®ƒæ˜¯é»„è‰²çš„ã€‚,What colour is it? --It's yellow.,0
+am3,sentences,ä½ ä»¬ï¼ˆä½ ï¼‰å–œæ¬¢ç©ã€‚ä»–ä»¬å–œæ¬¢ç©ã€‚,You like to play. They like to play.,0
+am3,sentences,é‚£äººæœ‰ä¸€å¼ ç½‘ã€‚è€é¼ åœ¨ç½‘é‡Œã€‚,The man has a net. The mouse is in the net.,0
+am3,sentences,è¯·æŠŠç›’å­æ”¾åœ¨æ¤…å­ä¸Šé¢ã€‚,Put the box on the chairï¼Œplease.,0
+am3,sentences,è¯·æŠŠé“…ç¬”æ”¾åœ¨ä¹¦åŒ…é‡Œé¢ã€‚,Put the pencils in the bagï¼Œplease.,0
+am3,sentences,æŠŠçƒæ”¾åœ¨è¯¾æ¡Œä¸‹é¢ã€‚å¥½çš„ã€‚,Put the ball under the desk. All right.,0
+am3,sentences,çœ‹çœ‹ä½ çš„æˆ¿é—´ã€‚æˆ‘å¾ˆæŠ±æ­‰ã€‚,Look at your room. I'm sorry.,0
+am3,sentences,æˆ‘æ¯å¤©ç”¨è¿™ä¸ªç›’å­ã€‚æˆ‘æ¯å¤©ä½¿å®ƒä¿æŒå¹²å‡€ã€‚,I use the box every day! I keep it clean every day!,0
+am3,sentences,è¦å‹ºå­å—ï¼Ÿä¸ç”¨ï¼Œè°¢è°¢ã€‚,"""--A spoon? --Noï¼Œthanks.",0
+am3,sentences,ç­·å­è¦å—ï¼Ÿæ˜¯çš„ï¼Œè¯·ç»™æˆ‘ã€‚,"""--Chopsticks?--Yesï¼Œplease.",0
+am3,sentences,è¯·ç»™æˆ‘ä¸€ä¸ªç›˜å­ã€‚ç»™ä½ ã€‚,Give me a plateï¼Œplease. --Here you are.,0
+am3,sentences,æ™šé¥­å‡†å¤‡å¥½äº†ã€‚æˆ‘æ¥äº†ã€‚,Dinner is ready! --I'm coming.,0
+am3,sentences,è¿™æ˜¯æˆ‘å®¶çš„å¨æˆ¿ã€‚,This is my kitchen.,0
+am4,words,å¤©ç©º,sky,0
+am4,words,å¤ªé˜³,sun,0
+am4,words,æœˆäº®,moon,0
+am4,words,æ˜Ÿæ˜Ÿ,star,0
+am4,words,æ˜äº®çš„,bright,0
+am4,words,é—ªçƒ,twinkle,0
+am4,words,å°çš„,little,0
+am4,words,é«˜çš„,high,0
+am4,words,é’»çŸ³,diamond,0
+am4,words,æ±¤ï¼ˆä¸å¯æ•°ï¼‰,soup,0
+am4,words,æ¡Œå­,table,0
+am4,words,æ±¤å§†ï¼ˆç”·åï¼‰,Tom,0
+am4,words,å…‰æ»‘çš„,smooth,0
+am4,words,æŸ”è½¯çš„,soft,0
+am4,words,æ£®æ—,forest,0
+am4,words,ç‹ç‹¸,fox,0
+am4,words,ç‹ç‹¸ï¼ˆå¤æ•°ï¼‰,foxes,0
+am4,words,æ²³é©¬,hippo,0
+am4,words,è‚‰ï¼ˆä¸å¯æ•°ï¼‰,meat,0
+am4,words,è‰ï¼ˆä¸å¯æ•°ï¼‰,grass,0
+am4,words,é‡ç”Ÿçš„,wild,0
+am4,words,åŠ¨ç‰©,animal,0
+am4,words,çŒ´å­,monkey,0
+am4,words,å…”å­,rabbit,0
+am4,words,å¥½çœ‹çš„,nice,0
+am4,words,å•è„šè·³,hop,0
+am4,words,å¯çˆ±çš„,cute,0
+am4,words,é¡½çš®çš„,naughty,0
+am4,words,æ£•è‰²,brown,0
+am4,words,ç™½è‰²,white,0
+am4,words,è¡ç§‹åƒ,swing,0
+am4,words,é›¨ä¼,umbrella,0
+am4,words,é¢åŒ…è½¦,van,0
+am4,words,çª—æˆ·,window,0
+am4,words,æ¸©è¿ªï¼ˆå¥³åï¼‰,Wendy,0
+am4,words,é»‘è‰²,black,0
+am4,words,é›¨ç‚¹,raindrop,0
+am4,words,å…³,close,0
+am4,words,è¡—é“,street,0
+am4,words,èŠ±æœµ,flower,0
+am4,words,æ ‘,tree,0
+am4,words,ä¸è¦,donâ€™t,0
+am4,words,é‡‡æ‘˜,pick,0
+am4,words,å¯¹ä¸èµ·,sorry,0
+am4,words,çˆ¬,climb,0
+am4,words,ç”»ç”»,draw,0
+am4,words,æ¶‚è‰²,colour,0
+am4,words,é¢œè‰²,cut,0
+am4,words,å…¬å›­,park,0
+am4,words,æ¼‚äº®çš„,beautiful,0
+am4,words,å¸®å¿™,help,0
+am4,words,å“­,cry,0
+am4,words,ç›’å­,box,0
+am4,words,é»„è‰²,yellow,0
+am4,words,æ–‘é©¬,zebra,0
+am4,words,åŠ¨ç‰©å›­,zoo,0
+am4,phrases,åœ¨å¤©ç©ºä¸­,in the sky,0
+am4,phrases,å…‰æ»‘åˆæŸ”è½¯çš„,smooth and soft,0
+am4,phrases,ååœ¨æ¡Œå­ä¸Š,sit on the table,0
+am4,phrases,ä¸€ä¸ªåŠ¨ç‰©,an animal,0
+am4,phrases,ä¸€æŠŠä¼,an umbrella,0
+am4,phrases,å…³çª—,close the window,0
+am4,phrases,æ²³é©¬çš„å˜´å·´,the hippoâ€™s mouth,0
+am4,phrases,åœ¨è¡—ä¸Š,in the street,0
+am4,phrases,é‡‡èŠ±,pick the flowers,0
+am4,phrases,çˆ¬æ ‘,climb the tree,0
+am4,phrases,åœ¨å…¬å›­é‡Œ,in the park,0
+am4,sentences,çœ‹çœ‹å¤©ç©ºã€‚,Look at the sky.,0
+am4,sentences,çœ‹ç€æˆ‘ã€‚,Look at me.,0
+am4,sentences,ä½ èƒ½çœ‹åˆ°ä»€ä¹ˆï¼Ÿæˆ‘èƒ½çœ‹è§å¤ªé˜³ã€‚,What can you see? --- I can see the sun.,0
+am4,sentences,ä½ èƒ½çœ‹åˆ°æ˜Ÿæ˜Ÿå—ï¼Ÿæ˜¯çš„ï¼Œæˆ‘èƒ½ã€‚,Can you see the stars? --- Yesï¼ŒI can.,0
+am4,sentences,ä½ èƒ½çœ‹åˆ°æœˆäº®å—ï¼Ÿä¸ï¼Œæˆ‘ä¸èƒ½ã€‚,Can you see the moon? --- Noï¼ŒI canâ€™t.,0
+am4,sentences,æœˆäº®æ˜¯å¤§çš„å—ï¼Ÿæ˜¯çš„ã€‚å®ƒæ˜¯å¤§çš„ã€‚å®ƒæ˜¯æ˜äº®çš„ã€‚,Is the moon big? ---Yes. Itâ€™s big. Itâ€™s bright.,0
+am4,sentences,æ±¤å§†çš„å…”å­å…‰æ»‘åˆæŸ”è½¯ã€‚,Tomâ€™s rabbit is smooth and soft.,0
+am4,sentences,çœ‹è¿™åªç‹®å­ã€‚å®ƒå¾ˆå¤§ã€‚å®ƒå–œæ¬¢åƒè‚‰ã€‚,Look at the lion. Itâ€™s big. It likes meat.,0
+am4,sentences,çœ‹è¿™åªæ²³é©¬çš„å˜´å·´ã€‚è¿™ä¹ˆå¤§ã€‚,Look at the hippoâ€™s mouth. Itâ€™s so big.,0
+am4,sentences,æ¸©è¿ªåœ¨é¢åŒ…è½¦é‡Œï¼Œæ‰‹é‡Œæ‹¿ç€ä¸¤æŠŠé›¨ä¼ã€‚,Wendy is in a vanï¼Œwith two umbrellas in her hands.,0
+am4,sentences,å¥¹æŠŠå®ƒä»¬å¸¦ç»™å¥¹çš„æœ‹å‹ä»¬ã€‚,She takes them to her friends.,0
+am4,sentences,é›¨ç‚¹è½åœ¨å¥¹çš„å¤´ä¸Šã€‚,Raindrops fall on her head.,0
+am4,sentences,æ¸©è¿ªç”¨æ‰‹å…³ä¸Šäº†çª—ã€‚,Wendy closes the window with her hand.,0
+am4,sentences,ä¸è¦æ‘˜èŠ±ã€‚å¯¹ä¸èµ·ã€‚,Donâ€™t pick the flowers. ---Iâ€™m sorry.,0
+am4,sentences,ä¸è¦çˆ¬æ ‘ï¼Œä¸¹å°¼ã€‚å¯¹ä¸èµ·ã€‚,Donâ€™t climb the treeï¼ŒDanny. ---Iâ€™m sorry.,0
+am4,sentences,æˆ‘å–œæ¬¢è¿™ä¸ªå…¬å›­ã€‚,I like this park.,0
+m1u1,words,å¬ï¼ˆåŠ¨ä½œï¼‰,listen,0
+m1u1,words,å¬è§,hear,0
+m1u1,words,çœ‹è§,see,0
+m1u1,words,çœ‹ï¼ˆåŠ¨ä½œï¼‰,look,0
+m1u1,words,ç«è½¦,train,0
+m1u1,words,å…¬äº¤è½¦,bus,0
+m1u1,words,å…¬äº¤è½¦ï¼ˆå¤æ•°ï¼‰,buses,0
+m1u1,words,æ±½è½¦,car,0
+m1u1,words,å°è´§è½¦,van,0
+m1u1,words,è‡ªè¡Œè½¦,bicycle,0
+m1u1,words,è‡ªè¡Œè½¦,bike,0
+m1u1,words,èˆ¹,ship,0
+m1u1,words,ç»µç¾Šï¼ˆå•æ•°ï¼‰,sheep,0
+m1u1,words,ç»µç¾Šï¼ˆå¤æ•°ï¼‰,sheep,0
+m1u1,words,åœ¨......æ—è¾¹,beside,0
+m1u1,words,ç¡è§‰,sleep,0
+m1u1,words,å…¬äº¤ç«™,bus stop,0
+m1u1,words,è½¦ç«™,station,0
+m1u1,words,é“è·¯,road,0
+m1u1,words,å£°éŸ³,sound,0
+m1u1,words,å˜€å£°,beep,0
+m1u1,words,å‘¼å•¸å£°ï¼ˆç«è½¦ï¼‰,choo,0
+m1u1,words,å˜€å˜Ÿå£°,boop,0
+m1u1,words,ç­‰å¾…,wait,0
+m1u1,phrases,å¬éŸ³ä¹,listen to music,0
+m1u1,sentences,æˆ‘å–œæ¬¢å¬éŸ³ä¹ã€‚,I like listening to music.,0
+m1u2,words,è´è¶,butterfly,0
+m1u2,words,æ˜†è™«,insect,0
+m1u2,words,ç‹®å­,lion,0
+m1u2,words,è€é¼ ,mouse,0
+m1u2,words,æ©™å­,orange,0
+m1u2,words,çŒª,pig,0
+m1u2,words,å…”å­,rabbit,0
+m1u2,words,é›¨ä¼,umbrella,0
+m1u2,words,ç®±å­,box,0
+m1u2,words,é»„è‰²,yellow,0
+m1u2,words,æ–‘é©¬,zebra,0
+m1u2,words,ç‹—,dog,0
+m1u2,words,çŒ«,cat,0
+m1u2,words,å¤§è±¡,elephant,0
+m1u2,words,é¢œè‰²,colour,0
+m1u2,words,ç™½è‰²,white,0
+m1u2,words,é»‘è‰²,black,0
+m1u2,words,ç²‰è‰²,pink,0
+m1u2,words,ç´«è‰²,purple,0
+m1u2,words,è‹¹æœ,apple,0
+m1u2,words,åŒ…,bag,0
+m1u2,words,é£ç­,kite,0
+m1u2,words,è‰,grass,0
+m1u2,words,æ©™è‰²,orange,0
+m1u2,words,è“è‰²,blue,0
+m1u2,words,æ£•è‰²,brown,0
+m1u2,words,çº¢è‰²,red,0
+m1u2,words,ç»¿è‰²,green,0
+m1u2,words,å…¬å›­,park,0
+m1u2,words,ä»–,he,0
+m1u2,words,å¥¹,she,0
+m1u2,words,å®ƒ,it,0
+m1u2,words,ä»–ä»¬/å¥¹ä»¬/å®ƒä»¬,they,0
+m1u2,words,ç“¢è™«,ladybird,0
+m1u2,words,é¸Ÿ,bird,0
+m1u2,words,è´è¶ï¼ˆå¤æ•°ï¼‰,butterflies,0
+m1u2,words,ç¾ä¸½çš„,beautiful,0
+m1u2,phrases,çœ‹è§è‹¹æœ,see an apple,0
+m1u2,sentences,æˆ‘èƒ½çœ‹è§ä¸€ä¸ªè‹¹æœã€‚,I can see an apple.,0
+m1u3,words,å½©è™¹,rainbow,0
+m1u3,words,åœ¨å¤–é¢,outside,0
+m1u3,words,çª—æˆ·,window,0
+m1u3,words,ä¸¤ä¸ª,two,0
+m1u3,words,æ£•è‰²,brown,0
+m1u3,words,è§¦æ‘¸,touch,0
+m1u3,words,æ„Ÿè§‰,feel,0
+m1u3,words,è§‚çœ‹,watch,0
+m1u3,words,æ‰‹è¡¨ï¼ˆå¤æ•°ï¼‰,watches,0
+m1u3,words,é“…ç¬”ç›’,pencil case,0
+m1u3,words,è½¯çš„,soft,0
+m1u3,words,ç¡¬çš„,hard,0
+m1u3,words,ç²—ç³™çš„,rough,0
+m1u3,words,å…‰æ»‘çš„,smooth,0
+m1u3,words,çƒ­çš„,hot,0
+m1u3,words,å†·çš„,cold,0
+m1u3,words,å“å°,taste,0
+m1u3,words,èˆŒå¤´,tongue,0
+m1u3,words,é—»,smell,0
+m1u3,words,çŒœæµ‹,guess,0
+m1u3,words,æ‰“å¼€,open,0
+m1u3,words,å…³é—­,close,0
+m1u3,words,æ¢¨,pear,0
+m1u3,words,æ¡ƒå­,peach,0
+m1u3,words,æ¡ƒå­ï¼ˆå¤æ•°ï¼‰,peaches,0
+m1u3,words,æ´‹å¨ƒå¨ƒ,doll,0
+m1u3,words,è è,pineapple,0
+m1u3,words,æ‰‹è¡¨,watch,0
+m1u3,words,è€è™,tiger,0
+m1u3,phrases,ç™½è‰²çš„é“è·¯,white road,0
+m1u3,sentences,è¿™æ¡é“è·¯æ˜¯ç™½è‰²çš„ã€‚,This road is white.,0
+m2u1,words,å–œæ¬¢,like,0
+m2u1,words,è·‘,run,0
+m2u1,words,è·‘ï¼ˆç°åœ¨åˆ†è¯ï¼‰,running,0
+m2u1,words,æ»‘å†°,skate,0
+m2u1,words,æ»‘å†°ï¼ˆç°åœ¨åˆ†è¯ï¼‰,skating,0
+m2u1,words,éª‘,ride,0
+m2u1,words,éª‘ï¼ˆç°åœ¨åˆ†è¯ï¼‰,riding,0
+m2u1,words,è‡ªè¡Œè½¦,bicycle,0
+m2u1,words,è‡ªè¡Œè½¦,bike,0
+m2u1,words,å•è„šè·³,hop,0
+m2u1,words,å•è„šè·³ï¼ˆç°åœ¨åˆ†è¯ï¼‰,hopping,0
+m2u1,words,è·³ç»³,skip,0
+m2u1,words,è·³ç»³ï¼ˆç°åœ¨åˆ†è¯ï¼‰,skipping,0
+m2u1,words,å”±æ­Œ,sing,0
+m2u1,words,å”±æ­Œï¼ˆç°åœ¨åˆ†è¯ï¼‰,singing,0
+m2u1,words,è·³èˆ,dance,0
+m2u1,words,è·³èˆï¼ˆç°åœ¨åˆ†è¯ï¼‰,dancing,0
+m2u1,words,å†™,write,0
+m2u1,words,å†™ï¼ˆç°åœ¨åˆ†è¯ï¼‰,writing,0
+m2u1,words,é’è›™,frog,0
+m2u1,words,è·³,jump,0
+m2u1,words,è·³ï¼ˆç°åœ¨åˆ†è¯ï¼‰,jumping,0
+m2u1,words,æ¸¸æ³³,swim,0
+m2u1,words,æ¸¸æ³³ï¼ˆç°åœ¨åˆ†è¯ï¼‰,swimming,0
+m2u1,words,ç”»,draw,0
+m2u1,words,ç”»ï¼ˆç°åœ¨åˆ†è¯ï¼‰,drawing,0
+m2u1,words,è¯»,read,0
+m2u1,words,è¯»ï¼ˆç°åœ¨åˆ†è¯ï¼‰,reading,0
+m2u1,words,é£,fly,0
+m2u1,words,é£ï¼ˆç°åœ¨åˆ†è¯ï¼‰,flying,0
+m2u1,words,ç©,play,0
+m2u1,words,ç©ï¼ˆç°åœ¨åˆ†è¯ï¼‰,playing,0
+m2u1,phrases,å–œæ¬¢é£,like to fly,0
+m2u1,sentences,å°é¸Ÿå–œæ¬¢é£ã€‚,Birds like to fly.,0
+m2u2,words,é£Ÿç‰©,food,0
+m2u2,words,æ±‰å ¡,hamburger,0
+m2u2,words,æŠ«è¨,pizza,0
+m2u2,words,æ²™æ‹‰,salad,0
+m2u2,words,é±¼,fish,0
+m2u2,words,é¸¡è‚‰,chicken,0
+m2u2,words,èƒ¡èåœ,carrot,0
+m2u2,words,é¦™è•‰,banana,0
+m2u2,words,è‹¹æœ,apple,0
+m2u2,words,æ¢¨,pear,0
+m2u2,words,æ¡ƒå­,peach,0
+m2u2,words,æ©™å­,orange,0
+m2u2,words,ç±³é¥­,rice,0
+m2u2,words,æ±¤,soup,0
+m2u2,words,é¢æ¡,noodles,0
+m2u2,words,é¸¡è›‹,egg,0
+m2u2,words,æœå†»,jelly,0
+m2u2,words,å†°æ·‡æ·‹,ice cream,0
+m2u2,words,ç³–æœ,sweet,0
+m2u2,words,é¥¼å¹²,biscuit,0
+m2u2,words,å¯ä¹,cola,0
+m2u2,words,æœæ±,juice,0
+m2u2,words,ç‰›å¥¶,milk,0
+m2u2,words,æ°´,water,0
+m2u2,words,é¦…é¥¼,pie,0
+m2u2,words,è›‹ç³•,cake,0
+m2u2,words,é•¿é¢ˆé¹¿,giraffe,0
+m2u2,words,è›‡,snake,0
+m2u2,words,å¤§è±¡,elephant,0
+m2u2,words,æ–‘é©¬,zebra,0
+m2u2,words,å°é¸¡,chick,0
+m2u2,words,é¸­å­,duck,0
+m2u2,words,ç‰›,cow,0
+m2u2,words,çŒª,pig,0
+m2u2,words,é’è›™,frog,0
+m2u2,words,å…”å­,rabbit,0
+m2u2,words,èœœèœ‚,bee,0
+m2u2,words,è´è¶,butterfly,0
+m2u2,words,ç“¢è™«,ladybird,0
+m2u2,words,æ˜†è™«,insect,0
+m2u2,words,é¸Ÿ,bird,0
+m2u2,words,ç»µç¾Š,sheep,0
+m2u2,words,æ¯é¸¡,hen,0
+m2u2,words,ç†Š,bear,0
+m2u2,words,è€è™,tiger,0
+m2u2,words,çŒ´å­,monkey,0
+m2u2,words,ç†ŠçŒ«,panda,0
+m2u2,words,ç‹—,dog,0
+m2u2,words,çŒ«,cat,0
+m2u2,words,ç‹¼,wolf,0
+m2u2,words,ç‹ç‹¸,fox,0
+m2u2,words,æ²³é©¬,hippo,0
+m2u2,words,è‡ªè¡Œè½¦,bicycle,0
+m2u2,words,è‡ªè¡Œè½¦,bike,0
+m2u2,words,æœ€å–œæ¬¢çš„,favourite,0
+m2u2,words,ç¾å‘³çš„,yummy,0
+m2u2,phrases,ç¤ºä¾‹è¯ç»„1,example phrase 1,0
+m2u2,sentences,ç¤ºä¾‹å¥å­1,example sentence 1,0
+m2u3,words,é•¿é¢ˆé¹¿,giraffe,0
+m2u3,words,è›‡,snake,0
+m2u3,words,å¤§è±¡,elephant,0
+m2u3,words,æ–‘é©¬,zebra,0
+m2u3,words,å°é¸¡,chick,0
+m2u3,words,é¸­å­,duck,0
+m2u3,words,å¥¶ç‰›,cow,0
+m2u3,words,çŒª,pig,0
+m2u3,words,é’è›™,frog,0
+m2u3,words,å…”å­,rabbit,0
+m2u3,words,èœœèœ‚,bee,0
+m2u3,words,è´è¶,butterfly,0
+m2u3,words,ç“¢è™«,ladybird,0
+m2u3,words,æ˜†è™«,insect,0
+m2u3,words,é¸Ÿ,bird,0
+m2u3,words,ç»µç¾Š,sheep,0
+m2u3,words,æ¯é¸¡,hen,0
+m2u3,words,ç†Š,bear,0
+m2u3,words,è€è™,tiger,0
+m2u3,words,çŒ´å­,monkey,0
+m2u3,words,ç†ŠçŒ«,panda,0
+m2u3,words,ç‹—,dog,0
+m2u3,words,çŒ«,cat,0
+m2u3,words,ç‹¼,wolf,0
+m2u3,words,ç‹ç‹¸,fox,0
+m2u3,words,æ²³é©¬,hippo,0
+m2u3,words,é±¼,fish,0
+m2u3,phrases,å®ƒä»¬æ˜¯ä»€ä¹ˆï¼Ÿ,What are they?,0
+m2u3,phrases,å®ƒä»¬æ˜¯æ–‘é©¬ã€‚,They are zebras.,0
+m2u3,phrases,ä½ å–œæ¬¢æ–‘é©¬å—ï¼Ÿ,Do you like zebras?,0
+m2u3,phrases,å®ƒä»¬æ˜¯é»‘ç™½çš„ã€‚,They are black and white.,0
+m2u3,sentences,å®ƒä»¬æ˜¯ä»€ä¹ˆï¼Ÿå®ƒä»¬æ˜¯æ–‘é©¬ã€‚,What are they? They are zebras.,0
+m2u3,sentences,ä½ å–œæ¬¢æ–‘é©¬å—ï¼Ÿæ˜¯çš„ï¼Œæˆ‘å–œæ¬¢ã€‚/ ä¸ï¼Œæˆ‘ä¸å–œæ¬¢ã€‚,"Do you like zebras? Yes, I do. / No, I don't.",0
+m2u3,sentences,å®ƒä»¬æ˜¯æ–‘é©¬ã€‚å®ƒä»¬æ˜¯é»‘ç™½çš„ã€‚å®ƒä»¬ä¼šè·‘ã€‚,They are zebras. They are black and white. They can runã€‚,0
+m3u1,words,å­£èŠ‚,season,0
+m3u1,words,æ˜¥å¤©,spring,0
+m3u1,words,å¤å¤©,summer,0
+m3u1,words,ç§‹å¤©,autumn,0
+m3u1,words,å†¬å¤©,winter,0
+m3u1,words,å¤©æ°”,weather,0
+m3u1,words,æ™´æœ—çš„,sunny,0
+m3u1,words,å¤ªé˜³,sun,0
+m3u1,words,å¤šäº‘çš„,cloudy,0
+m3u1,words,äº‘,cloud,0
+m3u1,words,æœ‰é›¨çš„,rainy,0
+m3u1,words,é›¨,rain,0
+m3u1,words,æœ‰é£çš„,windy,0
+m3u1,words,é£,wind,0
+m3u1,words,æ¸©æš–çš„,warm,0
+m3u1,words,ç‚çƒ­çš„,hot,0
+m3u1,words,å‡‰çˆ½çš„,cool,0
+m3u1,words,å¯’å†·çš„,cold,0
+m3u1,words,åœ¨å¤–é¢,outside,0
+m3u1,words,é›ªäººï¼ˆå•æ•°ï¼‰,snowman,0
+m3u1,words,é›ªäººï¼ˆå¤æ•°ï¼‰,snowmen,0
+m3u1,phrases,ç¤ºä¾‹è¯ç»„1,example phrase 1,0
+m3u1,sentences,åœ¨æ˜¥å¤©ï¼Œæˆ‘å–œæ¬¢åœ¨å…¬å›­é‡Œéª‘è‡ªè¡Œè½¦ã€‚,In spring I like riding my bicycle in the park.,0
+m3u1,sentences,åœ¨å¤å¤©ï¼Œæˆ‘å–œæ¬¢åœ¨æ°´é‡Œæ¸¸æ³³ã€‚,In summer I like swimming in the water.,0
+m3u1,sentences,åœ¨ç§‹å¤©ï¼Œæˆ‘å–œæ¬¢åœ¨å…¬å›­é‡Œæ”¾é£ç­ã€‚,In autumn I like flying a kite in the park.,0
+m3u1,sentences,åœ¨å†¬å¤©ï¼Œæˆ‘å–œæ¬¢æ»‘å†°å’Œå †é›ªäººã€‚,In winter I like skating on the ice and making snowmen.,0
+m3u1,sentences,ä½ å–œæ¬¢å¤å¤©ä¹ˆï¼Ÿä¸ï¼Œæˆ‘ä¸å–œæ¬¢ã€‚,Do you like summer? Noï¼ŒI don't.,0
+m3u1,sentences,ä½ å–œæ¬¢å†¬å¤©ä¹ˆï¼Ÿæ˜¯çš„ï¼Œæˆ‘å–œæ¬¢ã€‚,Do you like winter? Yesï¼ŒI do.,0
+m3u1,sentences,æ˜¥å¤©èˆ’æœåˆæ¸©æš–ã€‚,Spring is nice and warm.,0
+m3u1,sentences,å¤å¤©æ™´æœ—åˆç‚çƒ­ã€‚,Summer is sunny and hot.,0
+m3u1,sentences,ç§‹å¤©å¤šé£åˆå‡‰çˆ½ã€‚,Autumn is windy and cool.,0
+m3u1,sentences,å†¬å¤©å¤šäº‘åˆå¯’å†·ã€‚,Winter is cloudy and cold.,0
+m3u1,sentences,ä½ å–œæ¬¢ä»€ä¹ˆå­£èŠ‚ï¼Ÿæˆ‘å–œæ¬¢ç§‹å¤©ã€‚,What season do you like? I like autumn.,0
+m3u1,sentences,å¤©æ°”æ€ä¹ˆæ ·ï¼Ÿ,How is the weather?,0
+m3u1,sentences,æˆ‘æœ€å–œæ¬¢çš„å­£èŠ‚æ˜¯ç§‹å¤©ã€‚,My favourite season is autumn.,0
+m3u2,words,å…¬å…±æ±½è½¦,bus,0
+m3u2,words,å˜Ÿå˜Ÿå£°ï¼ˆæ‹Ÿå£°è¯ï¼‰,boop,0
+m3u2,words,ç«è½¦,train,0
+m3u2,words,ç«è½¦å£°ï¼ˆæ‹Ÿå£°è¯ï¼‰,choo,0
+m3u2,words,è´§è½¦,van,0
+m3u2,words,å“”å“”å£°ï¼ˆæ‹Ÿå£°è¯ï¼‰,beep,0
+m3u2,words,å°ºå­,ruler,0
+m3u2,words,è§„åˆ™,rule,0
+m3u2,words,äº¤é€šç¯,light,0
+m3u2,words,äº¤é€š,traffic,0
+m3u2,words,åœæ­¢,stop,0
+m3u2,words,å‰è¿›,go,0
+m3u2,words,ç­‰å¾…,wait,0
+m3u2,words,å¿«,fast,0
+m3u2,words,æ…¢,slow,0
+m3u2,words,åœè½¦,park,0
+m3u2,phrases,ç¯æ˜¯é»„è‰²çš„ã€‚ç­‰å¾…ï¼,The light is yellow. Wait!,0
+m3u2,phrases,çœ‹ç¯ã€‚å®ƒæ˜¯çº¢è‰²çš„ã€‚,Look at the light. It's red.,0
+m3u2,phrases,è®©æˆ‘ä»¬åœ¨è·¯è¾¹åœä¸‹ã€‚,Let's stop by the road.,0
+m3u2,phrases,ç¯æ˜¯ç»¿è‰²çš„ã€‚,The light is green.,0
+m3u2,phrases,è®©æˆ‘ä»¬è¿‡é©¬è·¯ã€‚,Let's cross the road.,0
+m3u2,sentences,ç¯æ˜¯é»„è‰²çš„ã€‚ç­‰å¾…ï¼,The light is yellow. Wait!,0
+m3u2,sentences,çœ‹ç¯ã€‚å®ƒæ˜¯çº¢è‰²çš„ã€‚è®©æˆ‘ä»¬åœ¨è·¯è¾¹åœä¸‹ã€‚,Look at the light. It's red. Let's stop by the road.,0
+m3u2,sentences,ç¯æ˜¯ç»¿è‰²çš„ã€‚è®©æˆ‘ä»¬è¿‡é©¬è·¯ã€‚,The light is green. Let's cross the road.,0
+m3u3,words,è¡£æœ,clothes,0
+m3u3,words,å­£èŠ‚,season,0
+m3u3,words,å¤©æ°”,weather,0
+m3u3,words,æ˜¥å¤©,spring,0
+m3u3,words,å¤å¤©,summer,0
+m3u3,words,ç§‹å¤©,autumn,0
+m3u3,words,å†¬å¤©,winter,0
+m3u3,words,æ¸©æš–çš„,warm,0
+m3u3,words,çƒ­çš„,hot,0
+m3u3,words,å‡‰çˆ½çš„,cool,0
+m3u3,words,å¯’å†·çš„,cold,0
+m3u3,words,æ™´æœ—çš„,sunny,0
+m3u3,words,å¤šé£çš„,windy,0
+m3u3,words,å¤šäº‘çš„,cloudy,0
+m3u3,words,è¿è¡£è£™,dress,0
+m3u3,words,è£™å­,skirt,0
+m3u3,words,Tæ¤,T-shirt,0
+m3u3,words,çŸ­è£¤,shorts,0
+m3u3,words,ç”·å¼è¡¬è¡«,shirt,0
+m3u3,words,å¥³å¼è¡¬è¡«,blouse,0
+m3u3,words,é•¿è£¤,trousers,0
+m3u3,words,å¤–å¥—,coat,0
+m3u3,phrases,ä½ å–œæ¬¢å“ªä¸ªå­£èŠ‚ï¼Ÿ,What season do you like?,0
+m3u3,phrases,æˆ‘å–œæ¬¢æ˜¥å¤©ã€‚,I like spring.,0
+m3u3,phrases,å®ƒ/æ˜¥å¤©æ¸©æš–è€Œèˆ’é€‚ã€‚,It's nice and warm. / Spring is nice and warm.,0
+m3u3,phrases,æˆ‘ä¸ºæ˜¥å¤©å‡†å¤‡äº†æ¯›è¡£å’Œé•¿è£¤ã€‚,I have a sweater and trousers for spring.,0
+m3u3,sentences,ä½ å–œæ¬¢å“ªä¸ªå­£èŠ‚ï¼Ÿæˆ‘å–œæ¬¢æ˜¥å¤©ã€‚,What season do you like? I like spring.,0
+m3u3,sentences,æ˜¥å¤©æ¸©æš–è€Œèˆ’é€‚ã€‚,Spring is nice and warm.,0
+m3u3,sentences,æˆ‘ä¸ºæ˜¥å¤©å‡†å¤‡äº†æ¯›è¡£å’Œé•¿è£¤ã€‚,I have a sweater and trousers for spring.,0
+m4u1,words,ç¤ºä¾‹å•è¯1,example word 1,0
+m4u1,words,ç¤ºä¾‹å•è¯2,example word 2,0
+m4u1,phrases,ç¤ºä¾‹è¯ç»„1,example phrase 1,0
+m4u1,sentences,ç¤ºä¾‹å¥å­1,example sentence 1,0
+m4u2,words,ç¤ºä¾‹å•è¯1,example word 1,0
+m4u2,words,ç¤ºä¾‹å•è¯2,example word 2,0
+m4u2,phrases,ç¤ºä¾‹è¯ç»„1,example phrase 1,0
+m4u2,sentences,ç¤ºä¾‹å¥å­1,example sentence 1,0
+m4u3,words,ç¤ºä¾‹å•è¯1,example word 1,0
+m4u3,words,ç¤ºä¾‹å•è¯2,example word 2,0
+m4u3,phrases,ç¤ºä¾‹è¯ç»„1,example phrase 1,0
+m4u3,sentences,ç¤ºä¾‹å¥å­1,example sentence 1,0
