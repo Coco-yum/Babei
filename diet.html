@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食谱合集</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #e74c3c;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 5px;
+        }
+        .recipe-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        .recipe-button {
+            padding: 8px 15px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: none;
+            background-color: #e74c3c;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .recipe-button:hover {
+            background-color: #c0392b;
+        }
+        .recipe-button.active {
+            background-color: #c0392b;
+            font-weight: bold;
+        }
+        .recipe {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .ingredients, .steps {
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .ingredient-item {
+            display: flex;
+            justify-content: space-between;
+            max-width: 300px;
+        }
+        .ingredient-name {
+            font-weight: bold;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>食谱合集</h1>
+    
+    <div class="recipe-buttons">
+
+        <button class="recipe-button" data-recipe="cake"> 戚风蛋糕</button>
+        <button class="recipe-button" data-recipe="double-lens-bun">刀切馒头</button>
+        <button class="recipe-button" data-recipe="brown-sugar-bun">红糖馒头</button>
+        <button class="recipe-button" data-recipe="peanut-brittle">牛轧糖</button>
+        <button class="recipe-button" data-recipe="milk-cake"> 蛋挞</button>
+        <button class="recipe-button" data-recipe="ruyi-filling">奶黄馅</button>
+        <button class="recipe-button" data-recipe="salted-egg-yolk">蛋黄流沙</button>
+        <button class="recipe-button" data-recipe="corn-kernels">爆米花</button>
+        <button class="recipe-button" data-recipe="ice-cream">冰淇淋</button>
+    </div>
+
+    <!-- 戚风蛋糕 -->
+    <div id="cake" class="recipe hidden">
+        <h2>戚风蛋糕</h2>
+        
+        <div class="ingredients">
+            <h3>配料表</h3>
+            <ul>
+                <li><div class="ingredient-item"><span class="ingredient-name">鸡蛋</span><span>5个</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">牛奶</span><span>40g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">油</span><span>40g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">面粉</span><span>85g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">糖</span><span>30g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">盐</span><span>2g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">糖</span><span>60g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">柠檬汁</span><span>5ml</span></div></li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <h3>制作步骤</h3>
+            <ol>
+                <li>鸡蛋蛋白蛋黄分离</li>
+                <li>蛋黄糊：蛋黄+前5个配料</li>
+                <li>蛋白糊：蛋白打发+后2个配料 </li>
+                <li>烤箱预热5分钟，150℃ 双层 40分钟</li>
+            </ol>
+        </div>
+    </div>
+    
+    <!-- 冰淇淋 -->
+    <div id="ice-cream" class="recipe hidden">
+        <h2>冰淇淋</h2>
+        
+        <div class="ingredients">
+            <h3>配料表</h3>
+            <ul>
+                <li><div class="ingredient-item"><span class="ingredient-name">淡奶油</span><span>200ml (450g)</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">鸡蛋黄</span><span>2个 (3个)</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">纯牛奶</span><span>50ml (130g)</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">白糖</span><span>50g (70g)</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">盐</span><span>少许 (1g)</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">柠檬汁</span><span>少许</span></div></li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <h3>制作步骤</h3>
+            <ol>
+                <li>蛋黄+糖+柠檬汁/醋     搅拌    至   浅黄色</li>
+                <li>牛奶加热 冒泡泡  +  蛋黄液    搅拌 </li>
+                <li>蛋黄液+盐，小火快速搅拌至沸腾</li>
+                <li>打发淡奶油至9分发，加入蛋奶液 </li>
+            </ol>
+        </div>
+    </div>
+    
+    <!-- 红糖馒头 -->
+    <div id="brown-sugar-bun" class="recipe hidden">
+        <h2>红糖馒头</h2>
+        
+        <div class="ingredients">
+            <h3>配料表</h3>
+            <ul>
+                <li><div class="ingredient-item"><span class="ingredient-name">中筋面粉</span><span>20g + 75g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">酵母</span><span>3g + 3g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">水</span><span>10g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">红糖</span><span>80g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">泡打粉</span><span>6g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">可可粉</span><span>1g</span></div></li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <h3>制作步骤</h3>
+            <p>制作步骤请参考白馒头食谱。</p>
+        </div>
+    </div>
+    
+    <!-- 爆米花 -->
+    <div id="corn-kernels" class="recipe hidden">
+        <h2> 爆米花</h2>
+        
+        <div class="ingredients">
+            <h3>配料表</h3>
+            <ul>
+                <li><div class="ingredient-item"><span class="ingredient-name">玉米粒</span><span>100g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">油</span><span>40-50g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">黄油</span><span>20-30g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">水</span><span>40g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">砂糖</span><span>80g</span></div></li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <h3>制作步骤</h3>
+            <ol>
+                <li>大火 + 玉米 + 油    爆开</li>
+                <li>糖 + 水 融化  中大火  → 黄  </li>
+                <li>+黄油 → 焦糖色</li>
+                <li>+已爆米花  搅拌</li>
+            </ol>
+            <p></p>
+        </div>
+    </div>
+    
+    <!-- 刀切馒头 -->
+    <div id="double-lens-bun" class="recipe hidden">
+        <h2>刀切馒头</h2>
+        
+        <div class="ingredients">
+            <h3>配料表</h3>
+            <ul>
+                <li><div class="ingredient-item"><span class="ingredient-name">中筋面粉</span><span>500g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">低糖酵母</span><span>5g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">糖</span><span>50g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">水/牛奶/南瓜</span><span><250g</span></div></li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <h3>制作步骤</h3>
+            <ol>
+                <li>发酵 - 一发 1-2小时</li>
+                <li>二发 15分钟</li>
+            </ol>
+        </div>
+    </div>
+    
+    <!-- 蛋挞 -->
+    <div id="milk-cake" class="recipe hidden">
+        <h2>蛋挞-无淡奶油</h2>
+        
+        <div class="ingredients">
+            <h3>配料表</h3>
+            <ul>
+                <li><div class="ingredient-item"><span class="ingredient-name">牛奶</span><span>200g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">糖</span><span>40g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">蛋</span><span>2个</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">蛋挞皮 </span><span>12个</span></div></li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <h3>制作步骤</h3>
+            <p>蛋+糖+牛奶 → 过筛3遍 </p>
+            <p>烤箱 200℃ 20分钟</p>
+            <p>注：改良家庭版：一个蛋配料减半。</p>
+        </div>
+    </div>
+    
+    <!-- 奶黄馅 -->
+    <div id="ruyi-filling" class="recipe hidden">
+        <h2>奶黄馅</h2>
+        
+        <div class="ingredients">
+            <h3>配料表</h3>
+            <ul>
+                <li><div class="ingredient-item"><span class="ingredient-name">鸡蛋</span><span>100g (2个)</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">棉白糖</span><span>45g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">澄粉/小麦淀粉</span><span>25g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">奶粉</span><span>15g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">纯牛奶</span><span>80g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">无盐黄油</span><span>30g</span></div></li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <h3>制作步骤</h3>
+            <ol>
+                <li>鸡蛋打散 + 牛奶 + 奶粉 + 黄油</li>
+                <li>小火翻拌炒</li>
+                <li>冷藏 </li>
+                <li>分成25g/个的小份</li>
+            </ol>
+            <p></p>
+        </div>
+    </div>
+    
+    <!-- 蛋黄流沙 -->
+    <div id="salted-egg-yolk" class="recipe hidden">
+        <h2>蛋黄流沙</h2>
+        
+        <div class="ingredients">
+            <h3>配料表</h3>
+            <ul>
+                <li><div class="ingredient-item"><span class="ingredient-name">咸蛋黄</span><span>3个</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">鸡蛋黄</span><span>1个</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">奶粉</span><span>20g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">吉士粉</span><span>3g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">绵白糖</span><span>40g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">动物黄油</span><span>35g</span></div></li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <h3>制作步骤</h3>
+            <ol>
+                <li>蛋黄以外的材料揉捏</li>
+                <li>+ 粉状蛋黄</li>
+                <li>揉捏至软 → 冰箱</li>
+            </ol>
+            <p></p>
+            <p>注：2种蛋黄均需要压成粉状。</p>
+        </div>
+    </div>
+    
+    <!-- 牛轧糖 -->
+    <div id="peanut-brittle" class="recipe hidden">
+        <h2>牛轧糖</h2>
+        
+        <div class="ingredients">
+            <h3>配料表</h3>
+            <ul>
+                <li><div class="ingredient-item"><span class="ingredient-name">黄油</span><span>80g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">棉花糖</span><span>300g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">全脂奶粉</span><span>100g</span></div></li>
+                <li><div class="ingredient-item"><span class="ingredient-name">花生</span><span>200g</span></div></li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <h3>制作步骤</h3>
+            <p>。</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.recipe-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.recipe-button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Hide all recipes
+                document.querySelectorAll('.recipe').forEach(recipe => {
+                    recipe.classList.add('hidden');
+                });
+                
+                // Show selected recipe
+                const recipeId = this.getAttribute('data-recipe');
+                document.getElementById(recipeId).classList.remove('hidden');
+            });
+        });
+
+        // Show the first recipe by default
+        document.querySelector('.recipe-button').click();
+    </script>
+</body>
+</html>
