@@ -677,24 +677,54 @@ m3u3,sentences,春天温暖而舒适。,Spring is nice and warm.,0
 m3u3,sentences,我为春天准备了毛衣和长裤。,I have a sweater and trousers for spring.,0
 m3u3,sentences,一起去上学。,Go to school together.,0
 m3u3,sentences,该上课了。,Time for class.,0
-m4u1,words,活动,activity,0
-m4u1,words,活动（复数）,activities,0
-m4u1,words,写,write,0
-m4u1,words,画,draw,0
-m4u1,words,游泳,swim,0
-m4u1,words,飞,fly,0
-m4u1,words,摇摆,swing,0
+m4u1,words,跳舞,dance,0
+m4u1,words,阅读,read,0
 m4u1,words,唱歌,sing,0
-m4u1,phrases,踢足球,play football,0
-m4u1,phrases,打篮球,play basketball,0
-m4u1,phrases,打乒乓球,play ping-pong,0
-m4u1,phrases,打乒乓球,play table tennis,0
-m4u1,phrases,打牌,play cards,0
-m4u1,phrases,跳绳,skip rope,0
+m4u1,words,画画,draw,0
+m4u1,words,骑,ride,0
+m4u1,words,跳,skip,0
+m4u1,words,玩,play,0
+m4u1,words,飞,fly,0
+m4u1,words,跑,run,0
+m4u1,words,跑步,running,0
+m4u1,words,写,write,0
+m4u1,words,写作,writing,0
+m4u1,words,游泳,swim,0
+m4u1,words,游泳（进行时）,swimming,0
+m4u1,words,采摘,pick,0
+m4u1,words,爬,climb,0
+m4u1,words,滑冰,skate,0
+m4u1,words,单脚跳,hop,0
+m4u1,words,等待,wait,0
+m4u1,words,停止,stop,0
+m4u1,phrases,骑自行车,ride a bicycle,0
 m4u1,phrases,放风筝,fly a kite,0
-m4u1,phrases,骑旋转木马,ride a frieze,0
+m4u1,phrases,跳绳,skip rope,0
+m4u1,phrases,打篮球,play basketball,0
+m4u1,phrases,踢足球,play football,0
+m4u1,phrases,打乒乓球,play ping-pong,0
+m4u1,sentences,你父亲会踢足球吗？,can your father play football?,0
+m4u1,sentences,不，他不会。他会打篮球。,No, he can't. He can play basketball.,0
+m4u1,sentences,你妈妈会做什么？,What can your mother do?,0
+m4u1,sentences,她会打牌和跳舞。,She can play cards and dance.,0
+m4u1,sentences,本会踢足球吗？是的，他会。,Can Ben play football? Yes, he can.,0
+m4u1,sentences,爱丽丝会打篮球吗？不，她不会。,Can Alice play basketball? No, she can't.,0
 m4u1,sentences,本会踢足球吗？是的，他会。,Can Ben play football? Yes，he can.,0
 m4u1,sentences,爱丽丝会打篮球吗？不，她不会。,Can Alice play basketball? No，she can't.,0
+m4u2,words,信,letter,0
+m4u2,words,卡片,card,0
+m4u2,words,气球,balloon,0
+m4u2,words,修正,correction,0
+m4u2,words,母亲,mother,0
+m4u2,words,父亲,father,0
+m4u2,words,兄弟,brother,0
+m4u2,words,姐妹,sister,0
+m4u2,words,孩子,child,0
+m4u2,words,孩子们,children,0
+m4u2,sentences,母亲节快乐！,Happy Mother's Day!,0
+m4u2,sentences,我能为妈妈做什么？,What can I do for Mum?,0
+m4u2,sentences,我喜欢这个好主意。,I love a good idea.,0
+m4u2,sentences,我爱你，妈妈！,I love you, Mum!,0
 m4u2,words,示例单词1,example word 1,0
 m4u2,words,示例单词2,example word 2,0
 m4u2,phrases,示例词组1,example phrase 1,0
