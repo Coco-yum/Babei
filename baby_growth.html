@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby成长曲线</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .baby-selector {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .chart-type-selector {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 500px;
+            margin-bottom: 20px;
+        }
+        
+        .add-data {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .add-data h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .form-group label {
+            font-weight: bold;
+            color: #555;
+        }
+        
+        .form-group input, .form-group select, .form-group textarea {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .btn:hover {
+            background-color: #45a049;
+        }
+        
+        .data-table {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .data-table h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .baby-filter {
+            margin-bottom: 15px;
+        }
+        
+        .baby-filter select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Baby成长曲线记录</h1>
+        
+        <div class="controls">
+            <div class="baby-selector">
+                <label for="baby-select">选择Baby:</label>
+                <select id="baby-select">
+                    <option value="all">所有Baby</option>
+                    <option value="EASON">EASON</option>
+                    <option value="BABY2">BABY2</option>
+                </select>
+            </div>
+            <div class="chart-type-selector">
+                <label for="chart-type">图表类型:</label>
+                <select id="chart-type">
+                    <option value="height">身高曲线</option>
+                    <option value="weight">体重曲线</option>
+                    <option value="both">身高体重对比</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="chart-container">
+            <canvas id="growth-chart"></canvas>
+        </div>
+        
+        <div class="add-data">
+            <h2>添加新记录</h2>
+            <form id="add-record-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="babyname">Baby Name:</label>
+                        <select id="babyname" required>
+                            <option value="EASON">EASON</option>
+                            <option value="BABY2">BABY2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">日期:</label>
+                        <input type="text" id="date" placeholder="例如: 2025年12月19日" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="height">身高 (cm):</label>
+                        <input type="number" id="height" step="0.1" placeholder="例如: 130">
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">体重 (kg):</label>
+                        <input type="number" id="weight" step="0.1" placeholder="例如: 29">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="record">记录:</label>
+                        <textarea id="record" placeholder="记录宝宝的日常情况"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn">添加记录</button>
+            </form>
+        </div>
+        
+        <div class="data-table">
+            <h2>详细数据</h2>
+            <div class="baby-filter">
+                <label for="table-baby-filter">过滤Baby:</label>
+                <select id="table-baby-filter">
+                    <option value="all">所有Baby</option>
+                    <option value="EASON">EASON</option>
+                    <option value="BABY2">BABY2</option>
+                </select>
+            </div>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>Baby Name</th>
+                        <th>身高 (cm)</th>
+                        <th>体重 (kg)</th>
+                        <th>记录</th>
+                    </tr>
+                </thead>
+                <tbody id="data-body">
+                    <!-- 数据将通过JavaScript动态生成 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // 全局变量
+        let babyData = [];
+        let growthChart = null;
+        
+        // 颜色配置
+        const colors = {
+            'EASON': {
+                height: 'rgba(255, 99, 132, 1)',
+                weight: 'rgba(255, 159, 64, 1)',
+                heightBg: 'rgba(255, 99, 132, 0.2)',
+                weightBg: 'rgba(255, 159, 64, 0.2)'
+            },
+            'BABY2': {
+                height: 'rgba(54, 162, 235, 1)',
+                weight: 'rgba(75, 192, 192, 1)',
+                heightBg: 'rgba(54, 162, 235, 0.2)',
+                weightBg: 'rgba(75, 192, 192, 0.2)'
+            }
+        };
+        
+        // 读取CSV文件
+        async function loadCSV() {
+            try {
+                const response = await fetch('Babydata.csv');
+                const csvText = await response.text();
+                const rows = csvText.split('\n').filter(row => row.trim() !== '');
+                
+                // 解析表头
+                const headers = rows[0].split(',').map(header => header.trim());
+                
+                // 解析数据行
+                babyData = rows.slice(1).map(row => {
+                    const values = row.split(',').map(value => value.trim());
+                    const record = {};
+                    headers.forEach((header, index) => {
+                        record[header] = values[index] || '';
+                    });
+                    
+                    // 转换数值类型
+                    if (record['身高']) record['身高'] = parseFloat(record['身高']);
+                    if (record['体重']) record['体重'] = parseFloat(record['体重']);
+                    
+                    return record;
+                });
+                
+                // 渲染图表和表格
+                renderChart();
+                renderTable();
+            } catch (error) {
+                console.error('Error loading CSV file:', error);
+                alert('无法加载CSV文件，请确保Babydata.csv存在于同一目录下。');
+            }
+        }
+        
+        // 渲染图表
+        function renderChart() {
+            const babySelect = document.getElementById('baby-select').value;
+            const chartType = document.getElementById('chart-type').value;
+            
+            // 过滤数据
+            let filteredData = babyData;
+            if (babySelect !== 'all') {
+                filteredData = babyData.filter(item => item['babyname'] === babySelect);
+            }
+            
+            // 按日期排序
+            filteredData.sort((a, b) => {
+                // 简单的日期比较，实际项目中应使用更可靠的日期解析
+                return a['日期'].localeCompare(b['日期']);
+            });
+            
+            // 准备图表数据
+            const chartData = prepareChartData(filteredData, chartType, babySelect);
+            
+            // 销毁现有图表
+            if (growthChart) {
+                growthChart.destroy();
+            }
+            
+            // 创建新图表
+            const ctx = document.getElementById('growth-chart').getContext('2d');
+            growthChart = new Chart(ctx, {
+                type: 'line',
+                data: chartData,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            title: {
+                                display: true,
+                                text: chartType === 'height' ? '身高 (cm)' : chartType === 'weight' ? '体重 (kg)' : '数值'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: '日期'
+                            }
+                        }
+                    },
+                    elements: {
+                        point: {
+                            radius: 5,
+                            hoverRadius: 7
+                        }
+                    }
+                }
+            });
+        }
+        
+        // 准备图表数据
+        function prepareChartData(data, chartType, babySelect) {
+            const datasets = [];
+            const labels = [...new Set(data.map(item => item['日期']))];
+            
+            // 如果是单Baby或所有Baby
+            if (babySelect === 'all') {
+                // 所有Baby，为每个Baby创建独立的数据集
+                const babies = [...new Set(data.map(item => item['babyname']))];
+                
+                babies.forEach(baby => {
+                    const babyData = data.filter(item => item['babyname'] === baby);
+                    
+                    if (chartType === 'height' || chartType === 'both') {
+                        datasets.push({
+                            label: `${baby} - 身高`,
+                            data: labels.map(label => {
+                                const item = babyData.find(d => d['日期'] === label);
+                                return item && item['身高'] ? item['身高'] : null;
+                            }),
+                            borderColor: colors[baby].height,
+                            backgroundColor: colors[baby].heightBg,
+                            yAxisID: 'y'
+                        });
+                    }
+                    
+                    if (chartType === 'weight' || chartType === 'both') {
+                        datasets.push({
+                            label: `${baby} - 体重`,
+                            data: labels.map(label => {
+                                const item = babyData.find(d => d['日期'] === label);
+                                return item && item['体重'] ? item['体重'] : null;
+                            }),
+                            borderColor: colors[baby].weight,
+                            backgroundColor: colors[baby].weightBg,
+                            yAxisID: chartType === 'both' ? 'y1' : 'y'
+                        });
+                    }
+                });
+            } else {
+                // 单个Baby
+                if (chartType === 'height' || chartType === 'both') {
+                    datasets.push({
+                        label: `${babySelect} - 身高`,
+                        data: data.map(item => item['身高'] || null),
+                        borderColor: colors[babySelect].height,
+                        backgroundColor: colors[babySelect].heightBg,
+                        yAxisID: 'y'
+                    });
+                }
+                
+                if (chartType === 'weight' || chartType === 'both') {
+                    datasets.push({
+                        label: `${babySelect} - 体重`,
+                        data: data.map(item => item['体重'] || null),
+                        borderColor: colors[babySelect].weight,
+                        backgroundColor: colors[babySelect].weightBg,
+                        yAxisID: chartType === 'both' ? 'y1' : 'y'
+                    });
+                }
+            }
+            
+            return {
+                labels: babySelect === 'all' ? labels : data.map(item => item['日期']),
+                datasets: datasets
+            };
+        }
+        
+        // 渲染表格
+        function renderTable() {
+            const tableBabyFilter = document.getElementById('table-baby-filter').value;
+            const tbody = document.getElementById('data-body');
+            
+            // 过滤数据
+            let filteredData = babyData;
+            if (tableBabyFilter !== 'all') {
+                filteredData = babyData.filter(item => item['babyname'] === tableBabyFilter);
+            }
+            
+            // 按日期排序
+            filteredData.sort((a, b) => {
+                return b['日期'].localeCompare(a['日期']);
+            });
+            
+            // 渲染表格内容
+            tbody.innerHTML = filteredData.map(item => {
+                return `
+                    <tr>
+                        <td>${item['日期']}</td>
+                        <td>${item['babyname']}</td>
+                        <td>${item['身高'] || '-'}</td>
+                        <td>${item['体重'] || '-'}</td>
+                        <td>${item['记录'] || '-'}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+        
+        // 添加新记录
+        document.getElementById('add-record-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 获取表单数据
+            const newRecord = {
+                'babyname': document.getElementById('babyname').value,
+                '日期': document.getElementById('date').value,
+                '身高': document.getElementById('height').value ? parseFloat(document.getElementById('height').value) : '',
+                '体重': document.getElementById('weight').value ? parseFloat(document.getElementById('weight').value) : '',
+                '记录': document.getElementById('record').value
+            };
+            
+            // 添加到内存数据
+            babyData.push(newRecord);
+            
+            // 更新图表和表格
+            renderChart();
+            renderTable();
+            
+            // 清空表单
+            this.reset();
+            
+            alert('记录添加成功！');
+        });
+        
+        // 监听控件变化
+        document.getElementById('baby-select').addEventListener('change', renderChart);
+        document.getElementById('chart-type').addEventListener('change', renderChart);
+        document.getElementById('table-baby-filter').addEventListener('change', renderTable);
+        
+        // 初始化
+        window.addEventListener('DOMContentLoaded', loadCSV);
+    </script>
+</body>
+</html>
