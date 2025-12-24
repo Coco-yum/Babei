@@ -5,31 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baby成长曲线</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- 使用正确的方式加载SQL.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <!-- 先加载SQL.js核心库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.9.0/sql-wasm.js"></script>
+    <!-- 配置SQL.js并初始化 -->
     <script>
-        // 配置SQL.js的WASM文件路径
-        const initSqlJs = window.initSqlJs;
-        
-        // 动态加载SQL.js库
-        (async () => {
-            try {
-                // 动态导入SQL.js
-                const sqlJsModule = await import('https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.9.0/sql-wasm.min.js');
-                const SQL = await sqlJsModule.default({
-                    locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.9.0/${file}`
-                });
-                
-                // 将SQL对象存储到全局作用域，供后续使用
-                window.SQL = SQL;
+        // 页面加载完成后初始化
+        window.addEventListener('DOMContentLoaded', () => {
+            // 配置SQL.js的WASM文件路径
+            initSqlJs({
+                locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.9.0/${file}`
+            }).then(SQL => {
                 console.log('SQL.js库加载成功');
-                
-                // 库加载成功后初始化数据库
+                // 将SQL对象存储到全局作用域
+                window.SQL = SQL;
+                // 初始化数据库
                 initSQL();
-            } catch (error) {
-                console.error('SQL.js库加载失败:', error);
-                alert('SQL.js库加载失败，请检查网络连接。');
-            }
-        })();
+            }).catch(error => {
+                console.error('SQL.js初始化失败:', error);
+                alert('SQL.js初始化失败，请检查网络连接。详细信息：' + error.message);
+            });
+        });
     </script>
     <link rel="stylesheet" href="baby_growth.css">
 </head>
@@ -76,10 +72,10 @@
                 <form id="add-record-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="babyname">Baby Name:</label>
+                            <label for="babyname">宝贝:</label>
                             <select id="babyname" required>
                                 <option value="EASON">EASON</option>
-                        <option value="JENNY">JENNY</option>
+                                <option value="JENNY">JENNY</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -113,18 +109,17 @@
             <div class="data-table">
                 <h2>详细数据</h2>
                 <div class="baby-filter">
-                    <label for="table-baby-filter">选择:</label>
-                    <select id="table-baby-filter">
-                        <option value="all">ALL</option>
-                        <option value="EASON">EASON</option>
-                        <option value="JENNY">JENNY</option>
-                    </select>
+                    <label>选择宝贝:</label>
+                    <div class="baby-checkbox-container">
+                        <label><input type="checkbox" class="baby-checkbox" value="EASON" checked>EASON</label>
+                        <label><input type="checkbox" class="baby-checkbox" value="JENNY" checked>JENNY</label>
+                    </div>
                 </div>
                 <table id="data-table">
                     <thead>
                         <tr>
                             <th>日期</th>
-                            <th>Baby Name</th>
+                            <th>宝贝</th>
                             <th>身高 (cm)</th>
                             <th>体重 (kg)</th>
                             <th>记录</th>
@@ -292,6 +287,9 @@
                             title: {
                                 display: true,
                                 text: '日期'
+                            },
+                            grid: {
+                                drawBorder: true
                             }
                         }
                     },
@@ -299,8 +297,13 @@
                         point: {
                             radius: 5,
                             hoverRadius: 7
+                        },
+                        line: {
+                            tension: 0.4,
+                            borderWidth: 2
                         }
-                    }
+                    },
+                    spanGaps: true
                 }
             });
         }
@@ -413,14 +416,13 @@
         
         // 渲染表格
         function renderTable() {
-            const tableBabyFilter = document.getElementById('table-baby-filter').value;
             const tbody = document.getElementById('data-body');
             
+            // 获取选中的宝贝
+            const selectedBabies = Array.from(document.querySelectorAll('.baby-checkbox:checked')).map(cb => cb.value);
+            
             // 过滤数据
-            let filteredData = babyData;
-            if (tableBabyFilter !== 'all') {
-                filteredData = babyData.filter(item => item['babyname'] === tableBabyFilter);
-            }
+            let filteredData = babyData.filter(item => selectedBabies.includes(item['babyname']));
             
             // 按日期排序
             filteredData.sort((a, b) => {
@@ -505,7 +507,9 @@
             radio.addEventListener('change', renderChart);
         });
         document.getElementById('chart-type').addEventListener('change', renderChart);
-        document.getElementById('table-baby-filter').addEventListener('change', renderTable);
+        document.querySelectorAll('.baby-checkbox').forEach(cb => {
+            cb.addEventListener('change', renderTable);
+        });
         
         // 初始化已通过SQL.js加载函数调用
     </script>

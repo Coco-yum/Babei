@@ -168,12 +168,26 @@ tr:nth-child(even) {
 
 .baby-filter {
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.baby-filter select {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.baby-checkbox-container {
+    display: flex;
+    gap: 15px;
+}
+
+.baby-checkbox-container label {
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.baby-checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
 }
 
 /* Tab样式 */
