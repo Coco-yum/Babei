@@ -73,10 +73,12 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="babyname">宝贝:</label>
-                            <select id="babyname" required>
-                                <option value="EASON">EASON</option>
-                                <option value="JENNY">JENNY</option>
-                            </select>
+                            <div class="autocomplete-container">
+                                <input type="text" id="babyname" list="babyname-options" required placeholder="输入或选择宝贝名字">
+                                <datalist id="babyname-options">
+                                    <!-- 选项将通过JavaScript动态生成 -->
+                                </datalist>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="date">日期:</label>
@@ -90,7 +92,7 @@
                         </div>
                         <div class="form-group">
                             <label for="weight">体重 (kg):</label>
-                            <input type="number" id="weight" step="0.1" placeholder="例如: 29">
+                            <input type="number" id="weight" step="0.01" placeholder="例如: 29.50">
                         </div>
                     </div>
                     <div class="form-row">
@@ -123,12 +125,54 @@
                             <th>身高 (cm)</th>
                             <th>体重 (kg)</th>
                             <th>记录</th>
+                            <th>操作</th>
                         </tr>
                     </thead>
                     <tbody id="data-body">
                         <!-- 数据将通过JavaScript动态生成 -->
                     </tbody>
                 </table>
+                
+                <!-- 修改记录模态框 -->
+                <div id="edit-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>修改记录</h2>
+                        <form id="edit-record-form">
+                            <input type="hidden" id="edit-record-id">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="edit-babyname">宝贝:</label>
+                                    <input type="text" id="edit-babyname" list="edit-babyname-options" required>
+                                    <datalist id="edit-babyname-options">
+                                        <!-- 选项将通过JavaScript动态生成 -->
+                                    </datalist>
+                                </div>
+                                <div class="form-group">
+                                    <label for="edit-date">日期:</label>
+                                    <input type="date" id="edit-date" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="edit-height">身高 (cm):</label>
+                                    <input type="number" id="edit-height" step="0.1" placeholder="例如: 130">
+                                </div>
+                                <div class="form-group">
+                                    <label for="edit-weight">体重 (kg):</label>
+                                    <input type="number" id="edit-weight" step="0.01" placeholder="例如: 29.50">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group" style="flex: 1;">
+                                    <label for="edit-record">记录:</label>
+                                    <textarea id="edit-record" placeholder="记录宝宝的日常情况"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn">保存修改</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -139,21 +183,76 @@
         let growthChart = null;
         let db = null; // SQLite数据库对象
         
-        // 颜色配置
-        const colors = {
-            'EASON': {
-                height: 'rgba(255, 99, 132, 1)',
-                weight: 'rgba(255, 159, 64, 1)',
-                heightBg: 'rgba(255, 99, 132, 0.2)',
-                weightBg: 'rgba(255, 159, 64, 0.2)'
-            },
-            'JENNY': {
-                height: 'rgba(54, 162, 235, 1)',
-                weight: 'rgba(75, 192, 192, 1)',
-                heightBg: 'rgba(54, 162, 235, 0.2)',
-                weightBg: 'rgba(75, 192, 192, 0.2)'
-            }
-        };
+        // 预设颜色数组，用于分配给不同的宝贝
+        const presetColors = [
+            { height: 'rgba(255, 99, 132, 1)', weight: 'rgba(255, 159, 64, 1)', heightBg: 'rgba(255, 99, 132, 0.2)', weightBg: 'rgba(255, 159, 64, 0.2)' },
+            { height: 'rgba(54, 162, 235, 1)', weight: 'rgba(75, 192, 192, 1)', heightBg: 'rgba(54, 162, 235, 0.2)', weightBg: 'rgba(75, 192, 192, 0.2)' },
+            { height: 'rgba(153, 102, 255, 1)', weight: 'rgba(255, 206, 86, 1)', heightBg: 'rgba(153, 102, 255, 0.2)', weightBg: 'rgba(255, 206, 86, 0.2)' },
+            { height: 'rgba(255, 159, 64, 1)', weight: 'rgba(255, 99, 132, 1)', heightBg: 'rgba(255, 159, 64, 0.2)', weightBg: 'rgba(255, 99, 132, 0.2)' },
+            { height: 'rgba(75, 192, 192, 1)', weight: 'rgba(54, 162, 235, 1)', heightBg: 'rgba(75, 192, 192, 0.2)', weightBg: 'rgba(54, 162, 235, 0.2)' },
+            { height: 'rgba(255, 206, 86, 1)', weight: 'rgba(153, 102, 255, 1)', heightBg: 'rgba(255, 206, 86, 0.2)', weightBg: 'rgba(153, 102, 255, 0.2)' }
+        ];
+        
+        // 获取宝贝对应的颜色配置
+        function getBabyColors(babyName) {
+            const babyNames = getAllBabyNames();
+            const index = babyNames.indexOf(babyName);
+            // 如果找不到宝贝或索引超出预设颜色范围，使用循环索引
+            const colorIndex = index >= 0 ? index % presetColors.length : 0;
+            return presetColors[colorIndex];
+        }
+        
+        // 获取所有唯一的宝贝名字
+        function getAllBabyNames() {
+            const babyNames = [...new Set(babyData.map(item => item['babyname']))];
+            babyNames.sort();
+            return babyNames;
+        }
+        
+        // 更新宝贝选择相关的UI元素
+        function updateBabySelectors() {
+            const babyNames = getAllBabyNames();
+            
+            // 更新添加记录表单的datalist选项
+            const datalist = document.getElementById('babyname-options');
+            datalist.innerHTML = babyNames.map(name => `<option value="${name}">${name}</option>`).join('');
+            
+            // 更新修改记录表单的datalist选项
+            const editDatalist = document.getElementById('edit-babyname-options');
+            editDatalist.innerHTML = babyNames.map(name => `<option value="${name}">${name}</option>`).join('');
+            
+            // 更新成长曲线的宝贝选择选项
+            const babySelector = document.querySelector('.baby-selector');
+            // 保留ALL选项，删除其他选项
+            babySelector.innerHTML = `
+                <input type="radio" id="baby-all" name="baby-select" value="all" checked>
+                <label for="baby-all">ALL</label>
+            `;
+            // 添加每个宝贝的选项
+            babyNames.forEach(name => {
+                const radioHtml = `
+                    <input type="radio" id="baby-${name.toLowerCase()}" name="baby-select" value="${name}">
+                    <label for="baby-${name.toLowerCase()}">${name}</label>
+                `;
+                babySelector.insertAdjacentHTML('beforeend', radioHtml);
+            });
+            
+            // 更新宝贝选择事件监听
+            document.querySelectorAll('input[name="baby-select"]').forEach(radio => {
+                radio.addEventListener('change', renderChart);
+            });
+            
+            // 更新详细数据页面的宝贝选择checkbox
+            const babyCheckboxContainer = document.querySelector('.baby-checkbox-container');
+            babyCheckboxContainer.innerHTML = babyNames.map(name => {
+                return `<label><input type="checkbox" class="baby-checkbox" value="${name}" checked>${name}</label>`;
+            }).join('');
+            
+            // 更新checkbox事件监听
+            document.querySelectorAll('.baby-checkbox').forEach(cb => {
+                cb.addEventListener('change', renderTable);
+            });
+        }
         
         // 初始化SQL.js并加载数据库
         async function initSQL() {
@@ -219,6 +318,9 @@
                     console.log('数据转换完成，转换后的数据:', babyData.length, '条记录');
                     console.log('转换后的数据示例:', babyData.slice(0, 2));
                     
+                    // 更新宝贝选择相关的UI元素
+                    updateBabySelectors();
+                    
                     // 渲染图表和表格
                     renderChart();
                     renderTable();
@@ -273,6 +375,27 @@
                         tooltip: {
                             mode: 'index',
                             intersect: false,
+                            callbacks: {
+                                label: function(context) {
+                                    // 格式化tooltip显示，确保包含年份
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.y !== null) {
+                                        label += context.parsed.y + ' ';
+                                        if (chartType === 'height' || context.dataset.label.includes('身高')) {
+                                            label += 'cm';
+                                        } else if (chartType === 'weight' || context.dataset.label.includes('体重')) {
+                                            label += 'kg';
+                                        }
+                                    }
+                                    // 添加完整日期，包括年份
+                                    const date = new Date(context.parsed.x);
+                                    label += ' (' + date.getFullYear() + '/' + String(date.getMonth() + 1).padStart(2, '0') + '/' + String(date.getDate()).padStart(2, '0') + ')';
+                                    return label;
+                                }
+                            }
                         }
                     },
                     scales: {
@@ -281,6 +404,9 @@
                             title: {
                                 display: true,
                                 text: chartType === 'height' ? '身高 (cm)' : chartType === 'weight' ? '体重 (kg)' : '数值'
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.1)'
                             }
                         },
                         x: {
@@ -288,8 +414,36 @@
                                 display: true,
                                 text: '日期'
                             },
+                            type: 'time',
+                            time: {
+                                unit: 'year',
+                                stepSize: 1,
+                                displayFormats: {
+                                    year: 'yyyy',
+                                    month: 'MM',
+                                    day: 'MM/dd'
+                                }
+                            },
+                            ticks: {
+                                // 确保每年显示一个刻度
+                                autoSkip: true,
+                                maxRotation: 0,
+                                minRotation: 0
+                            },
                             grid: {
-                                drawBorder: true
+                                drawBorder: true,
+                                drawTicks: true,
+                                color: function(context) {
+                                    // 每年的主要刻度线（1月1日）用实线，其他月份用虚线
+                                    return context.tick && context.tick.major ? 'rgba(0, 0, 0, 0.2)' : 'rgba(0, 0, 0, 0.05)';
+                                },
+                                borderDash: function(context) {
+                                    // 每年的主要刻度线（1月1日）用实线，其他月份用虚线
+                                    return context.tick && context.tick.major ? [] : [5, 5];
+                                }
+                            },
+                            border: {
+                                display: true
                             }
                         }
                     },
@@ -341,25 +495,53 @@
         // 准备图表数据
         function prepareChartData(data, chartType, babySelect) {
             const datasets = [];
-            const labels = [...new Set(data.map(item => item['日期']))];
             
-            // 如果是单Baby或所有Baby
+            // 获取所有日期
+            let allDates = [...new Set(data.map(item => item['日期']))];
+            
+            // 按日期排序
+            allDates.sort();
+            
+            // 获取日期范围
+            const minDate = allDates[0];
+            const maxDate = allDates[allDates.length - 1];
+            
+            // 获取年份范围
+            const minYear = parseInt(minDate.split('-')[0]);
+            const maxYear = parseInt(maxDate.split('-')[0]);
+            
+            // 添加每年1月1日的日期点
+            for (let year = minYear; year <= maxYear; year++) {
+                const newYearDate = `${year}-01-01`;
+                if (!allDates.includes(newYearDate)) {
+                    allDates.push(newYearDate);
+                }
+            }
+            
+            // 重新排序所有日期
+            allDates.sort();
+            
+            // 准备数据
             if (babySelect === 'all') {
                 // 所有Baby，为每个Baby创建独立的数据集
                 const babies = [...new Set(data.map(item => item['babyname']))];
                 
                 babies.forEach(baby => {
                     const babyData = data.filter(item => item['babyname'] === baby);
+                    const babyColors = getBabyColors(baby);
                     
                     if (chartType === 'height' || chartType === 'both') {
                         datasets.push({
                             label: `${baby} - 身高`,
-                            data: labels.map(label => {
-                                const item = babyData.find(d => d['日期'] === label);
-                                return item && item['身高'] ? item['身高'] : null;
+                            data: allDates.map(date => {
+                                const item = babyData.find(d => d['日期'] === date);
+                                return {
+                                    x: date,
+                                    y: item && item['身高'] ? item['身高'] : null
+                                };
                             }),
-                            borderColor: colors[baby].height,
-                            backgroundColor: colors[baby].heightBg,
+                            borderColor: babyColors.height,
+                            backgroundColor: babyColors.heightBg,
                             yAxisID: 'y',
                             tension: 0.4
                         });
@@ -368,12 +550,15 @@
                     if (chartType === 'weight' || chartType === 'both') {
                         datasets.push({
                             label: `${baby} - 体重`,
-                            data: labels.map(label => {
-                                const item = babyData.find(d => d['日期'] === label);
-                                return item && item['体重'] ? item['体重'] : null;
+                            data: allDates.map(date => {
+                                const item = babyData.find(d => d['日期'] === date);
+                                return {
+                                    x: date,
+                                    y: item && item['体重'] ? item['体重'] : null
+                                };
                             }),
-                            borderColor: colors[baby].weight,
-                            backgroundColor: colors[baby].weightBg,
+                            borderColor: babyColors.weight,
+                            backgroundColor: babyColors.weightBg,
                             yAxisID: chartType === 'both' ? 'y1' : 'y',
                             tension: 0.4
                         });
@@ -381,12 +566,21 @@
                 });
             } else {
                 // 单个Baby
+                const babyColors = getBabyColors(babySelect);
+                const babyData = data.filter(item => item['babyname'] === babySelect);
+                
                 if (chartType === 'height' || chartType === 'both') {
                     datasets.push({
                         label: `${babySelect} - 身高`,
-                        data: data.map(item => item['身高'] || null),
-                        borderColor: colors[babySelect].height,
-                        backgroundColor: colors[babySelect].heightBg,
+                        data: allDates.map(date => {
+                            const item = babyData.find(d => d['日期'] === date);
+                            return {
+                                x: date,
+                                y: item && item['身高'] ? item['身高'] : null
+                            };
+                        }),
+                        borderColor: babyColors.height,
+                        backgroundColor: babyColors.heightBg,
                         yAxisID: 'y',
                         tension: 0.4
                     });
@@ -395,21 +589,22 @@
                 if (chartType === 'weight' || chartType === 'both') {
                     datasets.push({
                         label: `${babySelect} - 体重`,
-                        data: data.map(item => item['体重'] || null),
-                        borderColor: colors[babySelect].weight,
-                        backgroundColor: colors[babySelect].weightBg,
+                        data: allDates.map(date => {
+                            const item = babyData.find(d => d['日期'] === date);
+                            return {
+                                x: date,
+                                y: item && item['体重'] ? item['体重'] : null
+                            };
+                        }),
+                        borderColor: babyColors.weight,
+                        backgroundColor: babyColors.weightBg,
                         yAxisID: chartType === 'both' ? 'y1' : 'y',
                         tension: 0.4
                     });
                 }
             }
             
-            // 格式化日期显示
-            const originalLabels = babySelect === 'all' ? labels : data.map(item => item['日期']);
-            const formattedLabels = formatDates(originalLabels);
-            
             return {
-                labels: formattedLabels,
                 datasets: datasets
             };
         }
@@ -430,7 +625,7 @@
             });
             
             // 渲染表格内容
-            tbody.innerHTML = filteredData.map(item => {
+            tbody.innerHTML = filteredData.map((item, index) => {
                 return `
                     <tr>
                         <td>${item['日期']}</td>
@@ -438,10 +633,170 @@
                         <td>${item['身高'] || '-'}</td>
                         <td>${item['体重'] || '-'}</td>
                         <td>${item['记录'] || '-'}</td>
+                        <td>
+                            <button class="action-btn edit-btn" onclick="openEditModal(${index})">修改</button>
+                            <button class="action-btn delete-btn" onclick="deleteRecord(${index})">删除</button>
+                        </td>
                     </tr>
                 `;
             }).join('');
         }
+        
+        // 删除记录
+        function deleteRecord(index) {
+            // 获取选中的宝贝
+            const selectedBabies = Array.from(document.querySelectorAll('.baby-checkbox:checked')).map(cb => cb.value);
+            // 过滤数据，与渲染表格时的过滤逻辑保持一致
+            let filteredData = babyData.filter(item => selectedBabies.includes(item['babyname']));
+            // 按日期排序，与渲染表格时的排序逻辑保持一致
+            filteredData.sort((a, b) => {
+                return b['日期'].localeCompare(a['日期']);
+            });
+            
+            const recordToDelete = filteredData[index];
+            
+            if (confirm(`确定要删除${recordToDelete['babyname']}在${recordToDelete['日期']}的记录吗？`)) {
+                try {
+                    // 从数据库中删除记录
+                    db.run(`
+                        DELETE FROM Babydata 
+                        WHERE baby = ? AND date = ?
+                    `, [recordToDelete['babyname'], recordToDelete['日期']]);
+                    
+                    // 从内存数据中删除记录
+                    const originalIndex = babyData.findIndex(item => 
+                        item['babyname'] === recordToDelete['babyname'] && 
+                        item['日期'] === recordToDelete['日期']
+                    );
+                    if (originalIndex > -1) {
+                        babyData.splice(originalIndex, 1);
+                    }
+                    
+                    // 更新图表和表格
+                    renderChart();
+                    renderTable();
+                    
+                    alert('记录删除成功！');
+                } catch (error) {
+                    console.error('Error deleting record:', error);
+                    alert('删除记录失败：' + error.message);
+                }
+            }
+        }
+        
+        // 打开修改模态框
+        function openEditModal(index) {
+            // 获取选中的宝贝
+            const selectedBabies = Array.from(document.querySelectorAll('.baby-checkbox:checked')).map(cb => cb.value);
+            // 过滤数据，与渲染表格时的过滤逻辑保持一致
+            let filteredData = babyData.filter(item => selectedBabies.includes(item['babyname']));
+            // 按日期排序，与渲染表格时的排序逻辑保持一致
+            filteredData.sort((a, b) => {
+                return b['日期'].localeCompare(a['日期']);
+            });
+            
+            const recordToEdit = filteredData[index];
+            
+            // 设置表单数据
+            document.getElementById('edit-record-id').value = index;
+            document.getElementById('edit-babyname').value = recordToEdit['babyname'];
+            document.getElementById('edit-date').value = recordToEdit['日期'];
+            document.getElementById('edit-height').value = recordToEdit['身高'] || '';
+            document.getElementById('edit-weight').value = recordToEdit['体重'] || '';
+            document.getElementById('edit-record').value = recordToEdit['记录'] || '';
+            
+            // 显示模态框
+            document.getElementById('edit-modal').style.display = 'block';
+        }
+        
+        // 关闭修改模态框
+        function closeEditModal() {
+            document.getElementById('edit-modal').style.display = 'none';
+        }
+        
+        // 点击模态框外部关闭
+        window.onclick = function(event) {
+            const modal = document.getElementById('edit-modal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+        
+        // 关闭按钮事件监听
+        document.querySelector('.close').addEventListener('click', closeEditModal);
+        
+        // 修改记录表单提交
+        document.getElementById('edit-record-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // 获取表单数据
+            const index = parseInt(document.getElementById('edit-record-id').value);
+            const babyname = document.getElementById('edit-babyname').value;
+            const date = document.getElementById('edit-date').value;
+            const height = document.getElementById('edit-height').value ? parseFloat(document.getElementById('edit-height').value) : null;
+            const weight = document.getElementById('edit-weight').value ? parseFloat(document.getElementById('edit-weight').value) : null;
+            const record = document.getElementById('edit-record').value || null;
+            
+            // 获取选中的宝贝
+            const selectedBabies = Array.from(document.querySelectorAll('.baby-checkbox:checked')).map(cb => cb.value);
+            // 过滤数据，与渲染表格时的过滤逻辑保持一致
+            let filteredData = babyData.filter(item => selectedBabies.includes(item['babyname']));
+            // 按日期排序，与渲染表格时的排序逻辑保持一致
+            filteredData.sort((a, b) => {
+                return b['日期'].localeCompare(a['日期']);
+            });
+            
+            const originalRecord = filteredData[index];
+            
+            try {
+                // 更新数据库记录
+                db.run(`
+                    UPDATE Babydata 
+                    SET baby = ?, height = ?, weight = ?, record = ?
+                    WHERE baby = ? AND date = ?
+                `, [babyname, height, weight, record, originalRecord['babyname'], originalRecord['日期']]);
+                
+                // 更新内存数据
+                const originalIndex = babyData.findIndex(item => 
+                    item['babyname'] === originalRecord['babyname'] && 
+                    item['日期'] === originalRecord['日期']
+                );
+                
+                if (originalIndex > -1) {
+                    // 如果宝贝名称或日期发生变化，先删除旧记录，再添加新记录
+                    if (babyname !== originalRecord['babyname'] || date !== originalRecord['日期']) {
+                        babyData.splice(originalIndex, 1);
+                        babyData.push({
+                            'babyname': babyname,
+                            '日期': date,
+                            '身高': height !== null ? height : '',
+                            '体重': weight !== null ? weight : '',
+                            '记录': record || ''
+                        });
+                    } else {
+                        // 只更新字段值
+                        babyData[originalIndex]['身高'] = height !== null ? height : '';
+                        babyData[originalIndex]['体重'] = weight !== null ? weight : '';
+                        babyData[originalIndex]['记录'] = record || '';
+                    }
+                }
+                
+                // 更新宝贝选择相关的UI元素（如果修改了宝贝名称）
+                updateBabySelectors();
+                
+                // 更新图表和表格
+                renderChart();
+                renderTable();
+                
+                // 关闭模态框
+                closeEditModal();
+                
+                alert('记录修改成功！');
+            } catch (error) {
+                console.error('Error editing record:', error);
+                alert('修改记录失败：' + error.message);
+            }
+        });
         
         // 添加新记录
         document.getElementById('add-record-form').addEventListener('submit', async function(e) {
@@ -462,16 +817,19 @@
                 `, [babyname, date, height, weight, record]);
                 
                 // 更新内存数据
-                const newRecord = {
-                    'babyname': babyname,
-                    '日期': date,
-                    '身高': height !== null ? height : '',
-                    '体重': weight !== null ? weight : '',
-                    '记录': record || ''
-                };
+            const newRecord = {
+                'babyname': babyname,
+                '日期': date,
+                '身高': height !== null ? height : '',
+                '体重': weight !== null ? weight : '',
+                '记录': record || ''
+            };
                 
                 // 添加到内存数据
                 babyData.push(newRecord);
+                
+                // 更新宝贝选择相关的UI元素（如果添加了新宝贝）
+                updateBabySelectors();
                 
                 // 更新图表和表格
                 renderChart();
